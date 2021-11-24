@@ -1,0 +1,24 @@
+@media all {
+  body.va-layout-default {
+    #to-shine-page-header-pane {
+      margin-top:0px;
+      @include media-breakpoint-up(xxl) {
+        margin-top:50px;
+      }
+    }
+    main#to-shine-page-main, footer#to-shine-page-footer {
+      width:100%;
+      margin: 0 auto;
+      background-color:$white;
+      @include media-breakpoint-up(xxl) {
+        max-width: 1320px;
+      }
+    }
+    footer#to-shine-page-footer {
+      background: $tosic-footer-background;
+      @include media-breakpoint-up(xxl) {
+        margin-bottom:60px;
+      }
+    }
+  }
+}

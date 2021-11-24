@@ -1,0 +1,342 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages><package name="dnn-theme-2shine-BS5-2sxc" type="Skin" version="5.1.3">
+  <friendlyName>2shine DNN BS5 2sxc</friendlyName>
+  <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with 2sxc bootstrap content-templates.</description>
+  <iconFile />
+  <owner>
+    <name>2sic</name>
+    <organization>2sic internet solutions gmbh</organization>
+    <url>https://www.2sic.com/</url>
+    <email>info@2sic.com</email>
+  </owner>
+  <license>MIT License
+
+Copyright (c) 2020 2sic Internet Solutions GmbH
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</license>
+  <releaseNotes />
+  <components>
+    <component type="Skin">
+      <skinFiles>
+        <skinName>Bootstrap 5 Instant</skinName>
+        <basePath>Portals\_default\Skins\2shine</basePath>
+        <skinFile>
+          <path>App_LocalResources</path>
+          <name>default.ascx.de-DE.resx</name>
+          <name>wide.ascx.de-DE.resx</name>
+          <name>full.ascx.de-DE.resx</name>
+          <name>box.ascx.de-DE.resx</name>
+          <name>landingpage.ascx.de-DE.resx</name>
+          <name>box-with-2col-navigation.ascx.de-DE.resx</name>
+        </skinFile>
+        <skinFile>
+          <path>App_LocalResources</path>
+          <name>default.ascx.resx</name>
+          <name>wide.ascx.resx</name>
+          <name>full.ascx.resx</name>
+          <name>box.ascx.resx</name>
+          <name>landingpage.ascx.resx</name>
+          <name>box-with-2col-navigation.ascx.resx</name>
+        </skinFile>
+        <skinFile>
+          <path>App_LocalResources</path>
+          <name>landingpage.ascx.de-DE.resx</name>
+        </skinFile>
+        <skinFile>
+          <path>App_LocalResources</path>
+          <name>landingpage.ascx.resx</name>
+        </skinFile>
+        <skinFile>
+          <path>controls</path>
+          <name>2sxc-quickedit.ascx</name>
+        </skinFile>
+        <skinFile>
+          <path>controls</path>
+          <name>body-css-classes.ascx</name>
+        </skinFile>
+        <skinFile>
+          <path>controls</path>
+          <name>optimize-page-title.ascx</name>
+        </skinFile>
+          <skinFile>
+          <path>controls</path>
+          <name>theme-body.ascx</name>
+        </skinFile>
+        <skinFile>
+          <path>dist</path>
+          <name>theme.min.css</name>
+        </skinFile>
+        <skinFile>
+          <path>dist</path>
+          <name>theme.min.css.map</name>
+        </skinFile>
+        <skinFile>
+          <path>dist</path>
+          <name>theme.min.js</name>
+        </skinFile>
+        <skinFile>
+          <path>dist</path>
+          <name>theme.min.js.map</name>
+        </skinFile>
+        <skinFile>
+          <path>images\landingpage</path>
+          <name>logo.png</name>
+        </skinFile>
+        <skinFile>
+          <path>images\landingpage</path>
+          <name>logo.svg</name>
+        </skinFile>
+        <skinFile>
+          <path>images</path>
+          <name>logo-1000.png</name>
+        </skinFile>
+        <skinFile>
+          <path>images</path>
+          <name>logo.png</name>
+        </skinFile>
+        <skinFile>
+          <path>images</path>
+          <name>logo.svg</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\blank</path>
+          <name>menudef.xml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\blank</path>
+          <name>template.cshtml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\main</path>
+          <name>menudef.xml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\main</path>
+          <name>template.cshtml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\main-mobile</path>
+          <name>menudef.xml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\main-mobile</path>
+          <name>template.cshtml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\sub</path>
+          <name>menudef.xml</name>
+        </skinFile>
+        <skinFile>
+          <path>nav\sub</path>
+          <name>template.cshtml</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components\optional</path>
+          <name>_form-dnncentric.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_base-layout.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_dnn-overrides.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_fancybox.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_footer.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_header.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_nav-desktop-main.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_nav-desktop-sub.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_nav-mobile-to-top.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_nav-mobile.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_print.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\components</path>
+          <name>_typography.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\layout-variations</path>
+          <name>_layout-header-variations.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\layout-variations</path>
+          <name>_layout-variation-box.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\layout-variations</path>
+          <name>_layout-variation-default.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\layout-variations</path>
+          <name>_layout-variation-full.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\layout-variations</path>
+          <name>_layout-variation-landingpage.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss\layout-variations</path>
+          <name>_layout-variation-wide.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss</path>
+          <name>readme.md</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss</path>
+          <name>theme.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss</path>
+          <name>_variables.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\ts</path>
+          <name>theme.ts</name>
+        </skinFile>
+        <skinFile>
+          <name>CHANGELOG-bs3-bs4.md</name>
+        </skinFile>
+        <skinFile>
+          <name>default.ascx</name>
+        </skinFile>
+        <skinFile>
+          <name>default.doctype.xml</name>
+        </skinFile>
+        <skinFile>
+          <name>default.jpg</name>
+        </skinFile>
+        <skinFile>
+          <name>favicon.png</name>
+        </skinFile>
+        <skinFile>
+          <name>InvisibleContainer.zip</name>
+        </skinFile>
+        <skinFile>
+          <name>koi.json</name>
+        </skinFile>
+        <skinFile>
+          <name>landingpage.ascx</name>
+        </skinFile>
+        <skinFile>
+          <name>landingpage.jpg</name>
+        </skinFile>
+        <skinFile>
+          <name>LICENSE</name>
+        </skinFile>
+        <skinFile>
+          <name>package-lock.json</name>
+        </skinFile>
+        <skinFile>
+          <name>package.json</name>
+        </skinFile>
+        <skinFile>
+          <name>readme.md</name>
+        </skinFile>
+        <skinFile>
+          <name>thumbnail_default.jpg</name>
+        </skinFile>
+        <skinFile>
+          <name>thumbnail_landingpage.jpg</name>
+        </skinFile>
+        <skinFile>
+          <name>tsconfig.json</name>
+        </skinFile>
+        <skinFile>
+          <name>webpack.config.js</name>
+        </skinFile>
+      </skinFiles>
+    </component>
+  </components>
+  </package>
+  <package name="2shine" type="Container" version="1.2.0">
+  <friendlyName>2shine</friendlyName>
+  <description>2shine</description>
+  <iconFile />
+  <owner>
+    <name>2sic</name>
+    <organization>2sic internet solutions gmbh</organization>
+    <url>https://www.2sic.com</url>
+    <email>info@2sic.com</email>
+  </owner>
+  <license>MIT License
+
+Copyright (c) 2016 2sic Internet Solutions GmbH
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</license>
+  <releaseNotes />
+  <components>
+    <component type="ResourceFile">
+      <resourceFiles>
+        <basePath>Portals\_default\Containers\2shine</basePath>
+        <resourceFile>
+          <name>2shineContainer.zip</name>
+        </resourceFile>
+      </resourceFiles>
+    </component>
+    <component type="Container">
+      <containerFiles>
+        <containerName>2shine</containerName>
+        <basePath>Portals\_default\Containers\2shine</basePath>
+      </containerFiles>
+    </component>
+  </components>
+</package>
+</packages>
+</dotnetnuke>

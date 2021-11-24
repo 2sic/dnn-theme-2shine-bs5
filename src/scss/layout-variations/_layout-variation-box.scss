@@ -1,0 +1,30 @@
+@media all {
+  /*layout box*/
+  body.va-layout-box {
+    header {
+      background: transparent;
+      .container {
+        background: $white;
+      }
+      &.fixed-header {
+        box-shadow: none;
+      }
+    }
+
+    main#to-shine-page-main,
+    #to-shine-page-header-pane,
+    footer#to-shine-page-footer,
+    header#to-shine-page-header {
+      background: $white;
+      width: 100%;
+      margin: 0 auto;
+      @include media-breakpoint-up(xxl) {
+        max-width: 1320px;
+      }
+    }
+    footer#to-shine-page-footer {
+        background: $tosic-footer-background;
+    }
+    
+  }
+}

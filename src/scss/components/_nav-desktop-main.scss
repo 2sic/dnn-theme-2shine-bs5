@@ -1,0 +1,21 @@
+@media all {
+  .nav {
+    .last{
+      a {
+          padding-right:0;
+      }
+    }
+    .active {
+      a {
+          color: darken($primary, 15%);
+      }
+    }
+  }
+
+  @media all and (min-width: 992px) {
+    .nav .nav-item .dropdown-menu { display: none; }
+    .nav .nav-item:hover .nav-link {   }
+    .nav .nav-item:hover .dropdown-menu { display: block; }
+    .nav .nav-item .dropdown-menu { margin-top:0; }
+  }
+}

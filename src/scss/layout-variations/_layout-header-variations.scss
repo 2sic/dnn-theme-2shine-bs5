@@ -1,0 +1,28 @@
+@media all {
+  /* Logo left */ /* Logo right */
+  body.va-mainnav-left {
+    header#to-shine-header{
+      @include media-breakpoint-up(lg) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  /* header centered */
+  body.va-mainnav-center {
+    header {
+      &#to-shine-header {
+        @include media-breakpoint-up(lg) {
+          flex-direction: column !important;
+          justify-content: center !important;
+          padding-bottom: 0px;
+        }
+
+        .logo {
+          @include media-breakpoint-up(lg) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

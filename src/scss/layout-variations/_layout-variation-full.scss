@@ -1,0 +1,23 @@
+/*layout full*/
+@media all {
+  html {
+    body.va-layout-full {
+      background-color: $white;
+      form {
+        #to-shine-page-header-pane {
+          max-width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          .co-container-outer {
+            .co-container-inner {
+             
+            }
+          }
+        }
+        footer#to-shine-page-footer {
+          background-color: $tosic-footer-background;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@media all {
+    /*layout full*/
+    body.va-layout-landingpage {
+      background:$white;
+      header.to-shine {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+      
+        &.fixed-header {
+          box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.3);
+          position: fixed;
+          top: 0px;
+          left:0;
+          transition: background 0.4s ease-in-out;
+          &.fixed-top {
+            top: 0;
+            background: $dark;
+          }
+          .logo {
+            width: 120px;
+            svg {
+              //If you use an SVG as Logo, you will have to give it a fixed height
+              //in this selector, orelse you may experience issues in IE */
+              height: 37px;
+            }
+          }
+        }
+      }
+
+     
+      footer.to-shine {
+      
+        background: $primary;
+      }
+    }
+  }
+  

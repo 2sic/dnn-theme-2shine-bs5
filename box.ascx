@@ -8,3 +8,6 @@
 
 <%-- All Themes share the same main part - they only differ in the css classes etc. --%>
 <!--#include file="controls/theme-body.ascx"-->
+<script runat="server">
+public bool showSidebarNavigation = false;
+</script>

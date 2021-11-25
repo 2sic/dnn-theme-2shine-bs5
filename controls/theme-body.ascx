@@ -96,22 +96,30 @@
       <dnn:BREADCRUMB runat="server" aria-current="page" Separator="<span>&nbsp;&rsaquo;&nbsp;</span>" CssClass="to-shine-page-breadcrumb-link" RootLevel="0" />
     </div>		
   </div>
-  <div id="ContentPane" runat="server" containertype="G" containername="2Shine" containersrc="default.ascx"></div>
+  <% 
+  if(showSidebarNavigation) {
+  %>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-lg-9 order-lg-2 ly-col-contentpane">
-        <div id="RightPane" runat="server" containertype="G" containername="2shine" containersrc="default.ascx"></div>
+  <%
+  }
+  %>
+        <div id="ContentPane" runat="server" containertype="G" containername="2Shine" containersrc="default.ascx"></div>
+  <% 
+  if(showSidebarNavigation) {
+  %>        
       </div>
       <div class="col-xs-12 col-lg-3 order-lg-1 ly-col-leftpane">
         <div id="nav-sub" class="d-none d-sm-block">  
           <dnn:MENU MenuStyle="nav/sub" NodeSelector="+0,0,2" runat="server" />
         </div>
-        <div class="d-block d-sm-none">
-          <dnn:MENU MenuStyle="nav/sub" NodeSelector="CurrentChildren" runat="server" />
-        </div>
       </div>
     </div>
   </div>
+  <%
+  }
+  %>
   <a id="to-shine-to-top" href="#" title="Nach oben" rel="nofollow">
     <svg xmlns="http://www.w3.org/2000/svg" width="19.032" height="20.034" viewBox="0 0 19.032 20.034">
       <g id="Group_2" data-name="Group 2" transform="translate(-1055.984 -551.276)">

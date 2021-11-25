@@ -15,20 +15,22 @@
 				if (node.Breadcrumb) { cssClasses.Add("active"); cssClasses.Add("ly-active"); } else { cssClasses.Add("inactive"); }
 				var classString = new HtmlString((cssClasses.Count == 0) ? "" : (" class=\"" + String.Join(" ", cssClasses.ToArray()) + "\""));
 				<li @classString>
-					@if (node.Enabled) {
-						<div class="to-shine-linkwrapper">
-                            <a target="@(node.Target)" href="@node.Url">@node.Text</a>
-                            @if (node.HasChildren())
-                            {
-                                <div class="to-shine-navopener">
-                                    <div class="to-shine-navopener-icon"></div>
-                                </div>
-                            }
-                        </div>
-					} else {
-						@node.Text
-					}
-                    @RenderNodes(node.Children)
+					<div class="to-shine-linkwrapper">
+						@if (node.Enabled) { 
+							<a target="@(node.Target)" href="@node.Url">@node.Text</a>
+						} else {
+							<a href="javascript:void(0)">@node.Text</a>
+						}
+
+						@if (node.HasChildren())
+						{
+								<div class="to-shine-navopener">
+										<div class="to-shine-navopener-icon"></div>
+								</div>
+						}
+					</div>
+
+					@RenderNodes(node.Children)
 				</li>
 			}
 		</ul>

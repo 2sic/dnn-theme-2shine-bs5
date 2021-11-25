@@ -14,6 +14,7 @@
 				if (node.Last) { cssClasses.Add("last"); }
 				if (node.HasChildren()) { cssClasses.Add("has-child dropdown"); }
 				if (node.Breadcrumb) { cssClasses.Add("active"); } else { cssClasses.Add("inactive"); }
+				if (!node.Enabled) { cssClasses.Add("disabled"); }
 				var classString = new HtmlString((cssClasses.Count == 0) ? "" : (" class=\"" + String.Join(" ", cssClasses.ToArray()) + "\""));
 				<li @classString>
 					@if (node.Enabled) {
@@ -25,7 +26,11 @@
 						
 						<a @linkClassString target="@(node.Target)" href="@node.Url">@node.Text</a>
 					} else {
-						@node.Text
+						if(node.HasChildren()) {
+							<span class="nav-link dropdown-toggle" data-bs-toggle="dropdown">@node.Text</span>
+						} else {
+							<span class="nav-link">@node.Text</span>
+						}
 					}
 					@RenderNodes(node.Children)
 				</li>

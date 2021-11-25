@@ -13,9 +13,9 @@
   }
 
   @media all and (min-width: 992px) {
-    .nav .nav-item .dropdown-menu { display: none; }
-    .nav .nav-item:hover .nav-link {   }
-    .nav .nav-item:hover .dropdown-menu { display: block; }
-    .nav .nav-item .dropdown-menu { margin-top:0; }
+    .nav .nav-item:not(.disabled) .dropdown-menu { display: none; }
+    .nav .nav-item:not(.disabled):hover .nav-link {   }
+    .nav .nav-item:not(.disabled):hover .dropdown-menu { display: block; }
+    .nav .nav-item:not(.disabled) .dropdown-menu { margin-top: 2px; }
   }
 }

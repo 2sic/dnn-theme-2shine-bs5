@@ -34,7 +34,7 @@ SOFTWARE.</license>
   <components>
     <component type="Skin">
       <skinFiles>
-        <skinName>Bootstrap 5 Instant</skinName>
+        <skinName>2Shine BS5</skinName>
         <basePath>Portals\_default\Skins\2shine</basePath>
         <skinFile>
           <path>App_LocalResources</path>
@@ -250,7 +250,7 @@ SOFTWARE.</license>
           <name>favicon.png</name>
         </skinFile>
         <skinFile>
-          <name>InvisibleContainer.zip</name>
+          <name>2shine.zip</name>
         </skinFile>
         <skinFile>
           <name>koi.json</name>
@@ -288,10 +288,9 @@ SOFTWARE.</license>
       </skinFiles>
     </component>
   </components>
-  </package>
-  <package name="2shine" type="Container" version="1.2.0">
-  <friendlyName>2shine</friendlyName>
-  <description>2shine</description>
+  </package><package name="2Shine" type="Container" version="1.2.0">
+  <friendlyName>2Shine</friendlyName>
+  <description>2Shine</description>
   <iconFile />
   <owner>
     <name>2sic</name>
@@ -322,18 +321,25 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</license>
   <releaseNotes />
   <components>
-    <component type="ResourceFile">
-      <resourceFiles>
-        <basePath>Portals\_default\Containers\2shine</basePath>
-        <resourceFile>
-          <name>2shineContainer.zip</name>
-        </resourceFile>
-      </resourceFiles>
-    </component>
     <component type="Container">
       <containerFiles>
-        <containerName>2shine</containerName>
-        <basePath>Portals\_default\Containers\2shine</basePath>
+        <containerName>2Shine</containerName>
+        <basePath>Portals\_default\Containers\2Shine</basePath>
+        <containerFile>
+          <name>default.ascx</name>
+        </containerFile>
+        <containerFile>
+          <name>fullwidthWithoutPadding.ascx</name>
+        </containerFile>
+        <containerFile>
+          <name>fullwidthWithPadding.ascx</name>
+        </containerFile>
+        <containerFile>
+          <name>LICENSE</name>
+        </containerFile>
+        <containerFile>
+          <name>readme.md</name>
+        </containerFile>
       </containerFiles>
     </component>
   </components>

@@ -76,7 +76,7 @@
 @import "components/nav-language";
 @import "components/nav-breadcrumb";
 
-// More components
+// More components TODO: remove?
 @import "components/fancybox";
 
 // Other medias
@@ -91,3 +91,6 @@
 @import "layout-variations/layout-variation-landingpage";
 @import "layout-variations/layout-header-variations";
 
+// 5. Page Customizations
+// This contains special overrides for specific pages
+@import "page-customizations";

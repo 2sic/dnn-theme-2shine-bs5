@@ -1,7 +1,7 @@
 @media all {
   /* Logo left */ /* Logo right */
   body.va-mainnav-left {
-    header#to-shine-header{
+    header#to-shine-page-header .container{
       @include media-breakpoint-up(lg) {
         flex-direction: row-reverse;
       }
@@ -10,7 +10,7 @@
   /* header centered */
   body.va-mainnav-center {
     header {
-      &#to-shine-header {
+      &#to-shine-page-header {
         @include media-breakpoint-up(lg) {
           flex-direction: column !important;
           justify-content: center !important;

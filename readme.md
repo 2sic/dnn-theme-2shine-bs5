@@ -30,8 +30,8 @@ This theme is a layout/skin for the CMS [DNN](https://github.com/dnnsoftware/Dnn
 ## Layouts
 
 1. Default - Floating content on background, full-width sticky-header
-2. Full -> "Fullscreen" - Modules can use the full width to set backgrounds
-3. Box "Centered" - Content and Menu are max-width, background to right and left
+2. Fullscreen - Modules can use the full width to set backgrounds
+3. Centered - Content and Menu are max-width, background to right and left
 4. Box with Navigation "Centered-Submenu" - Paged/floating content with submenu to the left
 5. Wide "Float-WideHeader" - Paged/floating content with wide header
 

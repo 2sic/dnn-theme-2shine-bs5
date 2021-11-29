@@ -84,12 +84,12 @@
 
 // ----------------------------------------------------------------------------------------------------
 // 4. Layout Variations
-@import "layout-variations/layout-variation-default";
+@import "layout-variations/variation-default";
 @import "layout-variations/variation-centered";
-@import "layout-variations/layout-variation-wide";
+@import "layout-variations/variation-floatwideheader";
 @import "layout-variations/variation-fullscreen";
-@import "layout-variations/layout-variation-landingpage";
-@import "layout-variations/layout-header-variations";
+@import "layout-variations/variation-landingpage";
+@import "layout-variations/variation-header";
 
 // 5. Page Customizations
 // This contains special overrides for specific pages

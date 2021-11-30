@@ -97,7 +97,7 @@
     </div>		
   </div>
   <% 
-  if(showSidebarNavigation) {
+  if(ShowSidebarNavigation) {
   %>
   <div class="container">
     <div class="row">
@@ -107,7 +107,7 @@
   %>
         <div id="ContentPane" runat="server" containertype="G" containername="2Shine" containersrc="default.ascx"></div>
   <% 
-  if(showSidebarNavigation) {
+  if(ShowSidebarNavigation) {
   %>        
       </div>
       <div class="col-xs-12 col-lg-3 order-lg-1 ly-col-leftpane">

@@ -1,13 +1,15 @@
+<script runat="server">
+  // Settings which determine what variation of the skin is loaded
+  public bool ShowSidebarNavigation = false;
+</script>
+
 <%-- 
   Set common CSS classes on the body which determine the Layout 
-  Layout="Full" are: Default, Wide, Full, Box
+  Layout="Fullscreen" are: Default, Wide, Fullscreen, Box
   Navigation="Left": Right, Center, Left
 --%>
 <%@ Register TagPrefix="tosic" TagName="BodyCssClasses" src="controls/body-css-classes.ascx" %>
-<tosic:BodyCssClasses runat="server" Layout="full" Navigation="right"/>
+<tosic:BodyCssClasses runat="server" Layout="Fullscreen" Navigation="Right"/>
 
 <%-- All Themes share the same main part - they only differ in the css classes etc. --%>
 <!--#include file="controls/theme-body.ascx"-->
-<script runat="server">
-public bool showSidebarNavigation = false;
-</script>

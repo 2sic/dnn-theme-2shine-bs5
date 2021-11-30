@@ -1,6 +1,6 @@
 @media all {
   /* Logo left */ /* Logo right */
-  body.va-mainnav-left {
+  body.to-shine-mainnav-variation-left {
     header#to-shine-page-header .container{
       @include media-breakpoint-up(lg) {
         flex-direction: row-reverse;
@@ -8,15 +8,17 @@
     }
   }
   /* header centered */
-  body.va-mainnav-center {
+  body.to-shine-mainnav-variation-center {
     header {
       &#to-shine-page-header {
-        @include media-breakpoint-up(lg) {
-          flex-direction: column !important;
-          justify-content: center !important;
-          padding-bottom: 0px;
+        > .container {
+          @include media-breakpoint-up(lg) {
+            flex-direction: column !important;
+            justify-content: center !important;
+            padding-bottom: 0px;
+          }
         }
-
+        
         .logo {
           @include media-breakpoint-up(lg) {
             margin-bottom: 10px;

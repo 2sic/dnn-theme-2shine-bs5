@@ -1,5 +1,18 @@
 @media all {
+    .to-shine-mainnav-variation-left {
+        #nav-desktop > div {
+            align-self: flex-start;
+        }
 
+        .to-shine-page-language {
+            li {
+                &:last-child {
+                    padding-left: 0;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
     .to-shine-page-language {
         margin: 0;
         padding: 0;

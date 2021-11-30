@@ -21,6 +21,10 @@
         #dnn_ContentPane:last-child .co-container-outer.mb-md-5 {
           margin-bottom: 0 !important;
         }
+
+        div[id^="module-"] {
+          scroll-margin-top: 150px;
+        }
       }
     }
   }

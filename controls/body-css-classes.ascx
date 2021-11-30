@@ -47,7 +47,7 @@
 
 		var nav = Navigation;
 		if(string.IsNullOrEmpty(nav)) nav = "Right";
-		return " va-layout-" + layout.ToLower() + " va-mainnav-" + nav.ToLower() + " ";
+		return " to-shine-variation-" + layout.ToLower() + " to-shine-mainnav-variation-" + nav.ToLower() + " ";
 	}
 
 

@@ -1,14 +1,12 @@
 @media all {
-  /*layout box*/
-  body.va-layout-box {
+  /*layout centered*/
+  body.to-shine-variation-centered {
     header {
       background: transparent;
       .container {
         background: $white;
       }
-      &.fixed-header {
-        box-shadow: none;
-      }
+
     }
 
     main#to-shine-page-main,

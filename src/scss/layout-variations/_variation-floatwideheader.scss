@@ -1,6 +1,6 @@
 @media all {
-  /*layout wide*/
-  body.va-layout-wide {
+  /*layout floatwideheader*/
+  body.to-shine-variation-floatwideheader {
     &.tab-2650 {
       main#to-shine-page-main {
         @include media-breakpoint-up(xl) {
@@ -14,11 +14,6 @@
       }
     }
 
-    header#to-shine-page-header {
-      &.fixed-header {
-        max-width: 100%;
-      }
-    }
     main#to-shine-page-main,
     footer#to-shine-page-footer {
       background: $white;

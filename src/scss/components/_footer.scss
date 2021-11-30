@@ -1,5 +1,6 @@
 @media all {
   footer#to-shine-page-footer {
+
     ul {
       margin: 0;
       padding: 0;
@@ -25,7 +26,8 @@
       }
       &.to-shine-page-login {
         font-size: 12px;
-        color: $tosic-footer-background;
+        color: transparent;
+
         &:hover {
           color:$white;
         }

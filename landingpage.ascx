@@ -106,7 +106,7 @@
   </a>
 </main>
 <footer id="to-shine-page-footer">
-  <div class="container pt-4 pb-2 d-flex justify-content-md-between flex-column flex-md-row text-white">
+  <div class="container py-4 d-flex justify-content-md-between flex-column flex-md-row text-white">
     <ul class="to-shine-footer-address" itemscope itemtype="http://schema.org/LocalBusiness">
       <li>
         <strong itemprop="name">2shine DNN BS5 2sxc </strong>
@@ -125,9 +125,9 @@
       </li>
     </ul>
     <div class="to-shine-footer-imprint">
-        <a href="<%= LocalizeString("Imprint.Url") %>" title="<%= LocalizeString("Imprint.Text") %>"><%= LocalizeString("Imprint.Text") %></a> | 
-        <a href="<%= LocalizeString("Privacy.Url") %>" title="<%= LocalizeString("Privacy.Text") %>"><%= LocalizeString("Privacy.Text") %></a><br>
-        <dnn:login id="DnnLogin" cssclass="to-shine-page-login d-none d-lg-inline-flex" rel="nofollow" runat="server" />
+      <dnn:login id="DnnLogin" cssclass="to-shine-page-login d-none d-lg-inline-flex" rel="nofollow" runat="server" />  
+      <a href="<%= LocalizeString("Imprint.Url") %>" title="<%= LocalizeString("Imprint.Text") %>"><%= LocalizeString("Imprint.Text") %></a> | 
+      <a href="<%= LocalizeString("Privacy.Url") %>" title="<%= LocalizeString("Privacy.Text") %>"><%= LocalizeString("Privacy.Text") %></a>
     </div>
   </div>
 </footer>

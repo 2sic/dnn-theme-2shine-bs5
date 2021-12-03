@@ -94,7 +94,7 @@
 </header>
 
 <main id="to-shine-page-main">
-  <div id="ContentPane" runat="server" containertype="G" containername="2Shine" containersrc="fullwidthWithoutPadding.ascx"></div>
+  <div id="ContentPane" runat="server" containertype="G" containername="2shine BS5" containersrc="fullwidthWithoutPadding.ascx"></div>
   
   <a id="to-shine-to-top" href="#" title="Nach oben" rel="nofollow">
     <svg xmlns="http://www.w3.org/2000/svg" width="19.032" height="20.034" viewBox="0 0 19.032 20.034">

@@ -86,7 +86,7 @@
   </div>
 </header>
 <div id="to-shine-page-header-pane" class="container-xxl px-0 <%= (HeaderPane.Attributes["class"] ?? "").Contains("DNNEmptyPane") ? "to-shine-header-pane-empty" : "" %>">
-  <div id="HeaderPane" runat="server" containertype="G" containername="2shine" containersrc="fullwidthWithoutPadding.ascx"></div>
+  <div id="HeaderPane" runat="server" containertype="G" containername="2shine BS5" containersrc="fullwidthWithoutPadding.ascx"></div>
 </div>
 <main id="to-shine-page-main">
   <div class="to-shine-page-breadcrumb" aria-label="breadcrumb">
@@ -105,7 +105,7 @@
   <%
   }
   %>
-        <div id="ContentPane" runat="server" containertype="G" containername="2Shine" containersrc="default.ascx"></div>
+        <div id="ContentPane" runat="server" containertype="G" containername="2shine BS5" containersrc="default.ascx"></div>
   <% 
   if(ShowSidebarNavigation) {
   %>        

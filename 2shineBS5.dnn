@@ -323,8 +323,8 @@ SOFTWARE.</license>
   <components>
     <component type="Container">
       <containerFiles>
-        <containerName>2Shine</containerName>
-        <basePath>Portals\_default\Containers\2Shine</basePath>
+        <containerName>2shine BS5</containerName>
+        <basePath>Portals\_default\Containers\2shine BS5</basePath>
         <containerFile>
           <name>default.ascx</name>
         </containerFile>

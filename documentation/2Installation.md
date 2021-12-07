@@ -24,12 +24,7 @@ For this method you are required to have a Dnn implementation installed and runn
     6. Go to **Themes**
     7. Select the 2shine skin
 
-**Important** The skin won't be applied to already existing pages. To fix that:
-1. Go to **Content**
-2. Go to **Pages** 
-3. Click on your **Home page**
-4. Go to **extended**
-5. 
+**Important:** The skin won't be applied to already existing pages. [Apply skin to already existing pages](#apply-skin-to-already-existing-pages)
 
 ---
 
@@ -47,8 +42,20 @@ For this method you are required to have a Dnn implementation installed and runn
 
 >   `git clone https://github.com/2sic/dnn-theme-2shine-bs5.git`
 
-8. Delete the repository ***needs to be specified***
-9. Initialize local repository ***needs to be specified***
-10. 
+8. Delete the existing repository ***needs to be specified***
+9. Initialize new repository ***needs to be specified***
+10. Apply the skin to a **page** or the **whole site**
+        1. Page: 
+        2. Whole site: 
 
+**Important:** The skin won't be applied to already existing pages. [Apply skin to already existing pages](#apply-skin-to-already-existing-pages)
 
+---
+
+### Apply skin to already existing pages
+
+1. Go to **Content**
+2. Go to **Pages** 
+3. Click on your **Home page**
+4. Go to **extended**
+5. 

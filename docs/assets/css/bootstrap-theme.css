@@ -3879,9 +3879,7 @@ progress { vertical-align: baseline; }
 
 body { background-color: #F5F5F5; }
 
-body .page-content { margin-top: 3%; margin-bottom: 3%; }
-
-body .page-content .left-sidebar { position: sticky; }
+body .page-content { margin-top: 3%; margin-bottom: 3%; margin-right: 0; margin-left: 0; }
 
 body .page-content .content-column { display: flex; justify-content: center; }
 

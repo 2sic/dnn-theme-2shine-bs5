@@ -6,7 +6,7 @@ permalink: /
 
 ---
 
-# <center> 2shine a skin to make Dnn websites beautiful 6 </center> 
+# <center> 2shine a skin to make Dnn websites beautiful 7 </center> 
 
 ---
 

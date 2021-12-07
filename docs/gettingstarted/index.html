@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Installation" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/dnn-theme-2shine-bs5/gettingstarted/","headline":"Installation","author":{"@type":"Person","name":"Github User"},"@type":"WebPage","description":"An awesome documentation for the awesome 2shine.","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/dnn-theme-2shine-bs5/gettingstarted/","author":{"@type":"Person","name":"Github User"},"@type":"WebPage","headline":"Installation","description":"An awesome documentation for the awesome 2shine.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-theme.css">
   <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/dnn-theme-2shine-bs5/feed.xml" title="2shine Docs" />
@@ -42,6 +42,8 @@
               <a class="nav-link " href="/dnn-theme-2shine-bs5/styles/">Styles</a>
             </li><li class="nav-item">
               <a class="nav-link " href="/dnn-theme-2shine-bs5/navigation/">Navigation</a>
+            </li><li class="nav-item">
+              <a class="nav-link " href="/dnn-theme-2shine-bs5/documentation/">Documentation</a>
             </li></ul>
         </div></div>
     </nav>
@@ -63,6 +65,8 @@
             <a class="nav-link " href="/dnn-theme-2shine-bs5/styles/">Styles</a>
           </li><li class="nav-item">
             <a class="nav-link " href="/dnn-theme-2shine-bs5/navigation/">Navigation</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/documentation/">Documentation</a>
           </li></ul>
       </div>
     </nav>
@@ -114,15 +118,34 @@
       <li>Option 3: Navigate to the folder with your console</li>
     </ol>
   </li>
-  <li>Clone the <strong>2shine theme</strong> repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-theme-2shine-bs5.git</code></li>
-    </ul>
+  <li>
+    <p>Clone the <strong><a href="https://github.com/2sic/dnn-theme-2shine-bs5.git">2shine theme repository</a></strong> into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:</p>
+
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-theme-2shine-bs5.git</code></p>
+    </blockquote>
   </li>
   <li>Change skin folder name to project’s name</li>
-  <li>Delete the existing repository 
-     1. Command Line: in the <strong>root</strong> folder of the skin, open cmd and execute “<code class="language-plaintext highlighter-rouge">rd /s /q .git</code>”
-     2. Powershell: In the <strong>root</strong> folder of the skin, open powershell and execute “<code class="language-plaintext highlighter-rouge">rm -r -fo .git</code>”</li>
+  <li>
+    <p>Delete the existing repository</p>
+
+    <ol>
+      <li>
+        <p>Command Line: in the <strong>root</strong> folder of the skin, open cmd and execute :</p>
+
+        <blockquote>
+          <p><code class="language-plaintext highlighter-rouge">rd /s /q .git</code></p>
+        </blockquote>
+      </li>
+      <li>
+        <p>Powershell: In the <strong>root</strong> folder of the skin, open powershell and execute :</p>
+
+        <blockquote>
+          <p><code class="language-plaintext highlighter-rouge">rm -r -fo .git</code></p>
+        </blockquote>
+      </li>
+    </ol>
+  </li>
   <li>
     <p>Initialize a new repository with VS Code or over the console and issue and make initial commit with all the files present in the root folder</p>
   </li>
@@ -134,12 +157,14 @@
       <li>Option 3: Navigate to the folder with your console</li>
     </ol>
   </li>
-  <li>Clone the <strong>2shine container</strong> repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-container-2shine-bs5.git</code></li>
-    </ul>
+  <li>
+    <p>Clone the <strong><a href="https://github.com/2sic/dnn-container-2shine-bs5.git">2shine container repository</a></strong> into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:</p>
+
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-container-2shine-bs5.git</code></p>
+    </blockquote>
   </li>
-  <li>Apply the skin to an <a href="#apply-skin-to-already-existing-pages"><strong>existing page</strong></a> or the <a href="#apply-skin-to-whole-site"><strong>whole site</strong></a></li>
+  <li>Apply the skin to an <a href="#apply-skin-to-already-existing-pages">existing page</a> or the <a href="#apply-skin-to-whole-site">whole site</a></li>
 </ol>
 
 <p><strong><em>Important:</em></strong> both of your locally copied repositories must have the same name</p>
@@ -155,6 +180,8 @@
   <li><strong>Reload</strong> the page to see changes</li>
   <li><strong>Existing pages wont update</strong>- for these you will have to <a href="#apply-skin-to-already-existing-pages">apply the skin manually</a></li>
 </ol>
+
+<hr />
 
 <h3 id="apply-skin-to-already-existing-pages">Apply skin to already existing pages</h3>
 

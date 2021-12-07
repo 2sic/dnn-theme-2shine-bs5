@@ -3889,4 +3889,7 @@ body .page-content .content-column .content-wrapper { margin: 0; background-colo
 
 footer { height: 10vh; background-color: white; }
 
+/*Adds blockquote styling for Markdown*/
+blockquote { border-left: .25em solid #dfe2e5; color: #6a737d; padding: 0 1em; }
+
 /*# sourceMappingURL=bootstrap-theme.css.map */

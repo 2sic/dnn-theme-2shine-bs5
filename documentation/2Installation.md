@@ -30,19 +30,29 @@ For this method you are required to have a Dnn implementation installed and runn
 
 ## Install 2shine by cloning the repository 
 1. Go to your project files > Go to **Website** > Go to **Portals** > Go to **_default** > Go to **Skins**
-2. Open the Skins folder in your console 
+2. Open the Skins folder in your console:
     1. Option 1: Right click and select **Open with Powershell** or **Open with Command Prompt**
     2. Option 2: Click on the folder Path in the explorer and write **cmd** and press enter 
     3. Option 3: Navigate to the folder with your console
-3. Clone the repository into this folder with the `git clone` command:
+3. Clone the **2shine theme** repository into this folder with the `git clone` command:
     - `git clone https://github.com/2sic/dnn-theme-2shine-bs5.git`
-
 4. Change skin folder name to project's name
 5. Delete the existing repository 
         1. Command Line: in the **root** folder of the skin, open cmd and execute "`rd /s /q .git`"
         2. Powershell: In the **root** folder of the skin, open powershell and execute "`rm -r -fo .git`"
-6. Initialize a new repository with VS Code and issue and initial commit with all the files present in the root folder  
-7. Apply the skin to an [**existing page**](#apply-skin-to-already-existing-pages) or the [**whole site**](#apply-skin-to-whole-site)
+6. Initialize a new repository with VS Code or over the console and issue and make initial commit with all the files present in the root folder  
+
+7. Go to your Projects **_default** folder > Go to **Containers**
+8. Open the Containers folder in your console:
+    1. Option 1: Right click and select **Open with Powershell** or **Open with Command Prompt**
+    2. Option 2: Click on the folder Path in the explorer and write **cmd** and press enter 
+    3. Option 3: Navigate to the folder with your console
+9. Clone the **2shine container** repository into this folder with the `git clone` command:
+- `git clone https://github.com/2sic/dnn-container-2shine-bs5.git`
+
+10. Apply the skin to an [**existing page**](#apply-skin-to-already-existing-pages) or the [**whole site**](#apply-skin-to-whole-site)
+
+***Important:*** both of your locally copied repositories must have the same name
 
 ---
 

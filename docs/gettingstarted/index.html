@@ -16,14 +16,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An awesome documentation for the awesome 2shine." />
 <meta property="og:description" content="An awesome documentation for the awesome 2shine." />
+<link rel="canonical" href="http://localhost:4000/dnn-theme-2shine-bs5/gettingstarted/" />
+<meta property="og:url" content="http://localhost:4000/dnn-theme-2shine-bs5/gettingstarted/" />
 <meta property="og:site_name" content="2shine Docs" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Installation" />
 <script type="application/ld+json">
-{"url":"/dnn-theme-2shine-bs5/gettingstarted/","headline":"Installation","author":{"@type":"Person","name":"Github User"},"@type":"WebPage","description":"An awesome documentation for the awesome 2shine.","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/dnn-theme-2shine-bs5/gettingstarted/","headline":"Installation","author":{"@type":"Person","name":"Github User"},"@type":"WebPage","description":"An awesome documentation for the awesome 2shine.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="/dnn-theme-2shine-bs5/feed.xml" title="2shine Docs" />
+  <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/dnn-theme-2shine-bs5/feed.xml" title="2shine Docs" />
 </head>
 <body class="vw-100 vh-90"><!--
   <header class="h-1"><nav class="navbar navbar-expand-lg navbar-light bg-light mh-2vh">
@@ -37,7 +39,9 @@
             </li><li class="nav-item">
               <a class="nav-link  active" aria-current="page" href="/dnn-theme-2shine-bs5/gettingstarted/">Installation</a>
             </li><li class="nav-item">
-              <a class="nav-link " href="/dnn-theme-2shine-bs5/newpage/">NewPage</a>
+              <a class="nav-link " href="/dnn-theme-2shine-bs5/styles/">Styles</a>
+            </li><li class="nav-item">
+              <a class="nav-link " href="/dnn-theme-2shine-bs5/navigation/">Navigation</a>
             </li></ul>
         </div></div>
     </nav>
@@ -56,7 +60,9 @@
           </li><li class="nav-item">
             <a class="nav-link  active" aria-current="page" href="/dnn-theme-2shine-bs5/gettingstarted/">Installation</a>
           </li><li class="nav-item">
-            <a class="nav-link " href="/dnn-theme-2shine-bs5/newpage/">NewPage</a>
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/styles/">Styles</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/navigation/">Navigation</a>
           </li></ul>
       </div>
     </nav>
@@ -101,14 +107,14 @@
 <h2 id="install-2shine-by-cloning-the-repository">Install 2shine by cloning the repository</h2>
 <ol>
   <li>Go to your project files &gt; Go to <strong>Website</strong> &gt; Go to <strong>Portals</strong> &gt; Go to <strong>_default</strong> &gt; Go to <strong>Skins</strong></li>
-  <li>Open the Skins folder in your console
+  <li>Open the Skins folder in your console:
     <ol>
       <li>Option 1: Right click and select <strong>Open with Powershell</strong> or <strong>Open with Command Prompt</strong></li>
       <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter</li>
       <li>Option 3: Navigate to the folder with your console</li>
     </ol>
   </li>
-  <li>Clone the repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:
+  <li>Clone the <strong>2shine theme</strong> repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:
     <ul>
       <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-theme-2shine-bs5.git</code></li>
     </ul>
@@ -117,9 +123,26 @@
   <li>Delete the existing repository 
      1. Command Line: in the <strong>root</strong> folder of the skin, open cmd and execute “<code class="language-plaintext highlighter-rouge">rd /s /q .git</code>”
      2. Powershell: In the <strong>root</strong> folder of the skin, open powershell and execute “<code class="language-plaintext highlighter-rouge">rm -r -fo .git</code>”</li>
-  <li>Initialize a new repository with VS Code and issue and initial commit with all the files present in the root folder</li>
+  <li>
+    <p>Initialize a new repository with VS Code or over the console and issue and make initial commit with all the files present in the root folder</p>
+  </li>
+  <li>Go to your Projects <strong>_default</strong> folder &gt; Go to <strong>Containers</strong></li>
+  <li>Open the Containers folder in your console:
+    <ol>
+      <li>Option 1: Right click and select <strong>Open with Powershell</strong> or <strong>Open with Command Prompt</strong></li>
+      <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter</li>
+      <li>Option 3: Navigate to the folder with your console</li>
+    </ol>
+  </li>
+  <li>Clone the <strong>2shine container</strong> repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-container-2shine-bs5.git</code></li>
+    </ul>
+  </li>
   <li>Apply the skin to an <a href="#apply-skin-to-already-existing-pages"><strong>existing page</strong></a> or the <a href="#apply-skin-to-whole-site"><strong>whole site</strong></a></li>
 </ol>
+
+<p><strong><em>Important:</em></strong> both of your locally copied repositories must have the same name</p>
 
 <hr />
 

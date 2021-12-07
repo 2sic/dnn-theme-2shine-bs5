@@ -1,7 +1,7 @@
 ---
 layout: doc
-title: NewPage 
-permalink: /newpage/
+title: Styles 
+permalink: /styles/
 ---
 
 ---

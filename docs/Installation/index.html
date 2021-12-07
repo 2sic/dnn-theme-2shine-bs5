@@ -46,7 +46,7 @@
 <header class="navbar-header">
   <div class="navbar-wrapper h-100">
     <nav class="navbar navbar-expand-lg navbar-light h-100 d-flex align-items-center">
-      <a href="/" class="navbar-brand"><img class="navbar-logo" src="/dnn-theme-2shine-bs5/assets/images/logo-1000.png" alt=""></a>
+      <a href="/dnn-theme-2shine-bs5/" class="navbar-brand"><img class="navbar-logo" src="/dnn-theme-2shine-bs5/assets/images/logo-1000.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -74,7 +74,7 @@
 
 <hr />
 
-<p>There are two methods to get started with 2shine. The first one is the easier one and recommended for beginners. The second one is more difficult and only recommended for people who know what they are doing. It is recommended that you download Dnn before you beginn with the installation process. To find out how to download and install Dnn visit their official website.</p>
+<p>There are two methods to get started with 2shine. The first one is the easier one and recommended for beginners. The second one is more difficult and only recommended for people who know what they are doing. It is recommended that you download Dnn before you beginn with the installation process. To find out how to download and install Dnn visit their <a href="https://www.dnnsoftware.com/">official website</a>.</p>
 
 <h2 id="install-2shine-with-the-dnn-extension-manager">Install 2shine with the Dnn extension manager</h2>
 
@@ -100,46 +100,48 @@
 
 <h2 id="install-2shine-by-cloning-the-repository">Install 2shine by cloning the repository</h2>
 <ol>
-  <li>Go to your project files</li>
-  <li>Go to the <strong>Website</strong> folder</li>
-  <li>Go to the <strong>Portals</strong> folder</li>
-  <li>Go to the <strong>_default</strong> folder</li>
-  <li>Go to the <strong>Skins</strong> folder</li>
+  <li>Go to your project files &gt; Go to <strong>Website</strong> &gt; Go to <strong>Portals</strong> &gt; Go to <strong>_default</strong> &gt; Go to <strong>Skins</strong></li>
   <li>Open the Skins folder in your console
     <ol>
-      <li>Right click and select <strong>Open with Powershell</strong> or <strong>Open with Command Prompt</strong></li>
-      <li>Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter</li>
-      <li>(You can also just navigate to the folder with your console)</li>
+      <li>Option 1: Right click and select <strong>Open with Powershell</strong> or <strong>Open with Command Prompt</strong></li>
+      <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter</li>
+      <li>Option 3: Navigate to the folder with your console</li>
     </ol>
   </li>
-  <li>Clone the repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:</li>
+  <li>Clone the repository into this folder with the <code class="language-plaintext highlighter-rouge">git clone</code> command:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-theme-2shine-bs5.git</code></li>
+    </ul>
+  </li>
+  <li>Change skin folder name to project’s name</li>
+  <li>Delete the existing repository 
+     1. Command Line: in the <strong>root</strong> folder of the skin, open cmd and execute “<code class="language-plaintext highlighter-rouge">rd /s /q .git</code>”
+     2. Powershell: In the <strong>root</strong> folder of the skin, open powershell and execute “<code class="language-plaintext highlighter-rouge">rm -r -fo .git</code>”</li>
+  <li>Initialize a new repository with VS Code and issue and initial commit with all the files present in the root folder</li>
+  <li>Apply the skin to an <a href="#apply-skin-to-already-existing-pages"><strong>existing page</strong></a> or the <a href="#apply-skin-to-whole-site"><strong>whole site</strong></a></li>
 </ol>
-
-<blockquote>
-  <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-theme-2shine-bs5.git</code></p>
-</blockquote>
-
-<ol>
-  <li>Delete the existing repository <strong><em>needs to be specified</em></strong></li>
-  <li>Initialize new repository <strong><em>needs to be specified</em></strong></li>
-  <li>Apply the skin to a <strong>page</strong> or the <strong>whole site</strong>
-    1. Page: 
-    2. Whole site:</li>
-</ol>
-
-<p><strong>Important:</strong> The skin won’t be applied to already existing pages. <a href="#apply-skin-to-already-existing-pages">Apply skin to already existing pages</a></p>
 
 <hr />
 
-<h3 id="apply-skin-to-already-existing-pages">Apply skin to already existing pages</h3>
+<h3 id="apply-skin-to-whole-site">Apply skin to whole site</h3>
 
 <ol>
-  <li>Go to <strong>Content</strong></li>
-  <li>Go to <strong>Pages</strong></li>
-  <li>Click on your <strong>Home page</strong></li>
-  <li>Go to <strong>extended</strong></li>
-  <li></li>
+  <li>Go to <strong>Manage</strong> &gt; <strong>Themes</strong></li>
+  <li>Select the desired theme</li>
+  <li>Confirm your choice</li>
+  <li><strong>Reload</strong> the page to see changes</li>
+  <li><strong>Existing pages wont update</strong>- for these you will have to <a href="#apply-skin-to-already-existing-pages">apply the skin manually</a></li>
 </ol>
+
+<h3 id="apply-skin-to-already-existing-pages">Apply skin to already existing pages</h3>
+
+<p>1.Go to <strong>Content</strong> &gt; <strong>Pages</strong></p>
+<ol>
+  <li>Select relevant <strong>Page</strong> &gt; Go to <strong>Advanced</strong> &gt; <strong>Appearance</strong> and select the theme</li>
+  <li>Save the changes after the selection</li>
+  <li>Reload the page to see changes</li>
+</ol>
+
 
       </div>
     </div>

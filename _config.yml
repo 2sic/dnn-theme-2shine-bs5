@@ -46,4 +46,4 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-destination:  ../docs
+destination:  docs

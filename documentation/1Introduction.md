@@ -1,12 +1,12 @@
 ---
 layout: home
-title: Getting Started  
+title: Home  
 permalink: /
 ---
 
 ---
 
-# <center> 2shine a skin to make Dnn websites beautiful 3 </center> 
+# <center> 2shine a skin to make Dnn websites beautiful 4 </center> 
 
 ---
 

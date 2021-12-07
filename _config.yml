@@ -46,5 +46,5 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-baseurl: /dnn-theme-2shine-bs5/
+baseurl: /dnn-theme-2shine-bs5
 destination:  docs

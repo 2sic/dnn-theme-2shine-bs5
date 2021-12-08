@@ -52,7 +52,7 @@
 <header class="navbar-header">
   <div class="navbar-wrapper h-100">
     <nav class="navbar navbar-expand-lg navbar-light h-100 d-flex align-items-center">
-      <a href="/dnn-theme-2shine-bs5/" class="navbar-brand"><img class="navbar-logo" src="/dnn-theme-2shine-bs5/assets/images/logo-1000.png"></a>
+      <a href="/dnn-theme-2shine-bs5/" class="navbar-brand"><img class="navbar-logo" src="/dnn-theme-2shine-bs5/assets/images/layout-images/logo-1000.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -104,7 +104,7 @@
   </li>
 </ol>
 
-<p><strong>Important:</strong> The skin won’t be applied to already existing pages. <a href="#apply-skin-to-already-existing-pages">Apply skin to already existing pages</a></p>
+<p>Note: The skin won’t be applied to already existing pages. <a href="#apply-skin-to-already-existing-pages">Apply skin to already existing pages</a></p>
 
 <hr />
 
@@ -114,7 +114,8 @@
   <li>Open the Skins folder in your console:
     <ol>
       <li>Option 1: Right click and select <strong>Open with Powershell</strong> or <strong>Open with Command Prompt</strong></li>
-      <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter</li>
+      <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter 
+ <img src="/dnn-theme-2shine-bs5/assets/images/content-images/installation-images/cmd-explorer.png" class="cmd-explorer" /></li>
       <li>Option 3: Navigate to the folder with your console</li>
     </ol>
   </li>
@@ -146,14 +147,23 @@
       </li>
     </ol>
   </li>
-  <li>
-    <p>Initialize a new repository with VS Code or over the console and issue and make initial commit with all the files present in the root folder</p>
+  <li>Initialize a new repository with VS Code or over the console and issue and make initial commit with all the files present in the root folder
+    <ol>
+      <li>
+        <p>In the console in the <strong>same folder</strong> write :</p>
+
+        <blockquote>
+          <p><code class="language-plaintext highlighter-rouge">git init</code></p>
+        </blockquote>
+      </li>
+    </ol>
   </li>
   <li>Go to your Projects <strong>_default</strong> folder &gt; Go to <strong>Containers</strong></li>
   <li>Open the Containers folder in your console:
     <ol>
       <li>Option 1: Right click and select <strong>Open with Powershell</strong> or <strong>Open with Command Prompt</strong></li>
-      <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter</li>
+      <li>Option 2: Click on the folder Path in the explorer and write <strong>cmd</strong> and press enter 
+ <img src="/dnn-theme-2shine-bs5/assets/images/content-images/installation-images/cmd-explorer.png" class="cmd-explorer" /></li>
       <li>Option 3: Navigate to the folder with your console</li>
     </ol>
   </li>
@@ -164,10 +174,9 @@
       <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/2sic/dnn-container-2shine-bs5.git</code></p>
     </blockquote>
   </li>
+  <li><strong>Important</strong>: rename the folder that you just created to have the <strong>same name</strong> you gave the skin folder</li>
   <li>Apply the skin to an <a href="#apply-skin-to-already-existing-pages">existing page</a> or the <a href="#apply-skin-to-whole-site">whole site</a></li>
 </ol>
-
-<p><strong><em>Important:</em></strong> both of your locally copied repositories must have the same name</p>
 
 <hr />
 
@@ -176,6 +185,13 @@
 <ol>
   <li>Go to <strong>Manage</strong> &gt; <strong>Themes</strong></li>
   <li>Select the desired theme</li>
+</ol>
+<div style="padding-left=100px">
+        <img src="/dnn-theme-2shine-bs5/assets/images/content-images/installation-images/manage-extensions.png" class="manage-extensions" style="max-height: 250px" />
+        <img src="/dnn-theme-2shine-bs5/assets/images/content-images/installation-images/select-2shine.png" class="select-2shine" style="height: 250px " />
+</div>
+
+<ol>
   <li>Confirm your choice</li>
   <li><strong>Reload</strong> the page to see changes</li>
   <li><strong>Existing pages wont update</strong>- for these you will have to <a href="#apply-skin-to-already-existing-pages">apply the skin manually</a></li>
@@ -196,7 +212,7 @@
       </div>
     </div>
     <div class="right-sidebar bg-secondary.bg-gradient  col-0 col-md-2"></div>
-</main><footer class="d-flex align-self-end footer mt-auto py-3 bg-light h-card">
+</main><footer class="footer mt-auto py-3 bg-light h-card">
 </footer>
 <script src="/dnn-theme-2shine-bs5/assets/js/bootstrap.bundle.min.js"></script>
 </body>

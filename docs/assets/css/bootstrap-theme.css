@@ -3890,4 +3890,11 @@ footer { height: 10vh; background-color: white; }
 /*Adds blockquote styling for Markdown*/
 blockquote { border-left: .25em solid #dfe2e5; color: #6a737d; padding: 0 1em; }
 
+/* Adds table styling for Markdown*/
+table { border-collapse: collapse; border-spacing: 0; border: 2px solid #000000; }
+
+th { border: 2px solid #000000; }
+
+td { border: 1px solid #000000; }
+
 /*# sourceMappingURL=bootstrap-theme.css.map */

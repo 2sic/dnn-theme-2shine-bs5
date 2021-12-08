@@ -33,7 +33,7 @@ Note: The skin won't be applied to already existing pages. [Apply skin to alread
 2. Open the Skins folder in your console:
     1. Option 1: Right click and select **Open with Powershell** or **Open with Command Prompt**
     2. Option 2: Click on the folder Path in the explorer and write **cmd** and press enter 
-        <img src="{{ 'assets/images/content-images/installation-images/cmd-explorer.png'  | relative_url  }}" class="cmd-explorer">
+        <img src="{{ 'assets/images/content-images/installation-images/cmd-explorer.png'  | relative_url  }}" class="cmd-explorer img-fluid">
     3. Option 3: Navigate to the folder with your console
 3. Clone the **[2shine theme repository](https://github.com/2sic/dnn-theme-2shine-bs5.git)** into this folder with the `git clone` command:
 
@@ -59,7 +59,7 @@ Note: The skin won't be applied to already existing pages. [Apply skin to alread
 8. Open the Containers folder in your console:
     1. Option 1: Right click and select **Open with Powershell** or **Open with Command Prompt**
     2. Option 2: Click on the folder Path in the explorer and write **cmd** and press enter 
-        <img src="{{ 'assets/images/content-images/installation-images/cmd-explorer.png'  | relative_url  }}" class="cmd-explorer">
+        <img src="{{ 'assets/images/content-images/installation-images/cmd-explorer.png'  | relative_url  }}" class="cmd-explorer img-fluid">
     3. Option 3: Navigate to the folder with your console
 9. Clone the **[2shine container repository](https://github.com/2sic/dnn-container-2shine-bs5.git)** into this folder with the `git clone` command:
 

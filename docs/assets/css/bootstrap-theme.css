@@ -3867,11 +3867,9 @@ progress { vertical-align: baseline; }
 
 .navbar-header { height: 10vh; position: sticky; background-color: white; }
 
-.navbar-header .navbar-wrapper { padding-left: 16.6%; padding-right: 20%; }
+.navbar-header .navbar-wrapper .navbar .navbar-brand .navbar-logo { height: 50px; z-index: 10; }
 
-.navbar-header .navbar-wrapper .navbar .navbar-brand .navbar-logo { height: 45px; }
-
-.navbar-header .navbar-wrapper .navbar .navbar-collapse { background-color: white; }
+.navbar-header .navbar-wrapper .navbar .navbar-collapse { background-color: white; opacity: 1; }
 
 .navbar-header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item { padding: 10px 20px; }
 

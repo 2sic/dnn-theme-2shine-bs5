@@ -47,6 +47,7 @@
     </nav>
   </header>
 -->
+<!--
 <header class="navbar-header">
   <div class="navbar-wrapper h-100">
     <nav class="navbar navbar-expand-lg navbar-light h-100 d-flex align-items-center">
@@ -70,7 +71,32 @@
     </nav>
   </div>
 </header>
-<main class="page-content d-flex h-100 w-100 row py-2" aria-label="Content">
+-->
+<header class="container-fluid navbar-header">
+  <div class="row navbar-wrapper h-100">
+    <div class="col-0 col-md-2"></div>
+    <nav class="col-12 col-md-8 navbar navbar-expand-lg navbar-light h-100 d-flex align-items-center">
+      <a href="/dnn-theme-2shine-bs5/" class="navbar-brand"><img class="navbar-logo" src="/dnn-theme-2shine-bs5/assets/images/layout-images/logo-1000.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class="nav-item">
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/">Home</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/gettingstarted/">Installation</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/styles/">Styles</a>
+          </li><li class="nav-item">
+            <a class="nav-link  active" aria-current="page" href="/dnn-theme-2shine-bs5/navigation/">Navigation</a>
+          </li><li class="nav-item">
+            <a class="nav-link " href="/dnn-theme-2shine-bs5/documentation/">Documentation</a>
+          </li></ul>
+      </div>
+    </nav>
+    <div class="col-0 col-md-2"></div>
+  </div>
+</header><main class="page-content d-flex h-100 w-100 row py-2" aria-label="Content">
     <div class="left-sidebar d-flex bg-secondary.bg-gradient col-0 col-md-2"><!---sidebar space---></div>
     
     <div class="content-column d-flex flex-column col-12 col-md-8 col-pe-0">
@@ -85,7 +111,24 @@
 <p>2shine is built to be easy to customize to anyones needs one of the more often customized components is the navigation. 
 So here you go a complete guide to 2shine navigation.</p>
 
-<p>The navigation itself is located in the</p>
+<p>The navigation files are located at:</p>
+<ul>
+  <li><strong>2shine &gt; nav</strong></li>
+</ul>
+
+<p>If you want to make any adjustements to the navigation which aren’t already provided to the navigation you will have to do that there.</p>
+
+<hr />
+
+<h2 id="disabble-droppwon-in-the-navigation">Disabble Droppwon in the Navigation</h2>
+
+<ol>
+  <li>Go to **&gt; default.ascx **</li>
+  <li>Change the value of <code class="language-plaintext highlighter-rouge">MainNavWithDropdown</code> to <strong>false</strong></li>
+</ol>
+
+<p>After that the server will load a file which doesnt generate any dropdowns in the Navbar.</p>
+
 
       </div>
     </div>

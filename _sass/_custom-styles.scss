@@ -10,44 +10,34 @@
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
-.navbar-header{
-  height: 10vh;
-  position: sticky;
-  background-color: white;
-  
-  .navbar-wrapper{
-    
-    .navbar{
-      .navbar-brand{
-        .navbar-logo{
-          height: 50px;
-          z-index: 10;
-        }
-      }
-      
-      .navbar-collapse{
-        background-color: white;
-        opacity: 1;
-        .navbar-nav{
-          
-          .nav-item{
-            padding:10px 20px;
-            
-            &:hover{
-              background-color: #F5F5F5;
-            }
+.navbar{
+  .nav-left{
+    height: 8vh;
+  }
+  .nav-wrapper{
+    .navbar-brand{
+      .navbar-logo{
+        height: 50px;
+        .navbar-link{
+          &:hover{
+            background-color: #F5F5F5;
           }
         }
       }
     }
   }
 }
+
+
 body{
-  background-color: #F5F5F5	;
+  background-color: #F5F5F5;
+
   
   .page-content{
+    
     margin-top: 3%;
     margin-bottom: 3%;
+
     margin-right: 0;
     margin-left: 0;
     

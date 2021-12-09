@@ -1,7 +1,7 @@
 ---
 layout: doc
-title: Styles 
-permalink: /styles/
+title: Customization 
+permalink: /customization/
 ---
 
 ---
@@ -9,7 +9,29 @@ permalink: /styles/
 # <center> {{page.title}}  </center>
 
 ---
-With 2shine you have many different options to customize the style of the skin to your liking. We build in some convienience features like scss variables or different 
+
+## Important: Before you start customizing 
+
+2shine is built to give you many different customization possibilites. You will have to prepare for your customization by installing **node.js** and some **dependenzies** that are needed to convert your changes to CSS and JS. 
+
+1. Make sure node.js is installed - or [install Node now](https://nodejs.org/en/download/). This will also install NPM (the node-package-manager).
+
+2. Install all Install all dependencies by running this command in your root folder: 
+
+    > `npm ci`
+
+    1. If it says it can't run, then try running:
+
+      > `npm install`
+
+    2. **Verify it works:** to verify **webpack** is working and watching for changes to convert, run: 
+
+      > `npm run build-prod`
+
+You should now be abble to make changes to your installation of 2shine. 
+
+---
+
 ## The styling file system 
 
 You can find all of the different stylesheets in the **src > scss** folder. In this folder you will also find some files that have the prefix **dnn** those files are used to make Dnn specific style changes like changes to the Dnn UI.  

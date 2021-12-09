@@ -11,4 +11,4 @@ permalink: /documentation/
 ---
 ## Prefixes
 
-On all of the prewritten CSS classes you will find in 2shine we added the prefix **dnn** to differentiate them clearly from Bootstrap classes and your personal classes. 
+You will find the prefix **Dnn** throughout the entire code. This just means that those files affect Dnn internal things but they can still be customized. 

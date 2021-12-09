@@ -35,4 +35,3 @@ You can find the scss variables in the 2shine skin folder. From there you go to 
 |$theme-colors    | -> with this variable you can add or change theme-colors which can be used like BS Classes (like .bg-yourcolor) |
 |$font-... | -> with those variables you can control everything about your font | 
 
-There are many more variables but you can easily explore them by yourself. 

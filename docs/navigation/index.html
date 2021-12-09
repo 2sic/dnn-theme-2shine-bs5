@@ -16,14 +16,16 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An awesome documentation for the awesome 2shine." />
 <meta property="og:description" content="An awesome documentation for the awesome 2shine." />
+<link rel="canonical" href="http://localhost:4000/dnn-theme-2shine-bs5/navigation/" />
+<meta property="og:url" content="http://localhost:4000/dnn-theme-2shine-bs5/navigation/" />
 <meta property="og:site_name" content="2shine Docs" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Navigation" />
 <script type="application/ld+json">
-{"url":"/dnn-theme-2shine-bs5/navigation/","author":{"@type":"Person","name":"Github User"},"@type":"WebPage","headline":"Navigation","description":"An awesome documentation for the awesome 2shine.","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/dnn-theme-2shine-bs5/navigation/","author":{"@type":"Person","name":"Github User"},"@type":"WebPage","headline":"Navigation","description":"An awesome documentation for the awesome 2shine.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="/dnn-theme-2shine-bs5/feed.xml" title="2shine Docs" />
+  <link rel="stylesheet" href="/dnn-theme-2shine-bs5/assets/css/bootstrap-icons.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/dnn-theme-2shine-bs5/feed.xml" title="2shine Docs" />
 </head>
 <body><!--
   <header class="h-1"><nav class="navbar navbar-expand-lg navbar-light bg-light mh-2vh">
@@ -97,9 +99,9 @@
     <div class="col-0 col-md-2"></div>
   </div>
 </header><main class="page-content d-flex h-100 w-100 row py-2" aria-label="Content">
-    <div class="left-sidebar d-flex bg-secondary.bg-gradient col-0 col-md-2"><!---sidebar space---></div>
+    <div class="left-sidebar d-flex bg-secondary.bg-gradient col-0 col-lg-2"><!---sidebar space---></div>
     
-    <div class="content-column d-flex flex-column col-12 col-md-8 col-pe-0">
+    <div class="content-column d-flex flex-column col-12 col-lg-8 col-pe-0">
       
       <div class="content-wrapper">
         <hr />
@@ -111,28 +113,41 @@
 <p>2shine is built to be easy to customize to anyones needs one of the more often customized components is the navigation. 
 So here you go a complete guide to 2shine navigation.</p>
 
-<p>The navigation files are located at:</p>
-<ul>
-  <li><strong>2shine &gt; nav</strong></li>
-</ul>
+<p>The navigation files are located at: <strong>2shine &gt; nav</strong></p>
 
-<p>If you want to make any adjustements to the navigation which aren’t already provided to the navigation you will have to do that there.</p>
+<p>If you want to make any adjustements to the navigation which aren’t already provided you will have to do that there.</p>
 
 <hr />
 
 <h2 id="disabble-droppwon-in-the-navigation">Disabble Droppwon in the Navigation</h2>
 
 <ol>
-  <li>Go to **&gt; default.ascx **</li>
-  <li>Change the value of <code class="language-plaintext highlighter-rouge">MainNavWithDropdown</code> to <strong>false</strong></li>
+  <li>Go to <strong>&gt; controls &gt; theme-body.ascx</strong></li>
+  <li>
+    <p>In this file search for the line where the navigation file is loaded. It should look like this:</p>
+
+    <blockquote>
+      <p><code class="language-plaintext highlighter-rouge">&lt;dnn:MENU MenuStyle="nav/mainDropdown" NodeSelector="*,0" runat="server" /&gt;</code></p>
+    </blockquote>
+  </li>
+  <li>On this line change the source from <code class="language-plaintext highlighter-rouge">nav/mainDropdown</code> to <code class="language-plaintext highlighter-rouge">nav/mainNoDropdown</code></li>
 </ol>
 
-<p>After that the server will load a file which doesnt generate any dropdowns in the Navbar.</p>
+<p>This is possible because we prepared a second version of our normal navbar which doesnt generate the dropdown menu.</p>
 
+<h4 id="how-we-did-it">How we did it</h4>
+
+<ol>
+  <li>We created the alternative navbar without the dropdown menu in the <strong>nav</strong> folder <strong>nav &gt; mainNoDropdown</strong></li>
+  <li>Inside the new folder we created a <strong>menudef.xml</strong> and <strong>template.cshtml</strong> file.</li>
+  <li>The <strong>menudef.xml</strong> is only used to load the other file and doesn’t need much code.</li>
+  <li>The <strong>template.cshtml</strong> file is the navbar template and is simply a copy of the normal navbar without the dropdown code.</li>
+  <li>So now if we wanted to switch between the two we just had to change the loaded file in the <strong>theme-body.ascx</strong> file.</li>
+</ol>
 
       </div>
     </div>
-    <div class="right-sidebar bg-secondary.bg-gradient  col-0 col-md-2"></div>
+    <div class="right-sidebar bg-secondary.bg-gradient  col-0 col-lg-2"></div>
 </main><footer class="footer mt-auto py-3 bg-light h-card">
 </footer>
 <script src="/dnn-theme-2shine-bs5/assets/js/bootstrap.bundle.min.js"></script>

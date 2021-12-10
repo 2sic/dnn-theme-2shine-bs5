@@ -38,3 +38,10 @@ This is possible because we prepared a second version of our normal navbar which
 3. The **menudef.xml** is only used to load the other file and doesn't need much code. 
 4. The **template.cshtml** file is the navbar template and is simply a copy of the normal navbar without the dropdown code. 
 5. So now if we wanted to switch between the two we just had to change the loaded file in the **theme-body.ascx** file.
+
+
+## Change navbar from sticky behaviour
+
+To make the navbar not sticky anymore you have to go to ** > src > scss > components > _header.scss ** in the header you will find the position attribute which is normally set to **sticky** you can change that property to whatever you like. 
+
+**Important:** [Make sure **webpack** is running and building your changes.]() 

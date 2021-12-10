@@ -65,7 +65,8 @@ Note: The skin won't be applied to already existing pages. [Apply skin to alread
 
     > `git clone https://github.com/2sic/dnn-container-2shine-bs5.git`
 
-10. **Important**: rename the folder that you just created to have the **same name** you gave the skin folder
+10. **Important**: rename the folder that you just created to have the name **2shine BS5** this is required for Dnn to find the container. 
+    1. If you would want to change the name of the folder where the container is inside you would have to go to the **theme-body.ascx** file and change the reference there. 
 11. Apply the skin to an [existing page](#apply-skin-to-already-existing-pages) or the [whole site](#apply-skin-to-whole-site)
 
 ---
@@ -80,8 +81,8 @@ Note: The skin won't be applied to already existing pages. [Apply skin to alread
 </div>
 
 3. Confirm your choice
-4. **Reload** the page to see changes 
-5. **Existing pages wont update**- for these you will have to [apply the skin manually](#apply-skin-to-already-existing-pages) 
+4. Reload the page to see changes 
+5. **Existing pages wont update**- for these you will have to [apply the skin manually](#apply-skin-to-already-existing-pages).
 
 
 ---

@@ -22,11 +22,11 @@ permalink: /customization/
 
     1. If it says it can't run, then try running:
 
-      > `npm install`
+        > `npm install`
 
     2. **Verify it works:** to verify **webpack** is working and watching for changes to convert, run: 
 
-      > `npm run build-prod`
+        > `npm run build-prod`
 
 You should now be abble to make changes to your installation of 2shine. 
 
@@ -44,7 +44,7 @@ You can find all of the different stylesheets in the **src > scss** folder. In t
 
 ### Scss variables
 
-You can find the scss variables in the 2shine skin folder. From there you go to **src > scss > _variables.scss**. Most of the variables are pretty self-explanatory but we will take a short look at the important ones anyway. 
+You can find the standart scss variables in the 2shine skin folder. From there you go to **src > scss > _variables.scss**. There are variables with the prefix **tosic** which just means those are variables that we prepared and are set for our preference. Most of the variables are pretty self-explanatory but we will take a short look at the important ones anyway.  
 
 - $primary      -> with this variable you can change the primary color of the skin 
 - $secondary    -> with this variable you can change the secondary color of the skin 

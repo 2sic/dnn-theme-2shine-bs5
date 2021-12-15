@@ -1,5 +1,5 @@
 @media all {
-	a.to-shine-top {
+	a#to-shine-to-top {
 		position: fixed;
 		bottom: 20px;
 		right: 25px;
@@ -24,9 +24,10 @@
 			position: relative;
 			top:-5px;
 		}
-	}
-	.to-shine-top.to-shine-top-visible {
-		opacity: 1;
-		pointer-events: auto;
+
+		&.to-shine-top-visible {
+			opacity: 1;
+			pointer-events: auto;
+		}
 	}
 }

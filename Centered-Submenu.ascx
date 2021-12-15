@@ -1,6 +1,6 @@
 <script runat="server">
   // Settings which determine what variation of the skin is loaded
-  public bool ShowSidebarNavigation = false;
+  public bool ShowSidebarNavigation = true;
 </script>
 
 <%-- 

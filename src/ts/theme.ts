@@ -67,7 +67,7 @@ window.addEventListener('scroll', function (event) {
 	if(document.querySelector('#to-shine-to-top') != null) {
 		/* show / hide scroll to top button */
 		if (window.scrollY > 200) {
-			document.querySelector('#to-shine-to-top').classList.add('ly-top-visible');
+			document.querySelector('#to-shine-to-top').classList.add('to-shine-top-visible');
 		} else {
 			document.querySelector('#to-shine-to-top').classList.remove('to-shine-top-visible');
 		}

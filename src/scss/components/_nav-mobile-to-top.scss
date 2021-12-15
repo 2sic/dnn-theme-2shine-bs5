@@ -4,25 +4,20 @@
 		bottom: 20px;
 		right: 25px;
 		background-color: $primary;
-		color: $white;
-		overflow: hidden;
 		width: 40px;
 		height: 40px;
-		line-height: 40px;
-		padding: 0;
 		border-radius: 50%;
-		cursor: pointer;
-		vertical-align: middle;
 		box-shadow: 0 0 4px rgba(0,0,0,.3);
-		font-size: 35px;
 		opacity: 0;
 		z-index: 100;
-		text-align: center;
 		transition: opacity 0.5s;
 		pointer-events: none;
+		
 		svg {
-			position: relative;
-			top:-5px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 
 		&.to-shine-top-visible {

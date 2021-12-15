@@ -39,7 +39,8 @@ This theme is a layout/skin for the CMS [DNN](https://github.com/dnnsoftware/Dnn
 
 ## Dokumentation
 
-For a detailed documentation go [here](https://2sic.github.io/dnn-theme-2shine-bs5/)
+For a detailed documentation go [here](https://www.2shine.org/)
+<!---
 ## Theme Installation (move to docs)
 
 There are three ways to install the initial package
@@ -53,12 +54,12 @@ You can read more about this [here](https://azing.org/dnn-community/r/xmvM_gD7).
 ## Customize and Redesign everything within Minutes (move to docs)
 
 You can now quickly customize and redesign everything within minutes. Check out the instructions [here](https://azing.org/2sxc/r/TIvm7V0H).
-
+-->
 ## Creating Awesome Designed Content (move to docs)
 
 You now have created the layout within minutes or hours, but you're still missing the perfectly designed inner pieces, like tile-lists, content-accordeons, galleries, sliders, blogs and more. Fortunately these are both super-easy to add and use the same mechanisms for design. They can even re-use the variables of your skin, to automatically match look and feel :)
 
-To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc/releases) and the default bootstrap4 content-templates. You can then change the SCSS in the content-templates to also point to the `_variables.scss` of this skin, and re-generate all styles for an amazingly fast development workflow.
+To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc/releases) and the default Bootstrap 5 content-templates.
 
 ## Love from Switzerland
 

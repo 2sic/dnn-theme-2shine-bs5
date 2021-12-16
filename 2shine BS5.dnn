@@ -18,19 +18,19 @@
         <basePath>Portals\_default\Skins\2shine BS5</basePath>
         <skinFile>
           <path>App_LocalResources</path>
+          <name>Centered-Submenu.ascx.de-DE.resx</name>
+        </skinFile>
+        <skinFile>
+          <path>App_LocalResources</path>
+          <name>Centered-Submenu.ascx.resx</name>
+        </skinFile>
+        <skinFile>
+          <path>App_LocalResources</path>
           <name>Centered.ascx.de-DE.resx</name>
         </skinFile>
         <skinFile>
           <path>App_LocalResources</path>
           <name>Centered.ascx.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>CenteredSubmenu.ascx.de-DE.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>CenteredSubmenu.ascx.resx</name>
         </skinFile>
         <skinFile>
           <path>App_LocalResources</path>
@@ -42,11 +42,11 @@
         </skinFile>
         <skinFile>
           <path>App_LocalResources</path>
-          <name>FloatWideHeader.ascx.de-DE.resx</name>
+          <name>Float-WideHeader.ascx.de-DE.resx</name>
         </skinFile>
         <skinFile>
           <path>App_LocalResources</path>
-          <name>FloatWideHeader.ascx.resx</name>
+          <name>Float-WideHeader.ascx.resx</name>
         </skinFile>
         <skinFile>
           <path>App_LocalResources</path>

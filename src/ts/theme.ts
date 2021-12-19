@@ -1,10 +1,13 @@
-import { hide, show, toggle } from 'slidetoggle';
+import { hide, show, toggle } from "slidetoggle";
 
 /* Open all PDF links in a new window */
-document.querySelectorAll('a').forEach((linkElem: Element, index) => {
-	if(linkElem.hasAttribute('href') && linkElem.getAttribute('href').endsWith('.pdf')) {
-		linkElem.setAttribute('target', '_blank');
-	}
+document.querySelectorAll("a").forEach((linkElem: Element, index) => {
+  if (
+    linkElem.hasAttribute("href") &&
+    (linkElem.getAttribute("href") as string).endsWith(".pdf")
+  ) {
+    linkElem.setAttribute("target", "_blank");
+  }
 });
 
 /* Mobile Navigation */
@@ -16,97 +19,126 @@ document.querySelectorAll('a').forEach((linkElem: Element, index) => {
 
 /* mailencrypting */
 setTimeout(function () {
-	let mailElement = document.querySelectorAll('[data-madr1]:not(.madr-done)');
+  let mailElement = document.querySelectorAll("[data-madr1]:not(.madr-done)");
 
-	mailElement.forEach((mail: HTMLElement, index) => {
-		const maddr = mail.getAttribute('data-madr1') + '@' + mail.getAttribute('data-madr2') + '.' + mail.getAttribute('data-madr3');
-		const linktext = mail.getAttribute('data-linktext') ? mail.getAttribute('data-linktext') : maddr;
+  mailElement.forEach((mail: HTMLElement, index) => {
+    const maddr =
+      mail.getAttribute("data-madr1") +
+      "@" +
+      mail.getAttribute("data-madr2") +
+      "." +
+      mail.getAttribute("data-madr3");
+    const linktext = mail.getAttribute("data-linktext")
+      ? (mail.getAttribute("data-linktext") as string)
+      : maddr;
 
-		const a = document.createElement('a')
-		a.setAttribute('href', `mailto:${maddr}`)
-		a.innerHTML = linktext;
+    const a = document.createElement("a");
+    a.setAttribute("href", `mailto:${maddr}`);
+    a.innerHTML = linktext;
 
-		mail.parentElement.appendChild(a);
-		mail.classList.add('madr-done');
-		mail.style.display = 'none';
-	});
+    if (mail.parentElement) mail.parentElement.appendChild(a);
+    mail.classList.add("madr-done");
+    mail.style.display = "none";
+  });
 }, 500);
 
 /* Go to top button */
-if(document.querySelector('#to-shine-to-top')) {
-	document.querySelector('#to-shine-to-top').addEventListener('click', (e) => {
-		e.preventDefault();
-	
-		window.scrollTo({
-			top: 0,
-			left: 0,
-			behavior: 'smooth'
-		});
-	})
+if (document.querySelector("#to-shine-to-top")) {
+  (document.querySelector("#to-shine-to-top") as Element).addEventListener(
+    "click",
+    (e) => {
+      e.preventDefault();
+
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  );
 }
 
+const navheader = document.querySelector("header");
+const navheight = navheader ? navheader.offsetHeight : 0;
+window.addEventListener(
+  "scroll",
+  function (event) {
+    const bc = document.querySelector(".to-shine-breadcrumb");
+    if (bc) {
+      (bc as HTMLElement).style.top = `${navheight - 1}px`;
 
-/* Check if DNN < 9 */
-// if(document.getElementsByTagName('body.role-admin').length > 0 && document.getElementsByClassName('personalBarContainer').length > 0) {
-// 	document.querySelector('header').style.marginTop = "0";
-// }
+      if (bc.getBoundingClientRect().top <= navheight) {
+        bc.classList.add("bg-light", "shadow");
+      } else {
+        bc.classList.remove("bg-light", "shadow");
+      }
+    }
 
-const navheader = document.querySelector('header');
-const navheight = navheader.offsetHeight;
-window.addEventListener('scroll', function (event) {
-	if(document.querySelector('.to-shine-page-breadcrumb') != null) {
-		(document.querySelector('.to-shine-page-breadcrumb') as HTMLElement).style.top = `${navheader.offsetHeight - 1}px` ;
-
-		if (document.querySelector('.to-shine-page-breadcrumb').getBoundingClientRect().top <= navheight) {
-			document.querySelector('.to-shine-page-breadcrumb').classList.add('bg-light' , 'shadow');
-		} else {
-			document.querySelector('.to-shine-page-breadcrumb').classList.remove('bg-light' , 'shadow');
-		}
-	}
-
-	if(document.querySelector('#to-shine-to-top') != null) {
-		/* show / hide scroll to top button */
-		if (window.scrollY > 200) {
-			document.querySelector('#to-shine-to-top').classList.add('to-shine-top-visible');
-		} else {
-			document.querySelector('#to-shine-to-top').classList.remove('to-shine-top-visible');
-		}
-	}
-	
-}, false);
-// breadcrumb
+    const toTop = document.querySelector("#to-shine-to-top");
+    if (toTop) {
+      if (window.scrollY > 200) {
+        toTop.classList.add("to-shine-top-visible");
+      } else {
+        toTop.classList.remove("to-shine-top-visible");
+      }
+    }
+  },
+  false
+);
 
 /* opens sub navs and mobile navs */
-document.querySelectorAll('.to-shine-navopener').forEach((openerElem: HTMLElement, index) => {
-	openerElem.addEventListener('click', (e) => {
-		const targetElem = e.currentTarget as HTMLElement;
-		const targetParent = targetElem.parentElement.parentElement;
+document
+  .querySelectorAll(".to-shine-navopener")
+  .forEach((openerElem: HTMLElement, index) => {
+    openerElem.addEventListener("click", (e) => {
+      const targetElem = e.currentTarget as HTMLElement;
+      const targetParent = (targetElem.parentElement as HTMLElement)
+        .parentElement as HTMLElement;
 
-		if(!targetParent.classList.contains('to-shine-active')) {
-			if(targetElem.closest('.has-child').classList.contains('to-shine-active')) {
-				document.querySelector('.to-shine-active').classList.remove('to-shine-active')
-				hide(document.querySelector('.to-shine-active ul') as HTMLElement, {});
-			}
-			targetParent.classList.toggle('to-shine-active');
-			show(targetParent.querySelector('ul') as HTMLElement, {});
-		} else {
-			targetParent.classList.toggle('to-shine-active');
-			hide(targetParent.querySelector('ul') as HTMLElement, {});
-		}
-	})
-})
+      if (!targetParent.classList.contains("to-shine-active")) {
+        const cl = targetElem.closest(".has-child");
+        if (cl && cl.classList.contains("to-shine-active")) {
+          cl.classList.remove("to-shine-active");
+          hide(
+            document.querySelector(".to-shine-active ul") as HTMLElement,
+            {}
+          );
+        }
+        targetParent.classList.toggle("to-shine-active");
+        show(targetParent.querySelector("ul") as HTMLElement, {});
+      } else {
+        targetParent.classList.toggle("to-shine-active");
+        hide(targetParent.querySelector("ul") as HTMLElement, {});
+      }
+    });
+  });
 
-
-if(document.querySelector('.to-shine-page-breadcrumb') != null){
-	document.querySelector('.to-shine-page-breadcrumb span a:last-child').classList.add('last');
-	document.querySelector('.to-shine-page-breadcrumb span:last-child').classList.add('last');
-	if(document.querySelector('.to-shine-page-breadcrumb span .to-shine-page-breadcrumb-link:nth-last-child(3)') != null) {
-		document.querySelector('.to-shine-page-breadcrumb span .to-shine-page-breadcrumb-link:nth-last-child(3)').classList.add('second-last');
-	}
-	document.querySelector('.to-shine-page-breadcrumb').classList.toggle('to-shine-page-breadcrumb-shortened', (document.querySelector('.to-shine-page-breadcrumb-link') != null || document.querySelectorAll('.to-shine-page-breadcrumb-link').length > 2))
-	document.querySelector('.to-shine-page-breadcrumb-trigger').addEventListener('click', () => {
-		document.querySelector('.to-shine-page-breadcrumb').classList.toggle('to-shine-page-breadcrumb-shortened')
-	})
+const bc2 = document.querySelector(".to-shine-breadcrumb");
+if (bc2) {
+  const el1 = document.querySelector(
+    ".to-shine-page-breadcrumb span a:last-child"
+  );
+  if (el1) el1.classList.add("last");
+  const el2 = document.querySelector(
+    ".to-shine-page-breadcrumb span:last-child"
+  );
+  if (el2) el2.classList.add("last");
+  const el3 = document.querySelector(
+    ".to-shine-page-breadcrumb span .to-shine-page-breadcrumb-link:nth-last-child(3)"
+  );
+  if (el3) {
+    el3.classList.add("second-last");
+  }
+  const el4 = document.querySelector(".to-shine-page-breadcrumb");
+  if (el4)
+    el4.classList.toggle(
+      "to-shine-page-breadcrumb-shortened",
+      document.querySelector(".to-shine-page-breadcrumb-link") != null ||
+        document.querySelectorAll(".to-shine-page-breadcrumb-link").length > 2
+    );
+  const el6 = document.querySelector(".to-shine-page-breadcrumb-trigger");
+  if (el6)
+    el6.addEventListener("click", () => {
+      bc2.classList.toggle("to-shine-page-breadcrumb-shortened");
+    });
 }
-
-

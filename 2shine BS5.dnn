@@ -86,7 +86,11 @@
         </skinFile>
         <skinFile>
           <path>dist\lib</path>
-          <name>bootstrap.min.js</name>
+          <name>bootstrap.bundle.min.js</name>
+        </skinFile>
+        <skinFile>
+          <path>dist\lib</path>
+          <name>bootstrap.bundle.min.js.map</name>
         </skinFile>
         <skinFile>
           <path>dist</path>
@@ -327,6 +331,9 @@
         </skinFile>
         <skinFile>
           <name>readme.md</name>
+        </skinFile>
+        <skinFile>
+          <name>thumbnail_default.jpg</name>
         </skinFile>
         <skinFile>
           <name>tsconfig.json</name>

@@ -118,27 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CloseNav.Text" xml:space="preserve">
-    <value>close</value>
+    <value>schliessen</value>
   </data>
   <data name="Imprint.Text" xml:space="preserve">
-    <value>Imprint</value>
-  </data>
-  <data name="Imprint.Url" xml:space="preserve">
-    <value>/imprint</value>
+    <value>Impressum</value>
   </data>
   <data name="Privacy.Text" xml:space="preserve">
-    <value>Privacy</value>
-  </data>
-  <data name="Privacy.Url" xml:space="preserve">
-    <value>/privacy</value>
+    <value>Datenschutz</value>
   </data>
   <data name="SkipLink.MainContent" xml:space="preserve">
-    <value>Skip to main content</value>
+    <value>Zum Inhalt springen</value>
   </data>
   <data name="SubnavTitle.Text" xml:space="preserve">
-    <value>Sub Navigation</value>
+    <value>Unternavigation</value>
   </data>
   <data name="ToTop.Text" xml:space="preserve">
-    <value>Back to top</value>
+    <value>Nach oben</value>
   </data>
 </root>

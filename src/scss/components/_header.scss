@@ -1,4 +1,8 @@
 @media all {
+  .role-admin .ly-header-pane-empty {
+    min-height: 50px
+  }
+  
   header#to-shine-page-header {
     background: $tosic-header-background;
     position: sticky;

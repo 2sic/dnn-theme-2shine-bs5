@@ -1,1 +1,42 @@
-node_modules
+# SYSTEM - started life from AccuTheme version
+.DS_Store
+Thumbs.db
+
+# BUILD FILES
+**/node_modules/
+**/yarn-error.log
+**/npm-debug.log
+
+# ASSETS
+**/dist/
+**/public/
+**/*.map
+**/*.css
+**/*.bundle.js
+
+# TEMP
+.cache
+.sass-cache/
+*.log
+/logs/
+/tmp/
+package/.tmp/
+# real-favicon-generator.json
+
+# MISC FILES
+*~
+*.zip
+*.err
+.cache
+.idea
+.project
+.settings
+*.esproj
+*.sublime*
+*.tmproj
+*.tmproject
+nbproject
+sftp-config.json
+# .vscode/sftp.json
+dist/*.min.css
+dist/

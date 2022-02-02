@@ -61,6 +61,13 @@ You now have created the layout within minutes or hours, but you're still missin
 
 To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc/releases) and the default Bootstrap 5 content-templates.
 
+## History
+
+v5.0.0
+1. removed node-sass, added sass
+2. removed unnecessary packages
+3. fixed :visited link style in navigation
+
 ## Love from Switzerland
 
 Daniel & Tom

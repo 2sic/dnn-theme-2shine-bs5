@@ -1,6 +1,6 @@
 {
   "name": "2sic-standard-skin-template",
-  "version": "05.00.00",
+  "version": "05.00.01",
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
   "scripts": {
@@ -8,17 +8,16 @@
   },
   "author": "2sic internet solutions",
   "license": "MIT",
-  "repository": "https://github.com/2sic/dnn-theme-bootstrap4-instant",
+  "repository": "https://github.com/2sic/dnn-theme-2shine-bs5",
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "cpx": "^1.5.0",
     "css-loader": "^2.1.1",
     "file-loader": "^4.3.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.8",
     "postcss-loader": "^3.0.0",
+    "sass": "^1.49.7",
     "sass-loader": "^7.3.1",
     "terser-webpack-plugin": "^2.3.8",
     "ts-loader": "^5.4.5",

@@ -15,13 +15,23 @@
     }
   }
   .nav {
+    .nav-link {
+      color: $primary;
+
+      &:visited {
+        color: $primary;
+      }
+      &:hover {
+        color: darken($primary, 15%);
+      }
+    }
     .last{
       a {
           padding-right: 0;
       }
     }
     .active {
-      a {
+      a, a:visited {
           color: darken($primary, 15%);
       }
     }
@@ -31,5 +41,16 @@
     .nav .nav-item:not(.disabled) .dropdown-menu { display: none; }
     .nav .nav-item:not(.disabled):hover .nav-link {   }
     .nav .nav-item:not(.disabled):hover .dropdown-menu { display: block; }
+  }
+
+  .dropdown-menu {
+    .nav-item.inactive {
+      .dropdown-item {
+        color: $primary;
+        &:visited {
+          color: $primary;
+        }
+      }
+    }
   }
 }

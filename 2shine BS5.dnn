@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="2shine BS5" type="Skin" version="5.0.1">
+  <packages><package name="2shine BS5" type="Skin" version="5.0.2">
   <friendlyName>2shine BS5</friendlyName>
   <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.</description>
   <iconFile>/Images/icon_skin.gif</iconFile>

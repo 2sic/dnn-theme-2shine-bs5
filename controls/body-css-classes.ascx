@@ -74,9 +74,10 @@
 	/// </summary>
 	private string CurrentPageClasses(PortalSettings portal, DotNetNuke.Entities.Tabs.TabInfo tab)
 	{
-		return "tab-" + tab.TabID + " " 
-			+ (portal.HomeTabId == portal.ActiveTab.TabID ? "tab-is-home " : "")
-			+ "tab-level-" + tab.Level + " ";
+		return "page-" + tab.TabID + " " 
+			+ (portal.ActiveTab.ParentId > -1 ? "page-parent-" + portal.ActiveTab.ParentId + " " : "")
+			+ (portal.HomeTabId == portal.ActiveTab.TabID ? "page-is-home " : "")
+			+ "nav-level-" + (tab.Level+1) + " ";
 	}
 
 
@@ -85,9 +86,9 @@
 	/// </summary>
 	private string PageAndPortalClasses(PortalSettings portal, DotNetNuke.Entities.Tabs.TabInfo rootTab, DotNetNuke.Entities.Tabs.TabInfo neutralRoot)
 	{
-		return " portal-" + portal.PortalId
-			+ " root-tab-" + rootTab.TabID
-			+ " root-neutral-tab-" + neutralRoot.TabID;
+		return " site-" + portal.PortalId
+			+ " page-root-" + rootTab.TabID
+			+ " page-root-neutral-" + neutralRoot.TabID;
 	}
 
 	/// <summary>

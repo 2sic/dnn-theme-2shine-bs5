@@ -77,6 +77,7 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 1. Cleaned up resource files as they were all the same
 1. Enhanced lookup of file name to not repeat unnecessarily
+1. Slimmed down resx files to the necessary minimum
 
 ## Love from Switzerland
 

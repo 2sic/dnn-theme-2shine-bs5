@@ -80,6 +80,7 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 1. Slimmed down resx files to the necessary minimum
 1. Added boolean to determin if Breadcrumbs should be displayed 
 1. Added boolean to determin how many nodes should be selected for the desktop navigation (disables Dropdown if "*,0,0" is set)
+
 ## Love from Switzerland
 
 Daniel & Tom

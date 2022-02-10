@@ -158,7 +158,16 @@
 
   protected string LocalizeString(string key)
   {
-      return Localization.GetString(key, Localization.GetResourceFile(this, System.IO.Path.GetFileName(this.AppRelativeVirtualPath)));
+      return Localization.GetString(key, ResourceFilePath);
   }
+
+  protected string ResourceFilePath
+  {
+    get
+    {
+      return _resPath ?? (_resPath = Localization.GetResourceFile(this, System.IO.Path.GetFileName(AppRelativeTemplateSourceDirectory + "2shine.resx" )));
+    }
+  }
+  private string _resPath;
 </script>
 

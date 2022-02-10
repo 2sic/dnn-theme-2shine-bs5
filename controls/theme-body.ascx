@@ -81,7 +81,7 @@
         }
         %>        
       </div>
-      <dnn:MENU MenuStyle="nav/main" NodeSelector="*,0,1" runat="server" />
+      <dnn:MENU MenuStyle="nav/main" NodeSelector="<%# NavNodeSelector %>" runat="server" />
     </nav>
   </div>
 </header>

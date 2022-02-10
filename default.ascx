@@ -1,7 +1,11 @@
 <script runat="server">
   // Settings which determine what variation of the skin is loaded
   public bool ShowSidebarNavigation = false;
-  public bool ShowBreadcrumb = true; 
+  // Turns Breadcrumbs on this layout on and off
+  public bool ShowBreadcrumb = true;
+  // Sets the Node selectors for the main desktop navigation -> determin which pages are laoded and included in the navigation 
+  //* -> means the root level, 0 -> means skip the nav-level-0, 1 -> means the nav-level-1
+  public string NavNodeSelector = "*,0,1";
 </script>
 
 <%-- 

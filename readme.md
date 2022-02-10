@@ -63,7 +63,8 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 ## History
 
-v5.0.2
+### v5.00.02
+
 1. removed node-sass, added sass
 2. removed unnecessary packages
 3. fixed :visited link style in navigation
@@ -71,6 +72,11 @@ v5.0.2
    1. tab -> page
    2. portal -> site
    3. tab-level -> nav-level
+
+### v05.00.03
+
+1. Cleaned up resource files as they were all the same
+1. Enhanced lookup of file name to not repeat unnecessarily
 
 ## Love from Switzerland
 

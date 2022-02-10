@@ -89,13 +89,19 @@
   <div id="HeaderPane" runat="server" containertype="G" containername="2shine BS5" containersrc="fullwidthWithoutPadding.ascx"></div>
 </div>
 <main id="to-shine-page-main">
-  <div class="to-shine-page-breadcrumb" aria-label="breadcrumb">
-    <div class="container py-2">
-      <a class="to-shine-page-breadcrumb-link to-shine-page-breadcrumb-home" aria-current="page" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"><%= LocalizeString("Home.Text") %></a>
-      <span>&nbsp;&rsaquo;&nbsp;</span><span class="to-shine-page-breadcrumb-trigger display-inline display-md-none"><a aria-current="page">...</a></span>
-      <dnn:BREADCRUMB runat="server" aria-current="page" Separator="<span>&nbsp;&rsaquo;&nbsp;</span>" CssClass="to-shine-page-breadcrumb-link" RootLevel="0" />
-    </div>		
-  </div>
+  <%
+  if(ShowBreadcrumb){
+  %>
+    <div class="to-shine-page-breadcrumb" aria-label="breadcrumb">
+      <div class="container py-2">
+        <a class="to-shine-page-breadcrumb-link to-shine-page-breadcrumb-home" aria-current="page" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"><%= LocalizeString("Home.Text") %></a>
+        <span>&nbsp;&rsaquo;&nbsp;</span><span class="to-shine-page-breadcrumb-trigger display-inline display-md-none"><a aria-current="page">...</a></span>
+        <dnn:BREADCRUMB runat="server" aria-current="page" Separator="<span>&nbsp;&rsaquo;&nbsp;</span>" CssClass="to-shine-page-breadcrumb-link" RootLevel="0" />
+      </div>		
+    </div>
+  <%
+  }
+  %>
   <% 
   if(ShowSidebarNavigation) {
   %>
@@ -182,7 +188,15 @@
 
   protected string LocalizeString(string key)
   {
-      return Localization.GetString(key, Localization.GetResourceFile(this, System.IO.Path.GetFileName(this.AppRelativeVirtualPath)));
+      return Localization.GetString(key, ResourceFilePath);
   }
-</script>
 
+  protected string ResourceFilePath
+  {
+    get
+    {
+      return _resPath ?? (_resPath = Localization.GetResourceFile(this, System.IO.Path.GetFileName(AppRelativeTemplateSourceDirectory + "2shine.resx" )));
+    }
+  }
+  private string _resPath;
+</script>

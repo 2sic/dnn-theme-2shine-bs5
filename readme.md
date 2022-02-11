@@ -1,6 +1,8 @@
 <img width="100%" src="https://github.com/2sic/dnn-theme-2shine-bs5/raw/main/images/logo-1000.png">
 
-# DNN Skin/Theme Bootstrap5 Instant! for DNN 7, 8, 9
+# DNN Skin/Theme Bootstrap5 Instant! for DNN 7, 8, 9 (works best with 9.6+)
+
+_Note: two links in the footer go to pages in dnn 9.6, which uses a 9.6 api. if you remove them, it also works in v7/8_
 
 A clean, prepared bootstrap5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.
 

@@ -1,8 +1,6 @@
 @media all {
-  .role-admin .ly-header-pane-empty {
-    min-height: 50px
-  }
-  
+
+
   header#to-shine-page-header {
     background: $tosic-header-background;
     position: sticky;
@@ -27,10 +25,6 @@
       }
     }    
   }
-  .to-shine-login {
-    width: 10px;
-    margin-left: 15px;
-    margin-top: -2px;
-  }
+
   
 }

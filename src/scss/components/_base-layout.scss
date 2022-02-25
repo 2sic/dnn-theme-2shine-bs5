@@ -5,6 +5,10 @@
       overflow-y: scroll;
       min-height: 100vh;
 
+      &.role-admin .to-shine-header-pane-empty {
+        min-height: 50px
+      }
+
       form {
         min-height: 100vh;
         display: flex;

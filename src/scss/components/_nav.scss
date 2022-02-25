@@ -1,0 +1,137 @@
+.to-shine-mainnav-variation-left {
+  #to-shine-page-navigation {
+    .offcanvas-body {
+      .align-items-end {
+        align-items: flex-start !important;
+      }
+    }
+
+    .navbar-nav {
+      > .first {
+        .nav-link {
+          padding-left: 0;
+        }
+      }
+  
+      > .last {
+        .nav-link {
+          padding-right: $nav-link-padding-x;
+        }
+      }
+    }
+    
+  }
+}
+
+#to-shine-page-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 801;
+
+  .offcanvas-body {
+    .align-items-end {
+      @include media-breakpoint-down(lg) {
+      align-items: flex-start !important;
+      }
+    }
+  }
+
+  .navbar-brand {
+    .logo {
+      display: block;
+      width: 130px;
+      height: auto;
+      transition: width 0.4s ease-in-out;
+      
+      @include media-breakpoint-up(lg) {
+        width: 170px;
+      }
+    }
+    svg {
+      //If you use an SVG as Logo, you will have to give it a fixed height
+      //in this selector, orelse you may experience issues in IE */
+      height: 37px;
+
+      @include media-breakpoint-up(lg) {
+        height: 53px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: $primary;
+    border-color: $primary;
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+    stroke: $primary;
+  }
+
+  .navbar-nav {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+    .nav-link {      
+      &.active {
+        color: darken($primary, 15%);
+      }
+
+      @include media-breakpoint-down(lg) {
+        color: rgba($white, 0.8);
+
+        &.active {
+          color: #fff
+        }
+      }
+    }
+    
+    > .last{
+      .nav-link {
+          padding-right: 0;
+      }
+    }
+  }
+  
+  @include media-breakpoint-down(lg) {
+    .offcanvas-body {
+      background-color: $primary;
+    }
+  }
+
+  .to-shine-login {
+    width: 10px;
+    margin-left: 15px;
+    margin-top: -2px;
+  }
+
+  .nav-item-sub-opener {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+
+    &:after {
+      content: "+";
+      border: none;
+      font-size: 20px;
+    }
+
+    &.show {
+      &:after {
+        content: "-";
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-nav .nav-item:not(.disabled) .dropdown-menu { display: none; }
+  .navbar-nav .nav-item:not(.disabled):hover .nav-link {   }
+  .navbar-nav .nav-item:not(.disabled):hover .dropdown-menu { display: block; }
+}

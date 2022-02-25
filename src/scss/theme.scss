@@ -64,14 +64,15 @@
 // 3. Generate CSS for this theme / skin
 @import "components/typography";      // Fonts / typography
 @import "components/base-layout";     // Layout styles, body, html, fluid, etc.
-@import "components/header";          // Header styles
+// @import "components/header";          // Header styles
 @import "components/footer";          // Footer styles
 @import "components/dnn-overrides";
 
 // Navigations / Menus
-@import "components/nav-desktop-main";
+@import "components/nav";
+// @import "components/nav-desktop-main";
 @import "components/nav-desktop-sub";         
-@import "components/nav-mobile";
+// @import "components/nav-mobile";
 @import "components/nav-mobile-to-top";
 @import "components/nav-language";
 @import "components/nav-breadcrumb";

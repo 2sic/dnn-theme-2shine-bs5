@@ -38,7 +38,7 @@ if(document.querySelector('#to-shine-to-top')) {
 	})
 }
 
-const navheader = document.querySelector('header');
+const navheader = document.querySelector('#to-shine-page-navigation') as HTMLElement;
 const navheight = navheader.offsetHeight;
 window.addEventListener('scroll', function (event) {
 	const bc = document.querySelector('.to-shine-page-breadcrumb');

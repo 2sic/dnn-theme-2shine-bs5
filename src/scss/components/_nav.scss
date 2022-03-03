@@ -31,7 +31,7 @@
   .offcanvas-body {
     .align-items-end {
       @include media-breakpoint-down(lg) {
-      align-items: flex-start !important;
+        align-items: flex-start !important;
       }
     }
   }
@@ -74,7 +74,19 @@
       width: 100%;
     }
 
-    .nav-link {      
+    > .nav-item {
+      @include media-breakpoint-down(lg) {
+       border-bottom: 1px solid #e5e5e5;
+      }
+    }
+
+    .nav-link {     
+      @include media-breakpoint-down(lg) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 20px;
+      }
+
       &.active {
         color: darken($primary, 15%);
       }
@@ -98,6 +110,30 @@
   @include media-breakpoint-down(lg) {
     .offcanvas-body {
       background-color: $primary;
+      padding: 0;
+
+      .dropdown-menu {
+        background-color: rgba($black, 0.4);
+        border-radius: 0;
+        border-left: none;
+        padding: 0;
+        margin-top: 0;
+
+        .nav-item {
+          border-bottom: 1px solid rgba($primary, 1);
+
+          .dropdown-item {
+            color: rgba($white, 0.8);
+            font-size: 20px;
+            padding: .5rem 1rem;
+
+            &.active {
+              background-color: rgba($black, 0.4);
+              color: #fff;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -105,27 +141,76 @@
     width: 10px;
     margin-left: 15px;
     margin-top: -2px;
+
+    @include media-breakpoint-down(lg) {
+      padding-top: 1rem;
+    }
   }
 
   .nav-item-sub-opener {
     position: absolute;
-    top: 5px;
+    top: 0px;
     right: 0;
+    height: 46px;
     width: 40px;
     text-align: center;
     cursor: pointer;
     color: #fff;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
     &:after {
       content: "+";
       border: none;
       font-size: 20px;
+      font-family: sans-serif;
+      color: hsla(0,0%,100%,.8);
     }
 
     &.show {
       &:after {
         content: "-";
       }
+    }
+  }
+}
+
+#to-shine-nav-sub {
+  .nav-item-sub-opener {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 46px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(.collapsed) {
+      &:after {
+        content: "–";
+      }
+    }
+
+    &:after {
+      content: "+";
+      color: $primary;
+    }
+  }
+
+  .ul-collapse {
+    background-color: rgba($primary, 0.1);
+    list-style: none;
+    padding-left: 0;
+
+    .nav-link {
+      padding-left: 15px;
     }
   }
 }

@@ -38,6 +38,7 @@ if(document.querySelector('#to-shine-to-top')) {
 	})
 }
 
+// scrolling behavior (to top button / breadcrumb)
 const navheader = document.querySelector('#to-shine-page-navigation') as HTMLElement;
 const navheight = navheader.offsetHeight;
 window.addEventListener('scroll', function (event) {
@@ -64,27 +65,6 @@ window.addEventListener('scroll', function (event) {
 	
 }, false);
 // breadcrumb
-
-/* opens sub navs and mobile navs */
-document.querySelectorAll('.to-shine-navopener').forEach((openerElem: HTMLElement, index) => {
-	openerElem.addEventListener('click', (e) => {
-		const targetElem = e.currentTarget as HTMLElement;
-		const targetParent = targetElem.parentElement.parentElement;
-
-		if(!targetParent.classList.contains('to-shine-active')) {
-			if(targetElem.closest('.has-child').classList.contains('to-shine-active')) {
-				document.querySelector('.to-shine-active').classList.remove('to-shine-active')
-				hide(document.querySelector('.to-shine-active ul') as HTMLElement, {});
-			}
-			targetParent.classList.toggle('to-shine-active');
-			show(targetParent.querySelector('ul') as HTMLElement, {});
-		} else {
-			targetParent.classList.toggle('to-shine-active');
-			hide(targetParent.querySelector('ul') as HTMLElement, {});
-		}
-	})
-})
-
 
 const bc = document.querySelector('.to-shine-page-breadcrumb');
 if(bc != null){

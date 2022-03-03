@@ -22,7 +22,7 @@
 				}
 
 				var classString = new HtmlString((cssClasses.Count == 0) ? "" : (" class=\"" + String.Join(" ", cssClasses.ToArray()) + "\""));
-
+				
 				var linkCssClasses = new List<string>();
 				if (nodes[0].Depth != 0) {
 					linkCssClasses.Add("dropdown-item"); 

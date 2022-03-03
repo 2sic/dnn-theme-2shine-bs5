@@ -14,6 +14,11 @@
         padding: 0;
         display: flex;
 
+        @include media-breakpoint-down(lg) {
+            padding: 1rem;
+            padding-right: 0;
+        }
+
         li {
             padding: 5px;
             margin: 0;

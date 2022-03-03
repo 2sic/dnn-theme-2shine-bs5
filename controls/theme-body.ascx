@@ -120,7 +120,7 @@
   %>        
       </div>
       <div class="col-xs-12 col-lg-3 order-lg-1 ly-col-leftpane">
-        <div id="nav-sub" class="d-none d-sm-block">  
+        <div id="to-shine-nav-sub" class="d-none d-sm-block">  
           <dnn:MENU MenuStyle="nav/sub" NodeSelector="+0,0,2" runat="server" />
         </div>
       </div>
@@ -177,10 +177,15 @@
 <dnn:DnnCssExclude runat="server" Name="dnndefault" />
 <script runat="server">
 
+  protected bool IsHome = false;
+
   protected override void OnLoad(EventArgs e)
   {
     base.OnLoad(e);
     AttachCustomHeader("<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />");
+
+    var portal = DotNetNuke.Entities.Portals.PortalSettings.Current;
+    IsHome = portal.HomeTabId == portal.ActiveTab.TabID;
 
     // Set various FavIcon and Icon headers according to best practices
     // The next line is disabled by default, because it requires RazorBlade to be installed.

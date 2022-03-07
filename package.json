@@ -28,7 +28,6 @@
     "webpackbar": "^3.2.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "slidetoggle": "^3.2.2"
+    "bootstrap": "^5.1.3"
   }
 }

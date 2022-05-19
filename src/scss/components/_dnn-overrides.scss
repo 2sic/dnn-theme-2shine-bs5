@@ -140,7 +140,17 @@
 			text-align: center;
 			#dnn_ctr_Login_pnlLogin {
 				margin: 0 auto;
-				width: 500px;
+				max-width: 500px;
+
+				.LoginPanel {
+					@include media-breakpoint-down(md) {
+						width: 100%;
+						padding-right: 0;
+						padding: 0 32px;
+					}
+				}
+
+				
 			}
 		}
 	}

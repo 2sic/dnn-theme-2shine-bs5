@@ -39,23 +39,23 @@
   .navbar-brand {
     .logo {
       display: block;
-      width: 130px;
+      width: 200px;
       height: auto;
       transition: width 0.4s ease-in-out;
       
-      @include media-breakpoint-up(lg) {
-        width: 170px;
+      @include media-breakpoint-up(xl) {
+        width: 280px;
       }
     }
-    svg {
-      //If you use an SVG as Logo, you will have to give it a fixed height
-      //in this selector, orelse you may experience issues in IE */
-      height: 37px;
+    // svg {
+    //   //If you use an SVG as Logo, you will have to give it a fixed height
+    //   //in this selector, orelse you may experience issues in IE */
+    //   height: 37px;
 
-      @include media-breakpoint-up(lg) {
-        height: 53px;
-      }
-    }
+    //   @include media-breakpoint-up(lg) {
+    //     height: 53px;
+    //   }
+    // }
   }
 
   .navbar-toggler {
@@ -80,15 +80,21 @@
       }
     }
 
-    .nav-link {     
-      @include media-breakpoint-down(lg) {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        font-size: 20px;
+    .nav-link {
+      color: $body-color;
+      font-weight: bold;
+      @include media-breakpoint-up(lg) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 16px;
       }
-
+      
+     
+      &:hover {
+        color: $primary;
+      }
       &.active {
-        color: darken($primary, 15%);
+        color: $primary;
       }
 
       @include media-breakpoint-down(lg) {
@@ -97,6 +103,17 @@
         &.active {
           color: #fff
         }
+        
+      }
+      &.dropdown-toggle:after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.2em solid!important;
+        border-right: 0.2em solid transparent!important;
+        border-bottom: 0;
+        border-left: 0.2em solid transparent!important;
       }
     }
     
@@ -107,6 +124,64 @@
     }
   }
   
+  .navbar-nav.nav-top {
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+
+    > .nav-item {
+      @include media-breakpoint-down(lg) {
+       border-bottom: 1px solid #e5e5e5;
+      }
+    }
+
+    .nav-link {
+      color: $gray-600;
+      font-weight: bold;
+      @include media-breakpoint-up(lg) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 14px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 16px;
+      }
+    
+      &:hover {
+        color: $primary;
+      }
+      &.active {
+        color: $primary;
+      }
+
+      @include media-breakpoint-down(lg) {
+        color: rgba($white, 0.8);
+
+        &.active {
+          color: #fff
+        }
+        
+      }
+      &.dropdown-toggle:after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.2em solid!important;
+        border-right: 0.2em solid transparent!important;
+        border-bottom: 0;
+        border-left: 0.2em solid transparent!important;
+      }
+    }
+    
+    > .last{
+      .nav-link {
+          padding-right: 0;
+      }
+    }
+  }
   @include media-breakpoint-down(lg) {
     .offcanvas-body {
       background-color: $primary;
@@ -141,6 +216,10 @@
     width: 10px;
     margin-left: 15px;
     margin-top: -4px;
+
+    @include media-breakpoint-down(lg) {
+      padding-top: 1rem;
+    }
   }
 
   .nav-item-sub-opener {
@@ -212,7 +291,49 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .navbar-nav .nav-item:not(.disabled) .dropdown-menu { display: none; }
+  .navbar-nav .nav-item:not(.disabled) .dropdown-menu { display: block;  opacity: 0;   visibility: hidden; }
   .navbar-nav .nav-item:not(.disabled):hover .nav-link {   }
-  .navbar-nav .nav-item:not(.disabled):hover .dropdown-menu { display: block; }
+  .navbar-nav .nav-item:not(.disabled):hover .dropdown-menu { display: block;  opacity: 1;   visibility: visible; }
+  .navbar-nav .nav-item.last .dropdown-menu { right:0px;   }
+
+
+  .dropdown-menu {
+    max-width: 250px;
+    width:100%;
+    min-width:250px;
+    padding:15px;
+    transform: translateY(10px);
+    transition: all .4s ease-in-out;
+    border-radius: 8px;
+
+   
+    .dropdown-item {
+      white-space: normal;
+      border-radius: 8px;
+      transition:background-color .3s ease-in-out, color .3s ease-in-out;
+      padding: 8px 12px;
+      &:hover {
+        background-color: lighten($primary, 60%);
+        color: $body-color!important;
+      }
+    }
+   
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
 }

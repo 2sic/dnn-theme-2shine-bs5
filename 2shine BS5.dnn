@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="2shine BS5" type="Skin" version="5.0.2">
+  <packages><package name="2shine BS5" type="Skin" version="5.0.3">
   <friendlyName>2shine BS5</friendlyName>
   <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.</description>
   <iconFile>/Images/icon_skin.gif</iconFile>
@@ -18,51 +18,11 @@
         <basePath>Portals\_default\Skins\2shine BS5</basePath>
         <skinFile>
           <path>App_LocalResources</path>
-          <name>Centered-Submenu.ascx.de-DE.resx</name>
+          <name>2shine.de-DE.resx</name>
         </skinFile>
         <skinFile>
           <path>App_LocalResources</path>
-          <name>Centered-Submenu.ascx.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Centered.ascx.de-DE.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Centered.ascx.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>default.ascx.de-DE.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>default.ascx.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Float-HeaderWide.ascx.de-DE.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Float-HeaderWide.ascx.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Fullscreen.ascx.de-DE.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Fullscreen.ascx.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Landingpage.ascx.de-DE.resx</name>
-        </skinFile>
-        <skinFile>
-          <path>App_LocalResources</path>
-          <name>Landingpage.ascx.resx</name>
+          <name>2shine.resx</name>
         </skinFile>
         <skinFile>
           <path>controls</path>
@@ -91,6 +51,10 @@
         <skinFile>
           <path>dist\lib</path>
           <name>bootstrap.bundle.min.js.map</name>
+        </skinFile>
+        <skinFile>
+          <path>dist</path>
+          <name>dnn-default.min.css</name>
         </skinFile>
         <skinFile>
           <path>dist</path>
@@ -186,19 +150,7 @@
         </skinFile>
         <skinFile>
           <path>src\scss\components</path>
-          <name>_header.scss</name>
-        </skinFile>
-        <skinFile>
-          <path>src\scss\components</path>
           <name>_nav-breadcrumb.scss</name>
-        </skinFile>
-        <skinFile>
-          <path>src\scss\components</path>
-          <name>_nav-desktop-main.scss</name>
-        </skinFile>
-        <skinFile>
-          <path>src\scss\components</path>
-          <name>_nav-desktop-sub.scss</name>
         </skinFile>
         <skinFile>
           <path>src\scss\components</path>
@@ -210,7 +162,7 @@
         </skinFile>
         <skinFile>
           <path>src\scss\components</path>
-          <name>_nav-mobile.scss</name>
+          <name>_nav.scss</name>
         </skinFile>
         <skinFile>
           <path>src\scss\components</path>

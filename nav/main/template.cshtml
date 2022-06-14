@@ -35,7 +35,7 @@
 				var linkClassString = new HtmlString((linkCssClasses.Count == 0) ? "" : (" class=\"" + String.Join(" ", linkCssClasses.ToArray()) + "\""));
 
 				<li @classString>
-					<a @linkClassString target="@(node.Target)" @(!node.Enabled && node.HasChildren() ? "data-bs-toggle=dropdown" : "") href='@(node.Enabled ? node.Url : "javascript:void(0)")'>@node.Text</a>
+					<a @linkClassString target='@(node.Target == "_blank" ? "_blank" : "_self")' @(!node.Enabled && node.HasChildren() ? "data-bs-toggle=dropdown" : "") href='@(node.Enabled ? node.Url : "javascript:void(0)")'>@node.Text</a>
 
 					@RenderNodes(node.Children)
 				</li>

@@ -51,7 +51,13 @@
           </div>
 
           <div class="d-flex align-items-center order-lg-first">
-            <ToSic:languagenavigation runat="server" Languages="de-DE:DE,en-US:EN,fr-FR:FR,it-IT:IT" />
+            <%
+            if(LocaleController.Instance.GetLocales(0).Count() > 1) {
+            %>
+              <ToSic:languagenavigation runat="server" Languages="de-DE:DE,en-US:EN,fr-FR:FR,it-IT:IT" />
+            <%
+            }
+            %> 
             <%
             if(DotNetNuke.Security.PortalSecurity.IsInRoles(PortalSettings.AdministratorRoleName)) {
             %>
@@ -89,7 +95,7 @@
 </nav>
 
 <div id="to-shine-page-header-pane" class="container-xxl px-0 <%= (HeaderPane.Attributes["class"] ?? "").Contains("DNNEmptyPane") ? "to-shine-header-pane-empty" : "" %>">
-  <div id="HeaderPane" runat="server" containertype="G" containername="2shine BS5" containersrc="fullwidthWithoutPadding.ascx"></div>
+  <div id="HeaderPane" runat="server" containertype="G" containername="2shineBS5" containersrc="fullwidthWithoutPadding.ascx"></div>
 </div>
 <main id="to-shine-page-main">
   <%
@@ -114,7 +120,7 @@
   <%
   }
   %>
-        <div id="ContentPane" runat="server" containertype="G" containername="2shine BS5" containersrc="default.ascx"></div>
+        <div id="ContentPane" runat="server" containertype="G" containername="2shineBS5" containersrc="default.ascx"></div>
   <% 
   if(ShowSidebarNavigation) {
   %>        
@@ -169,8 +175,8 @@
 </footer>
 
 <!-- include files -->
-<dnn:DnnCssInclude runat="server" FilePath="dist/dnn-default.min.css" Priority="99" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet', rel:'preload', as:'style'" />
-<dnn:DnnCssInclude runat="server" FilePath="dist/theme.min.css" Priority="100" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet', rel:'preload', as:'style'" />
+<dnn:DnnCssInclude runat="server" FilePath="dist/dnn-default.min.css" Priority="99" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
+<dnn:DnnCssInclude runat="server" FilePath="dist/theme.min.css" Priority="100" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
 <dnn:DnnJsInclude runat="server" FilePath="dist/lib/bootstrap.bundle.min.js" ForceProvider="DnnFormBottomProvider" Priority="100" PathNameAlias="SkinPath" HtmlAttributesAsString="defer, async" />
 <dnn:DnnJsInclude runat="server" FilePath="dist/theme.min.js" ForceProvider="DnnFormBottomProvider" Priority="130" PathNameAlias="SkinPath" HtmlAttributesAsString="defer, async" />
 

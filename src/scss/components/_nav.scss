@@ -83,18 +83,26 @@
     .nav-link {
       color: $body-color;
       font-weight: bold;
+
       @include media-breakpoint-up(lg) {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         font-size: 16px;
       }
-      
      
       &:hover {
-        color: $primary;
+        color: #fff;
+
+        @include media-breakpoint-up(lg) {
+          color: $primary;
+        }
       }
       &.active {
-        color: $primary;
+        color: #fff;
+        
+        @include media-breakpoint-up(lg) {
+          color: $primary;
+        }
       }
 
       @include media-breakpoint-down(lg) {
@@ -182,6 +190,7 @@
       }
     }
   }
+
   @include media-breakpoint-down(lg) {
     .offcanvas-body {
       background-color: $primary;
@@ -211,7 +220,7 @@
             font-size: 20px;
             padding: .5rem 1rem;
 
-            &.active {
+            &:hover, &.active {
               background-color: rgba($black, 0.4);
               color: #fff;
             }
@@ -317,6 +326,7 @@
       border-radius: 8px;
       transition:background-color .3s ease-in-out, color .3s ease-in-out;
       padding: 8px 12px;
+
       &:hover {
         background-color: lighten($primary, 60%);
         color: $body-color!important;

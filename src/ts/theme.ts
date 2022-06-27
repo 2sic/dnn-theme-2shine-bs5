@@ -36,7 +36,7 @@ if(document.querySelector('#to-shine-to-top')) {
 	})
 }
 
-// scrolling behavior (to top button / breadcrumb)
+/* scrolling behavior (to top button / breadcrumb) */
 const navheader = document.querySelector('#to-shine-page-navigation') as HTMLElement;
 const navheight = navheader.offsetHeight;
 window.addEventListener('scroll', function (event) {
@@ -62,19 +62,29 @@ window.addEventListener('scroll', function (event) {
 	}
 	
 }, false);
-// breadcrumb
 
+/* Breadcrumb */
 const bc = document.querySelector('.to-shine-page-breadcrumb');
-if(bc != null){
-	document.querySelector('.to-shine-page-breadcrumb span a:last-child').classList.add('last');
-	document.querySelector('.to-shine-page-breadcrumb span:last-child').classList.add('last');
-	if(document.querySelector('.to-shine-page-breadcrumb span .to-shine-page-breadcrumb-link:nth-last-child(3)') != null) {
-		document.querySelector('.to-shine-page-breadcrumb span .to-shine-page-breadcrumb-link:nth-last-child(3)').classList.add('second-last');
+if(bc){
+	const bcALast = document.querySelector('.to-shine-page-breadcrumb span a:last-child');
+	if(bcALast) bcALast.classList.add('last');
+
+	const bcSpanLast = document.querySelector('.to-shine-page-breadcrumb span:last-child')
+	if(bcSpanLast) bcSpanLast.classList.add('last');
+
+	const bcSpanLinkChild = document.querySelector('.to-shine-page-breadcrumb span .to-shine-page-breadcrumb-link:nth-last-child(3)');
+	if(bcSpanLinkChild) bcSpanLinkChild.classList.add('second-last');
+
+	bc.classList.toggle('to-shine-page-breadcrumb-shortened', 
+		(document.querySelector('.to-shine-page-breadcrumb-link') != null || document.querySelectorAll('.to-shine-page-breadcrumb-link').length > 2)
+	)
+	
+	const bcTrigger = document.querySelector('.to-shine-page-breadcrumb-trigger');
+	if(bcTrigger) {
+		bcTrigger.addEventListener('click', () => {
+			bc.classList.toggle('to-shine-page-breadcrumb-shortened')
+		})
 	}
-	bc.classList.toggle('to-shine-page-breadcrumb-shortened', (document.querySelector('.to-shine-page-breadcrumb-link') != null || document.querySelectorAll('.to-shine-page-breadcrumb-link').length > 2))
-	document.querySelector('.to-shine-page-breadcrumb-trigger').addEventListener('click', () => {
-		bc.classList.toggle('to-shine-page-breadcrumb-shortened')
-	})
 }
 
 

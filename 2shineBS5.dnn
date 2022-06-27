@@ -15,7 +15,7 @@
     <component type="Skin">
       <skinFiles>
         <skinName>2shine BS5</skinName>
-        <basePath>Portals\_default\Skins\2shine BS5</basePath>
+        <basePath>Portals\_default\Skins\2shineBS5</basePath>
         <skinFile>
           <path>App_LocalResources</path>
           <name>2shine.de-DE.resx</name>

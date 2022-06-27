@@ -45,7 +45,7 @@
             }
             %> 
             <%
-            if(DotNetNuke.Security.PortalSecurity.IsInRoles(PortalSettings.AdministratorRoleName)) {
+            if (Request.IsAuthenticated) {
             %>
               <a href="?ctl=logoff" Title="Logoff" class="to-shine-login" target="_self">
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

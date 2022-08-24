@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="2shine BS5" type="Skin" version="5.0.4">
+  <packages><package name="2shine BS5" type="Skin" version="5.0.5">
   <friendlyName>2shineBS5</friendlyName>
   <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.</description>
   <iconFile>/Images/icon_skin.gif</iconFile>
@@ -16,34 +16,6 @@
       <skinFiles>
         <skinName>2shineBS5</skinName>
         <basePath>Portals\_default\Skins\2shineBS5</basePath>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>0.pack.gz</name>
-        </skinFile>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>1.pack.gz</name>
-        </skinFile>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>2.pack.gz</name>
-        </skinFile>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>3.pack.gz</name>
-        </skinFile>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>4.pack.gz</name>
-        </skinFile>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>index.pack.gz</name>
-        </skinFile>
-        <skinFile>
-          <path>.temp_cache\default-production</path>
-          <name>index.pack.gz.old</name>
-        </skinFile>
         <skinFile>
           <path>App_LocalResources</path>
           <name>2shine.de-DE.resx</name>

@@ -19,7 +19,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="offcanvas offcanvas-start border-0" id="offcanvasNavbar">
+    <div class="offcanvas offcanvas-start border-0" id="offcanvasNavbar" tabindex="-1" >
       <div class="offcanvas-header">
         <a class="navbar-brand" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalController.GetCurrentPortalSettings().HomeTabId) %>" title="2shine DNN BS5 2sxc (change this in the theme-body.ascx)">
           <img alt="Logo" class="logo img-fluid" src="<%=SkinPath%>images/logo.svg">

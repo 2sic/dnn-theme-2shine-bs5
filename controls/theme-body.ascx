@@ -87,7 +87,7 @@
   <%
   if(ShowBreadcrumb){
   %>
-    <div class="to-shine-page-breadcrumb" aria-label="breadcrumb">
+    <div class="to-shine-page-breadcrumb" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
       <div class="container py-2">
         <a class="to-shine-page-breadcrumb-link to-shine-page-breadcrumb-home" aria-current="page" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"><%= LocalizeString("Home.Text") %></a>
         <span>&nbsp;&rsaquo;&nbsp;</span><span class="to-shine-page-breadcrumb-trigger display-inline display-md-none"><a aria-current="page">...</a></span>

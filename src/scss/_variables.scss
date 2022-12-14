@@ -137,10 +137,10 @@ $custom-spacers: (
 );
 
 // Merge the maps
-$spacers: map-merge(
-  $custom-spacers,
-  $spacers
-);
+// $spacers: map-merge(
+//   $spacers,
+//   $custom-spacers
+// );
 
 // ----------------------------------------------------------------------------------------------------
 // 5. Include remainder of required parts

@@ -1,6 +1,11 @@
 <img width="100%" src="https://github.com/2sic/dnn-theme-2shine-bs5/raw/main/images/logo-1000.png">
 
-# DNN Skin/Theme Bootstrap5 Instant! for DNN 7, 8, 9 (works best with 9.6+)
+# DNN Skin/Theme Bootstrap5.2 Instant! for DNN 7, 8, 9 (works best with 9.6+)
+
+> Important: this is an archived version of the theme.
+> Newer versions use Bootstrap 5.3 CSS Variables.
+>
+> The latest version is available at <https://github.com/2sic/dnn-theme-2shine-bs5>
 
 _Note: two links in the footer go to pages in dnn 9.6, which uses a 9.6 api. if you remove them, it also works in v7/8_
 
@@ -17,7 +22,7 @@ A clean, prepared bootstrap5 skin for DNN (DotNetNuke), ready to make awesomenes
 
 # The Bootstrap5 Instant Theme for DNN
 
-This theme is a layout/skin for the CMS [DNN](https://github.com/dnnsoftware/Dnn.Platform) based on [Bootstrap5](http://getbootstrap.com/) and [SASS](http://sass-lang.com/). It allows you to create simple custom designs within minutes and complex designs within a few hours. This is why it's called *instant*.
+This theme is a layout/skin for the CMS [DNN](https://github.com/dnnsoftware/Dnn.Platform) based on [Bootstrap5](http://getbootstrap.com/) and [SASS](http://sass-lang.com/). It allows you to create simple custom designs within minutes and complex designs within a few hours. This is why it's called _instant_.
 
 ## What's in the Package
 
@@ -37,7 +42,6 @@ This theme is a layout/skin for the CMS [DNN](https://github.com/dnnsoftware/Dnn
 3. Centered - Content and Menu are max-width, background to right and left
 4. Centered-Submenu - Paged/floating content with submenu to the left
 5. Float-WideHeader - Paged/floating content with wide header
-
 
 ## Dokumentation
 
@@ -70,7 +74,7 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 1. removed node-sass, added sass
 2. removed unnecessary packages
 3. fixed :visited link style in navigation
-4. Renamed body classes 
+4. Renamed body classes
    1. tab -> page
    2. portal -> site
    3. tab-level -> nav-level
@@ -80,12 +84,12 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 1. Cleaned up resource files as they were all the same
 1. Enhanced lookup of file name to not repeat unnecessarily
 1. Slimmed down resx files to the necessary minimum
-1. Added boolean to determin if Breadcrumbs should be displayed 
-1. Added boolean to determin how many nodes should be selected for the desktop navigation (disables Dropdown if "*,0,0" is set)
+1. Added boolean to determine if Breadcrumbs should be displayed
+1. Added boolean to determine how many nodes should be selected for the desktop navigation (disables Dropdown if "*,0,0" is set)
 
 ### v05.00.04
 
-1. Added NPM Script to copy node_modules bootstrap and update bootstrap files in lib folder 
+1. Added NPM Script to copy node_modules bootstrap and update bootstrap files in lib folder
 
 ## Love from Switzerland
 

@@ -1,0 +1,16 @@
+/*layout fullscreen*/
+@media all {
+  html {
+    body.theme-variation-fullscreen {
+      background-color: var(--bs-white);
+
+      form {
+        #theme-page-header-pane {
+          max-width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

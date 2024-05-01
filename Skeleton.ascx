@@ -31,7 +31,7 @@
 <%@ Register TagPrefix="tosic" TagName="SxcQuickEdit" src="controls/2sxc-quickedit.ascx" %>
 <tosic:SxcQuickEdit runat="server" />
 
-<main id="to-shine-page-main">
+<main id="theme-page-main">
   <div id="ContentPane" runat="server" containertype="G" containername="2shineBS5" containersrc="fullwidthWithPadding.ascx"></div>
 </main>
 

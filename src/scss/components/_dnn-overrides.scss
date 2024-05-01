@@ -27,22 +27,27 @@
 	ol {
 		margin: 0;
 	}
+
 	ul {
 		list-style-type: disc;
+		
 		ul {
 			list-style-type: circle;
 		}
 	}
 
-	a.to-shine-page-login,
-	a.to-shine-page-login:link,
-	a.to-shine-page-login:visited {
-		color: $secondary;
-		font-size: 10px;
+	html body form#Form {
+		a.theme-page-login,
+		a.theme-page-login:link,
+		a.theme-page-login:visited {
+			color: var(--bs-primary);
+			font-size: 10px;
+		}
+		a.theme-page-login:hover {
+			color: var(--bs-white);
+		}
 	}
-	a.to-shine-page-login:hover {
-		color: $white;
-	}
+	
 	#ControlBar_ControlPanel #ServiceImg {
 		display: none;
 	}
@@ -50,28 +55,13 @@
 	// ----------------------------------------------------------------------------------------------------
 	// 9. Final adjustments / tweaking / DNN workarounds
 
-	// 9.1 Fix links which look like buttons so the text doesn't get underlined
-	a.btn-primary.btn-primary {
-		&:link,
-		&:visited,
-		&:hover {
-			color: #fff;
-		}
-	}
-	a.btn.btn {
-		&:link,
-		&:visited,
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
-	// 9.2 Override width of DNNEmptyPane for 2sxc Quick-Edit control (DNN9)
+	// 9.1 Override width of DNNEmptyPane for 2sxc Quick-Edit control (DNN9)
 	body:not(.dnnEditState) .DNNEmptyPane {
 		width: 100%;
 	}
-	// Login
-	body {
+
+	// 9.2 Login
+	html body form#Form {
 		.dnnLabel {
 			display: block;
 			float: none;
@@ -92,8 +82,8 @@
 		.dnnPrimaryAction,
 		.dnnFormItem input[type="submit"],
 		a.dnnPrimaryAction {
-			border-color: $primary;
-			background: $primary;
+			border-color: var(--bs-primary);
+			background: var(--bs-primary);
 			box-shadow: none;
 			color: #fff;
 			text-shadow: none;
@@ -104,8 +94,8 @@
 		.dnnPrimaryAction:hover,
 		.dnnFormItem input[type="submit"]:hover,
 		a.dnnPrimaryAction:hover {
-			border-color: $primary;
-			background: $primary;
+			border-color: var(--bs-primary);
+			background: var(--bs-primary);
 			color: #fff;
 		}
 		.dnnFormItem button,
@@ -149,8 +139,6 @@
 						padding: 0 32px;
 					}
 				}
-
-				
 			}
 		}
 	}

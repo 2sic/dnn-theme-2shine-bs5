@@ -1,5 +1,5 @@
-.to-shine-mainnav-variation-left {
-  #to-shine-page-navigation {
+.theme-mainnav-variation-left {
+  #theme-page-navigation {
     .offcanvas-body {
       .align-items-end {
         align-items: flex-start !important;
@@ -23,66 +23,45 @@
   }
 }
 
-#to-shine-page-navigation {
-  position: sticky;
-  top: 0;
+#theme-page-navigation {
   z-index: 801;
 
-  .offcanvas-body {
-    .align-items-end {
-      @include media-breakpoint-down(lg) {
-        align-items: flex-start !important;
-      }
+  &.navbar-expand-lg {
+    background-color: var(--theme-bg);
+  }
+
+  .logo {
+    display: block;
+    height: 37px;
+    width: auto;
+    transition: height 0.4s ease-in-out;
+    
+    @include media-breakpoint-up(xl) {
+      height: 54px;
     }
   }
 
-  .navbar-brand {
-    .logo {
-      display: block;
-      width: 200px;
-      height: auto;
-      transition: width 0.4s ease-in-out;
-      
-      @include media-breakpoint-up(xl) {
-        width: 280px;
-      }
-    }
-    // svg {
-    //   //If you use an SVG as Logo, you will have to give it a fixed height
-    //   //in this selector, orelse you may experience issues in IE */
-    //   height: 37px;
-
-    //   @include media-breakpoint-up(lg) {
-    //     height: 53px;
-    //   }
-    // }
+  .theme-login {
+    width: 10px;
+    margin-left: 15px;
+    margin-top: -4px;
   }
 
   .navbar-toggler {
-    color: $primary;
-    border-color: $primary;
     border: none;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg);
-    stroke: $primary;
   }
 
   .navbar-nav {
-    @include media-breakpoint-down(lg) {
-      width: 100%;
-    }
-
     > .nav-item {
+
       @include media-breakpoint-down(lg) {
        border-bottom: 1px solid #e5e5e5;
       }
     }
 
     .nav-link {
-      color: $body-color;
       font-weight: bold;
+      color: var(--bs-nav-link-color);
 
       @include media-breakpoint-up(lg) {
         padding-left: 0.5rem;
@@ -91,84 +70,26 @@
       }
      
       &:hover {
-        color: #fff;
+        color: white;
 
         @include media-breakpoint-up(lg) {
-          color: $primary;
+          color: var(--bs-nav-link-hover-color);
         }
       }
+      
       &.active {
-        color: #fff;
+        color: var(--bs-white);
         
         @include media-breakpoint-up(lg) {
-          color: $primary;
+          color: var(--bs-nav-link-hover-color);
         }
       }
 
       @include media-breakpoint-down(lg) {
-        color: rgba($white, 0.8);
+        color: color-mix(in srgb,var(--bs-white), transparent 70%);
 
         &.active {
-          color: #fff
-        }
-        
-      }
-      &.dropdown-toggle:after {
-        display: inline-block;
-        margin-left: 0.255em;
-        vertical-align: 0.255em;
-        content: "";
-        border-top: 0.2em solid!important;
-        border-right: 0.2em solid transparent!important;
-        border-bottom: 0;
-        border-left: 0.2em solid transparent!important;
-      }
-    }
-    
-    > .last{
-      .nav-link {
-          padding-right: 0;
-      }
-    }
-  }
-  
-  .navbar-nav.nav-top {
-    @include media-breakpoint-down(lg) {
-      width: 100%;
-    }
-
-    > .nav-item {
-      @include media-breakpoint-down(lg) {
-       border-bottom: 1px solid #e5e5e5;
-      }
-    }
-
-    .nav-link {
-      color: $gray-600;
-      font-weight: bold;
-      @include media-breakpoint-up(lg) {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 14px;
-      }
-      @include media-breakpoint-up(xl) {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        font-size: 16px;
-      }
-    
-      &:hover {
-        color: $primary;
-      }
-      &.active {
-        color: $primary;
-      }
-
-      @include media-breakpoint-down(lg) {
-        color: rgba($white, 0.8);
-
-        &.active {
-          color: #fff
+          color: var(--bs-white);
         }
         
       }
@@ -193,7 +114,7 @@
 
   @include media-breakpoint-down(lg) {
     .offcanvas-body {
-      background-color: $primary;
+      background-color: var(--bs-primary);
       padding: 0;
 
       .navbar-nav {
@@ -206,68 +127,61 @@
       }
 
       .dropdown-menu {
-        background-color: rgba($black, 0.4);
+        background-color: color-mix(in srgb,var(--bs-black), transparent 40%);
         border-radius: 0;
         border-left: none;
         padding: 0;
         margin-top: 0;
 
         .nav-item {
-          border-bottom: 1px solid rgba($primary, 1);
+          border-bottom: 1px solid var(--bs-primary);
 
           .dropdown-item {
-            color: rgba($white, 0.8);
+            color: color-mix(in srgb,var(--bs-white), transparent 80%);
             font-size: 20px;
             padding: .5rem 1rem;
 
             &:hover, &.active {
-              background-color: rgba($black, 0.4);
+              background-color: color-mix(in srgb,var(--bs-black), transparent 40%);
               color: #fff;
             }
           }
         }
       }
     }
-  }
 
-  .to-shine-login {
-    width: 10px;
-    margin-left: 15px;
-    margin-top: -4px;
-  }
-
-  .nav-item-sub-opener {
-    position: absolute;
-    top: 0px;
-    right: 0;
-    height: 46px;
-    width: 40px;
-    text-align: center;
-    cursor: pointer;
-    color: #fff;
-    background: rgba(0,0,0,.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-    &:after {
-      content: "+";
-      border: none;
-      font-size: 20px;
-      font-family: sans-serif;
-      color: hsla(0,0%,100%,.8);
-    }
-
-    &.show {
+    .nav-item-sub-opener {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 46px;
+      width: 40px;
+      text-align: center;
+      cursor: pointer;
+      color: #fff;
+      background: rgba(0,0,0,.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
       &:after {
-        content: "-";
+        content: "+";
+        border: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: hsla(0,0%,100%,.8);
       }
-    }
-  }
+  
+      &.show {
+        &:after {
+          content: "-";
+        }
+      }
+    }    
+  }  
 }
 
-#to-shine-nav-sub {
+#theme-nav-sub {
   .nav-item-sub-opener {
     position: absolute;
     top: 0px;
@@ -289,16 +203,17 @@
 
     &:after {
       content: "+";
-      color: $primary;
+      color: var(--bs-primary);
     }
   }
 
   .ul-collapse {
-    background-color: rgba($primary, 0.1);
+    background-color: color-mix(in srgb,var(--bs-primary), transparent 10%);
     list-style: none;
     padding-left: 0;
 
     .nav-link {
+      color: #fff;
       padding-left: 15px;
     }
   }
@@ -310,7 +225,6 @@
   .navbar-nav .nav-item:not(.disabled):hover .dropdown-menu { display: block;  opacity: 1;   visibility: visible; }
   .navbar-nav .nav-item.last .dropdown-menu { right:0px;   }
 
-
   .dropdown-menu {
     max-width: 250px;
     width:100%;
@@ -319,7 +233,7 @@
     transform: translateY(10px);
     transition: all .4s ease-in-out;
     border-radius: 8px;
-
+    background-color: white;
    
     .dropdown-item {
       white-space: normal;
@@ -327,28 +241,10 @@
       transition:background-color .3s ease-in-out, color .3s ease-in-out;
       padding: 8px 12px;
 
-      &:hover {
-        background-color: lighten($primary, 60%);
-        color: $body-color!important;
+      &:hover, &.active {
+        background-color: color-mix(in srgb,var(--bs-primary), transparent 50%);
+        color: var(--bs-body-color) !important;
       }
     }
-   
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(1rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0rem);
-    opacity: 1;
-  }
-
-  0% {
-    transform: translateY(1rem);
-    opacity: 0;
   }
 }

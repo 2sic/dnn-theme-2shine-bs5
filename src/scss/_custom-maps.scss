@@ -1,0 +1,25 @@
+// Add custom colors depending on your style
+// $custom-colors: (
+//   "name": value
+// );
+
+// // Merge the maps
+// $theme-colors: map-merge(
+//   $theme-colors,
+//   $custom-colors
+// );
+
+// Optimized and extended spacing for the use of paddings and margins like: px-5 or mb-2
+// $spacer: 1rem !default;
+// $spacers: () !default;
+// $spacers: map-merge((
+//   0: 0,
+//   1: ($spacer / 2), // 10px
+//   2: ($spacer * 1), // 20px
+//   3: ($spacer * 1.5), // 30px
+//   4: ($spacer * 2), // 40px
+//   5: ($spacer * 3), // 60px
+//   6: ($spacer * 4), // 80px
+//   7: ($spacer * 5), // 100px
+//   8: ($spacer * 6) // 120px
+// ), $spacers);

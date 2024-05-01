@@ -19,6 +19,7 @@
 		base.OnPreRender(e); 
 		HtmlGenericControl body = (HtmlGenericControl)this.Page.FindControl("ctl00$body");
 		body.Attributes["class"] = GetCssClassesForBody();
+		body.Attributes["data-bs-theme"] = "default-theme";
 	}
 	
 	private string GetCssClassesForBody()
@@ -47,7 +48,7 @@
 
 		var nav = Navigation;
 		if(string.IsNullOrEmpty(nav)) nav = "Right";
-		return " to-shine-variation-" + layout.ToLower() + " to-shine-mainnav-variation-" + nav.ToLower() + " ";
+		return " theme-variation-" + layout.ToLower() + " theme-mainnav-variation-" + nav.ToLower() + " ";
 	}
 
 

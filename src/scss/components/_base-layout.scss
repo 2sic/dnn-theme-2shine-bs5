@@ -1,31 +1,65 @@
 @media all {
   html {
     min-height: 100vh;
+
     body {
       overflow-y: scroll;
+      overflow-x: hidden;
       min-height: 100vh;
 
-      &.role-admin .to-shine-header-pane-empty {
-        min-height: 50px
-      }
-
-      form {
+      form#Form {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        main#to-shine-page-main {
+
+        main#theme-page-main {
           flex: 1 0 auto;
         }
-        .container {
-          @include media-breakpoint-up(xxl) {
-            padding-left: 45px;
-            padding-right: 45px;
-          }
+
+        .text-primary {
+          color: var(--bs-primary) !important;
         }
-        #dnn_ContentPane:last-child .co-container-outer.mb-md-5 {
-          margin-bottom: 0 !important;
+    
+        .text-secondary {
+          color: var(--bs-secondary) !important;
         }
 
+        a:not(.btn) {
+          color: var(--bs-link-color);
+
+          &:hover {
+            color: var(--bs-link-hover-color);
+          }
+        }
+
+        footer {
+          background-color: var(--theme-bg);   
+          
+          a {
+            color: var(--bs-link-color);
+
+            &:hover {
+              color: var(--bs-link-hover-color);
+            }
+          }
+
+          ul {
+            padding: 0;
+            list-style: none;
+
+            li {
+              margin-right: 6px;
+            }
+          }
+        }
+
+        .container {
+          @include media-breakpoint-up(xxl) {
+            padding-left: 48px;
+            padding-right: 48px;
+          }
+        }
+        
         div[id^="module-"] {
           scroll-margin-top: 150px;
         }

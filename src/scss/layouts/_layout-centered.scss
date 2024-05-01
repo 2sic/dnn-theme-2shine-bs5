@@ -1,0 +1,29 @@
+@media all {
+  /*layout centered*/
+  body.theme-variation-centered {
+    header {
+      background: transparent;
+
+      .container {
+        background: var(--bs-white);
+      }
+    }
+
+    main#theme-page-main,
+    #theme-page-header-pane,
+    footer#theme-page-footer,
+    nav#theme-page-navigation {      
+      background: var(--bs-white);
+      width: 100%;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(xxl) {
+        max-width: 1320px;
+      }
+    }   
+    
+    footer#theme-page-footer {
+      background-color: var(--theme-bg);
+    }
+  }
+}

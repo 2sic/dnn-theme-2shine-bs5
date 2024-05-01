@@ -3,10 +3,10 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "production",
-  entry: ['./src/scss/theme.scss', './src/ts/theme.ts'],
+  mode: "development",
+  entry: ['./src/scss/styles.scss', './src/ts/scripts.ts'],
   output: {
-    filename: 'theme.min.js',
+    filename: 'scripts.min.js',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[hash][ext][query]'
   },
@@ -27,7 +27,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'theme.min.css',
+      filename: 'styles.min.css',
     }),
     new webpack.ProgressPlugin(),
   ],

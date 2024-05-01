@@ -31,13 +31,13 @@
 <%@ Register TagPrefix="tosic" TagName="SxcQuickEdit" src="controls/2sxc-quickedit.ascx" %>
 <tosic:SxcQuickEdit runat="server" />
 
-<a class="visually-hidden-focusable" rel="nofollow" href="#to-shine-page-main"><%= LocalizeString("SkipLink.MainContent") %></a>
-<header id="to-shine-page-header">
+<a class="visually-hidden-focusable" rel="nofollow" href="#theme-page-main"><%= LocalizeString("SkipLink.MainContent") %></a>
+<header id="theme-page-header">
   <div class="container d-flex justify-content-between align-items-center py-3">			
     <a class="logo" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalController.GetCurrentPortalSettings().HomeTabId) %>" title="2shine DNN BS5 2sxc (change this in the theme-body.ascx)">			
       <img alt="Logo" class="img-fluid" src="<%=SkinPath%>images/logo.svg">
     </a>
-    <div class="to-shine-mobile-hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" title="Menu">
+    <div class="theme-mobile-hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart" title="Menu">
       <div>
         <span></span>
         <span></span>
@@ -63,7 +63,7 @@
         <%
         if(DotNetNuke.Security.PortalSecurity.IsInRoles(PortalSettings.AdministratorRoleName)) {
         %>
-          <a href="?ctl=logoff" Title="Logoff" class="to-shine-login" target="_self">
+          <a href="?ctl=logoff" Title="Logoff" class="theme-login" target="_self">
             <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 12.2 14.5" style="enable-background:new 0 0 12.2 14.5;" xml:space="preserve">
             <g>
@@ -76,7 +76,7 @@
         <%
         } else {
         %>        
-          <a href="?ctl=login" Title="Login" class="to-shine-login" target="_self">
+          <a href="?ctl=login" Title="Login" class="theme-login" target="_self">
             <svg version="1.1" id="Lock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 12.2 14" style="enable-background:new 0 0 12.2 14;" xml:space="preserve">
               <g>
@@ -93,10 +93,10 @@
   </div>
 </header>
 
-<main id="to-shine-page-main">
+<main id="theme-page-main">
   <div id="ContentPane" runat="server" containertype="G" containername="2shineBS5" containersrc="fullwidthWithoutPadding.ascx"></div>
   
-  <a id="to-shine-to-top" href="#" title="Nach oben" rel="nofollow">
+  <a id="theme-to-top" href="#" title="Nach oben" rel="nofollow">
     <svg xmlns="http://www.w3.org/2000/svg" width="19.032" height="20.034" viewBox="0 0 19.032 20.034">
       <g id="Group_2" data-name="Group 2" transform="translate(-1055.984 -551.276)">
         <path id="Path_2" data-name="Path 2" d="M8.1,16.2,0,8.1,8.1,0" transform="translate(1073.602 552.69) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
@@ -105,9 +105,9 @@
     </svg>
   </a>
 </main>
-<footer id="to-shine-page-footer">
+<footer id="theme-page-footer">
   <div class="container py-4 d-flex justify-content-md-between flex-column flex-md-row text-white">
-    <ul class="to-shine-footer-address" itemscope itemtype="http://schema.org/LocalBusiness">
+    <ul class="theme-footer-address" itemscope itemtype="http://schema.org/LocalBusiness">
       <li>
         <strong itemprop="name">2shine DNN BS5 2sxc </strong>
       </li>
@@ -124,8 +124,8 @@
         <span data-madr1="shine" data-madr2="example" data-madr3="com" data-linktext=""></span>
       </li>
     </ul>
-    <div class="to-shine-footer-imprint">
-      <dnn:login id="DnnLogin" cssclass="to-shine-page-login d-none d-lg-inline-flex" rel="nofollow" runat="server" />  
+    <div class="theme-footer-imprint">
+      <dnn:login id="DnnLogin" cssclass="theme-page-login d-none d-lg-inline-flex" rel="nofollow" runat="server" />  
       <%-- 
         Terms and Privacy Links are set in "Site Settings" > "Site Behavior"
       --%>

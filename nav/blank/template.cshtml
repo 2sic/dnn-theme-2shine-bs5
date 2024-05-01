@@ -5,7 +5,7 @@
 
 @helper RenderNodes(IList<MenuNode> nodes) {
 	if (nodes.Count > 0) {
-		<ul class="@(nodes[0].Depth == 0 ? "to-shine-nav" : "")">
+		<ul class="@(nodes[0].Depth == 0 ? "theme-nav" : "")">
 			@foreach (var node in nodes) {
 				var cssClasses = new List<string>();
 				cssClasses.Add("nav-" + node.TabId);

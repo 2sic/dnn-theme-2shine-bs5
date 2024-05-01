@@ -14,3 +14,6 @@
 --%>
 <%@ Register TagPrefix="tosic" TagName="SxcQuickEdit" src="2sxc-quickedit.ascx" %>
 <tosic:SxcQuickEdit runat="server" />
+
+<%@ Import Namespace="DotNetNuke.Security.Permissions" %>
+<%@ Import Namespace="TabInfo=DotNetNuke.Entities.Tabs.TabInfo" %>

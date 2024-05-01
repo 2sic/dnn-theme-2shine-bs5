@@ -31,7 +31,7 @@
 
 </script>
 
-<ul class="to-shine-page-language">
+<ul id="theme-page-language" class="d-flex">
     <% foreach (var language in LanguagesArray) { %>
         <% var lang = language.Split(':'); %>
         <% if (ShowLanguageSwitchForLanguage(lang[0]))

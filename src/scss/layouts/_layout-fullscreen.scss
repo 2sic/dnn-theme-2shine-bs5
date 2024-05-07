@@ -2,9 +2,12 @@
 @media all {
   html {
     body.theme-variation-fullscreen {
-      background-color: var(--bs-white);
-
+      
       form {
+        main#theme-page-main {
+          background-color: var(--theme-page-main-bg);
+        }
+        
         #theme-page-header-pane {
           max-width: 100%;
           padding-left: 0;

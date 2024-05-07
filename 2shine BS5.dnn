@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="2shine BS5" type="Skin" version="5.0.5">
+  <packages><package name="2shine BS5" type="Skin" version="5.3.3">
   <friendlyName>2shineBS5</friendlyName>
   <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.</description>
   <iconFile>/Images/icon_skin.gif</iconFile>
@@ -62,19 +62,19 @@
         </skinFile>
         <skinFile>
           <path>dist</path>
-          <name>theme.min.css</name>
+          <name>scripts.min.js</name>
         </skinFile>
         <skinFile>
           <path>dist</path>
-          <name>theme.min.css.map</name>
+          <name>scripts.min.js.map</name>
         </skinFile>
         <skinFile>
           <path>dist</path>
-          <name>theme.min.js</name>
+          <name>styles.min.css</name>
         </skinFile>
         <skinFile>
           <path>dist</path>
-          <name>theme.min.js.map</name>
+          <name>styles.min.css.map</name>
         </skinFile>
         <skinFile>
           <path>images\landingpage</path>
@@ -177,28 +177,28 @@
           <name>_typography.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss\layout-variations</path>
-          <name>_variation-centered.scss</name>
+          <path>src\scss\layouts</path>
+          <name>_layout-centered.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss\layout-variations</path>
-          <name>_variation-default.scss</name>
+          <path>src\scss\layouts</path>
+          <name>_layout-default.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss\layout-variations</path>
-          <name>_variation-floatwideheader.scss</name>
+          <path>src\scss\layouts</path>
+          <name>_layout-floatwideheader.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss\layout-variations</path>
-          <name>_variation-fullscreen.scss</name>
+          <path>src\scss\layouts</path>
+          <name>_layout-fullscreen.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss\layout-variations</path>
-          <name>_variation-header.scss</name>
+          <path>src\scss\layouts</path>
+          <name>_layout-header.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss\layout-variations</path>
-          <name>_variation-landingpage.scss</name>
+          <path>src\scss\layouts</path>
+          <name>_layout-landingpage.scss</name>
         </skinFile>
         <skinFile>
           <path>src\scss\modules</path>
@@ -214,11 +214,19 @@
         </skinFile>
         <skinFile>
           <path>src\scss</path>
-          <name>theme.scss</name>
+          <name>styles.scss</name>
         </skinFile>
         <skinFile>
           <path>src\scss</path>
-          <name>_page-customizations.scss</name>
+          <name>_custom-maps.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss</path>
+          <name>_custom-pages.scss</name>
+        </skinFile>
+        <skinFile>
+          <path>src\scss</path>
+          <name>_custom-variables.scss</name>
         </skinFile>
         <skinFile>
           <path>src\scss</path>
@@ -226,7 +234,15 @@
         </skinFile>
         <skinFile>
           <path>src\ts</path>
+          <name>scripts.ts</name>
+        </skinFile>
+        <skinFile>
+          <path>src\ts</path>
           <name>theme.ts</name>
+        </skinFile>
+        <skinFile>
+          <path>theme</path>
+          <name>theme.css</name>
         </skinFile>
         <skinFile>
           <name>2shineBS5.zip</name>
@@ -284,6 +300,9 @@
         </skinFile>
         <skinFile>
           <name>readme.md</name>
+        </skinFile>
+        <skinFile>
+          <name>Skeleton.ascx</name>
         </skinFile>
         <skinFile>
           <name>skin.doctype.xml</name>

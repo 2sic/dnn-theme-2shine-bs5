@@ -1,13 +1,21 @@
 :root,
 [data-bs-theme="default-theme"] {
-  /* Theme Classes */
-  --theme-bg: black;
-
   /* BS Main Colors */
   --bs-primary: #0060AC;
   --bs-secondary: #001D38;
-  --bs-body-bg: #E5E5E5;
+
+  /* */
+  --theme-backdrop-bg: #E5E5E5;
+
+  /* */
+  --bs-body-bg: #fff;
   --bs-body-color: #222222;
+  
+  /* Theme Classes */
+  --theme-page-main-bg: var(--bs-body-bg);
+  --theme-breadcrumb-bg: var(--theme-page-main-bg);
+  --theme-footer-bg: var(--bs-primary);
+  --theme-nav-bg: #fff;
 
   /* Override Link-Colors */
   --bs-nav-link-color: var(--bs-primary);
@@ -40,11 +48,6 @@
   /* .row {
     --bs-gutter-x: 30px;
   } */
-
-  /* Main body Color for inner Content */
-  #theme-page-main {
-    --bs-body-bg: #fff;
-  }
   
   /* Main Button-Colors */
   .btn-primary {
@@ -119,15 +122,10 @@
   }
 
   .footer {
-    --theme-bg: var(--bs-primary);
     --bs-link-color: var(--bs-white);
     --bs-link-hover-color: var(--bs-body-color);
   }
     
-  .navbar {
-    --theme-bg: var(--bs-white);
-  }
-
   .navbar-nav {
     --bs-nav-link-color: var(--bs-body-color); 
     --bs-nav-link-hover-color: var(--bs-primary);

@@ -6,6 +6,19 @@
       overflow-y: scroll;
       overflow-x: hidden;
       min-height: 100vh;
+      // background-color: var(--theme-backdrop-bg);
+      
+      &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--theme-backdrop-bg);
+        clear: both;
+        z-index: -1;
+      }
 
       form#Form {
         min-height: 100vh;
@@ -33,7 +46,7 @@
         }
 
         footer {
-          background-color: var(--theme-bg);   
+          background-color: var(--theme-footer-bg);   
           
           a {
             color: var(--bs-link-color);

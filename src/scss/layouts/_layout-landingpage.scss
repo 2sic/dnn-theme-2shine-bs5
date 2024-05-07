@@ -1,7 +1,7 @@
 @media all {
     /*layout full*/
     body.theme-variation-landingpage {
-      background: var(--bs-white);
+      background: var(--theme-page-main-bg);
       
       nav#theme-page-navigation {
         background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 100%);

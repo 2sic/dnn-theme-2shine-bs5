@@ -10109,6 +10109,17 @@ textarea.form-control-lg {
     overflow-x: hidden;
     min-height: 100vh;
   }
+  html body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--theme-backdrop-bg);
+    clear: both;
+    z-index: -1;
+  }
   html body form#Form {
     min-height: 100vh;
     display: flex;
@@ -10130,7 +10141,7 @@ textarea.form-control-lg {
     color: var(--bs-link-hover-color);
   }
   html body form#Form footer {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-footer-bg);
   }
   html body form#Form footer a {
     color: var(--bs-link-color);
@@ -10299,7 +10310,7 @@ textarea.form-control-lg {
   z-index: 801;
 }
 #theme-page-navigation.navbar-expand-lg {
-  background-color: var(--theme-bg);
+  background-color: var(--theme-nav-bg);
 }
 #theme-page-navigation .logo {
   display: block;
@@ -10569,7 +10580,7 @@ textarea.form-control-lg {
   position: sticky;
   top: 82px;
   z-index: 10;
-  background: var(--bs-white);
+  background: var(--theme-breadcrumb-bg);
 }
 @media (max-width: 991.98px) {
   .theme-page-breadcrumb {
@@ -10626,27 +10637,28 @@ textarea.form-control-lg {
   }
 }
 @media all {
-  body.theme-variation-default main#theme-page-main,
-  body.theme-variation-default footer#theme-page-footer {
-    background-color: var(--bs-white);
+  body.theme-variation-default main#theme-page-main {
+    background-color: var(--theme-page-main-bg);
     width: 100%;
     margin: 0 auto;
   }
 }
 @media (min-width: 1400px) {
-  body.theme-variation-default main#theme-page-main,
-  body.theme-variation-default footer#theme-page-footer {
+  body.theme-variation-default main#theme-page-main {
     max-width: 1320px;
   }
 }
 @media all {
   body.theme-variation-default footer#theme-page-footer {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-footer-bg);
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1400px) {
   body.theme-variation-default footer#theme-page-footer {
     margin-bottom: 60px;
+    max-width: 1320px;
   }
 }
 @media all {
@@ -10661,7 +10673,6 @@ textarea.form-control-lg {
   body.theme-variation-centered #theme-page-header-pane,
   body.theme-variation-centered footer#theme-page-footer,
   body.theme-variation-centered nav#theme-page-navigation {
-    background: var(--bs-white);
     width: 100%;
     margin: 0 auto;
   }
@@ -10675,8 +10686,17 @@ textarea.form-control-lg {
   }
 }
 @media all {
+  body.theme-variation-centered main#theme-page-main {
+    background: var(--theme-page-main-bg);
+  }
+  body.theme-variation-centered #theme-page-header-pane {
+    background-color: var(--theme-nav-bg);
+  }
+  body.theme-variation-centered nav#theme-page-navigation {
+    background-color: var(--theme-nav-bg);
+  }
   body.theme-variation-centered footer#theme-page-footer {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-footer-bg);
   }
 }
 @media all {
@@ -10693,17 +10713,15 @@ textarea.form-control-lg {
   }
 }
 @media all {
-  body.theme-variation-floatwideheader main#theme-page-main,
-  body.theme-variation-floatwideheader footer#theme-page-footer {
-    background: var(--bs-white);
+  body.theme-variation-floatwideheader main#theme-page-main {
+    background: var(--theme-page-main-bg);
     width: 100%;
     margin: 0 auto;
     position: relative;
   }
 }
 @media (min-width: 1400px) {
-  body.theme-variation-floatwideheader main#theme-page-main,
-  body.theme-variation-floatwideheader footer#theme-page-footer {
+  body.theme-variation-floatwideheader main#theme-page-main {
     max-width: 1320px;
   }
 }
@@ -10713,7 +10731,7 @@ textarea.form-control-lg {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
-    background: var(--bs-white);
+    background: var(--theme-nav-bg);
   }
 }
 @media (min-width: 992px) {
@@ -10726,18 +10744,22 @@ textarea.form-control-lg {
 }
 @media all {
   body.theme-variation-floatwideheader footer#theme-page-footer {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-footer-bg);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
   }
 }
 @media (min-width: 1400px) {
   body.theme-variation-floatwideheader footer#theme-page-footer {
     margin-bottom: 60px;
+    max-width: 1320px;
   }
 }
 /*layout fullscreen*/
 @media all {
-  html body.theme-variation-fullscreen {
-    background-color: var(--bs-white);
+  html body.theme-variation-fullscreen form main#theme-page-main {
+    background-color: var(--theme-page-main-bg);
   }
   html body.theme-variation-fullscreen form #theme-page-header-pane {
     max-width: 100%;
@@ -10748,7 +10770,7 @@ textarea.form-control-lg {
 @media all {
   /*layout full*/
   body.theme-variation-landingpage {
-    background: var(--bs-white);
+    background: var(--theme-page-main-bg);
   }
   body.theme-variation-landingpage nav#theme-page-navigation {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);

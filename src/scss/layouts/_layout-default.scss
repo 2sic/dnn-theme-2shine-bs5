@@ -6,9 +6,8 @@
         margin-top:50px;
       }
     }
-    main#theme-page-main,
-    footer#theme-page-footer {
-      background-color: var(--bs-white);
+    main#theme-page-main {
+      background-color: var(--theme-page-main-bg);
       width:100%;
       margin: 0 auto;
 
@@ -17,10 +16,13 @@
       }
     }
     footer#theme-page-footer { 
-      background-color: var(--theme-bg);
+      background-color: var(--theme-footer-bg);
+      width:100%;
+      margin: 0 auto;
 
       @include media-breakpoint-up(xxl) {
         margin-bottom:60px;
+        max-width: 1320px;
       }
     }
   }

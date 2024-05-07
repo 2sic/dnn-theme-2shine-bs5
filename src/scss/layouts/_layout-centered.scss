@@ -13,7 +13,6 @@
     #theme-page-header-pane,
     footer#theme-page-footer,
     nav#theme-page-navigation {      
-      background: var(--bs-white);
       width: 100%;
       margin: 0 auto;
 
@@ -21,9 +20,21 @@
         max-width: 1320px;
       }
     }   
-    
+
+    main#theme-page-main {
+      background: var(--theme-page-main-bg);
+    }
+
+    #theme-page-header-pane {
+      background-color: var(--theme-nav-bg);
+    }    
+
+    nav#theme-page-navigation {
+      background-color: var(--theme-nav-bg);
+    }
+
     footer#theme-page-footer {
-      background-color: var(--theme-bg);
+      background-color: var(--theme-footer-bg);
     }
   }
 }

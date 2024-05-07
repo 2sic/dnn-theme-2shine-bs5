@@ -1,0 +1,11 @@
+:root,
+[data-bs-theme="default-theme"] {
+  main {
+    --bs-body-color: #fff;
+  }
+
+  .form-control {
+    --bs-body-bg: red;
+  }
+}
+

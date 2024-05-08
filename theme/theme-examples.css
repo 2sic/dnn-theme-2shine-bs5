@@ -1,9 +1,18 @@
+/* This is are some examples of how to change default stylings or stylings for certain elements */
+
 :root,
 [data-bs-theme="default-theme"] {
+  /* Bootstrap Default is 24px, if you want to change the gutter use this variable */
+  .row {
+    --bs-gutter-x: 30px;
+  }
+
+  /* Change the font-color for only main tag and its content */
   main {
     --bs-body-color: #fff;
   }
 
+  /* Change the background for most input fields */
   .form-control {
     --bs-body-bg: red;
   }

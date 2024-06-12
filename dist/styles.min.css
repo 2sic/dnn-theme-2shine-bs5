@@ -10279,70 +10279,69 @@ textarea.form-control-lg {
     content: " ";
   }
 }
-@media all {
-  body strong {
-    font-weight: 700;
-  }
-  body ul {
-    list-style-type: disc;
-  }
+
+body strong {
+  font-weight: 700;
 }
-@media all {
-  html {
-    min-height: 100vh;
-  }
-  html body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    min-height: 100vh;
-  }
-  html body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--theme-backdrop-bg);
-    clear: both;
-    z-index: -1;
-  }
-  html body form#Form {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  html body form#Form main#theme-page-main {
-    flex: 1 0 auto;
-  }
-  html body form#Form .text-primary {
-    color: var(--bs-primary) !important;
-  }
-  html body form#Form .text-secondary {
-    color: var(--bs-secondary) !important;
-  }
-  html body form#Form a:not(.btn) {
-    color: var(--bs-link-color);
-  }
-  html body form#Form a:not(.btn):hover {
-    color: var(--bs-link-hover-color);
-  }
-  html body form#Form footer {
-    background-color: var(--theme-footer-bg);
-  }
-  html body form#Form footer a {
-    color: var(--bs-link-color);
-  }
-  html body form#Form footer a:hover {
-    color: var(--bs-link-hover-color);
-  }
-  html body form#Form footer ul {
-    padding: 0;
-    list-style: none;
-  }
-  html body form#Form footer ul li {
-    margin-right: 6px;
-  }
+body ul {
+  list-style-type: disc;
+}
+
+a:not(.btn) {
+  color: var(--bs-link-color);
+}
+a:not(.btn):hover {
+  color: var(--bs-link-hover-color);
+}
+
+html {
+  min-height: 100vh;
+}
+html body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+html body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--theme-backdrop-bg);
+  clear: both;
+  z-index: -1;
+}
+html body form#Form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+html body form#Form main#theme-page-main {
+  flex: 1 0 auto;
+}
+html body form#Form .text-primary {
+  color: var(--bs-primary) !important;
+}
+html body form#Form .text-secondary {
+  color: var(--bs-secondary) !important;
+}
+html body form#Form footer {
+  background-color: var(--theme-footer-bg);
+}
+html body form#Form footer a {
+  color: var(--bs-link-color);
+}
+html body form#Form footer a:hover {
+  color: var(--bs-link-hover-color);
+}
+html body form#Form footer ul {
+  padding: 0;
+  list-style: none;
+}
+html body form#Form footer ul li {
+  margin-right: 6px;
 }
 @media (min-width: 1400px) {
   html body form#Form .container {
@@ -10350,131 +10349,139 @@ textarea.form-control-lg {
     padding-right: 48px;
   }
 }
-@media all {
-  html body form#Form div[id^=module-] {
-    scroll-margin-top: 150px;
-  }
+html body form#Form div[id^=module-] {
+  scroll-margin-top: 150px;
 }
-@media all {
-  /*DNN Overrides and default styles (do not change) */
-  /* box-sizing Fixes for DNN components, 3dr party plugins, modules */
-  #ControlBar_ControlPanel * {
-    box-sizing: content-box;
-  }
-  #ControlBar_ControlPanel .mark {
-    background-color: transparent;
-    padding: 0;
-  }
-  #ControlNav > li > a {
-    text-decoration: none;
-  }
-  .actionMenu * {
-    box-sizing: content-box;
-  }
-  .dnnCheckbox .mark {
-    padding: 0;
-    background: none;
-  }
-  .ui-dialog {
-    color: black;
-    font-family: Arial, sans-serif;
-  }
-  ul,
-  ol {
-    margin: 0;
-  }
-  ul {
-    list-style-type: disc;
-  }
-  ul ul {
-    list-style-type: circle;
-  }
-  html body form#Form a.theme-page-login,
-  html body form#Form a.theme-page-login:link,
-  html body form#Form a.theme-page-login:visited {
-    color: var(--bs-primary);
-    font-size: 10px;
-  }
-  html body form#Form a.theme-page-login:hover {
-    color: var(--bs-white);
-  }
-  #ControlBar_ControlPanel #ServiceImg {
-    display: none;
-  }
-  body:not(.dnnEditState) .DNNEmptyPane {
-    width: 100%;
-  }
-  html body form#Form .dnnLabel {
-    display: block;
-    float: none;
-    position: relative;
-    width: 100%;
-    padding-right: 20px;
-    margin-right: 18px;
-    overflow: visible;
-    text-align: left;
-    font-size: 14px;
-  }
-  html body form#Form .dnnLoginService input[type=text],
-  html body form#Form .dnnLoginService input[type=password] {
-    width: 100%;
-    min-width: 200px;
-    margin-bottom: 5px;
-  }
-  html body form#Form .dnnPrimaryAction,
-  html body form#Form .dnnFormItem input[type=submit],
-  html body form#Form a.dnnPrimaryAction {
-    border-color: var(--bs-primary);
-    background: var(--bs-primary);
-    box-shadow: none;
-    color: #fff;
-    text-shadow: none;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 6px 15px;
-  }
-  html body form#Form .dnnPrimaryAction:hover,
-  html body form#Form .dnnFormItem input[type=submit]:hover,
-  html body form#Form a.dnnPrimaryAction:hover {
-    border-color: var(--bs-primary);
-    background: var(--bs-primary);
-    color: #fff;
-  }
-  html body form#Form .dnnFormItem button,
-  html body form#Form .dnnFormItem input[type=button],
-  html body form#Form .dnnFormItem input[type=reset],
-  html body form#Form .dnnSecondaryAction,
-  html body form#Form a.dnnSecondaryAction,
-  html body form#Form ul.dnnAdminTabNav li a,
-  html body form#Form .dnnLogin .LoginTabGroup span {
-    background: #f5f5f5;
-    font-size: 14px;
-    font-weight: normal;
-    box-shadow: none;
-    text-shadow: none;
-    color: #333;
-    padding: 6px 15px;
-  }
-  html body form#Form .dnnActions {
-    padding-left: 0;
-  }
-  html body form#Form .dnnFormItem > label.dnnFormLabel,
-  html body form#Form .dnnFormItem > span.dnnFormLabel {
-    display: block;
-    margin: 0;
-    width: 0%;
-    text-align: left;
-  }
-  html body form#Form .dnnBoxLabel {
-    font-size: 14px;
-  }
-  html body form#Form .dnnLogin {
-    text-align: center;
-  }
-  html body form#Form .dnnLogin #dnn_ctr_Login_pnlLogin {
-    margin: 0 auto;
-    max-width: 500px;
-  }
+
+/*DNN Overrides and default styles (do not change) */
+/* box-sizing Fixes for DNN components, 3dr party plugins, modules */
+#ControlBar_ControlPanel * {
+  box-sizing: content-box;
+}
+
+#ControlBar_ControlPanel .mark {
+  background-color: transparent;
+  padding: 0;
+}
+
+#ControlNav > li > a {
+  text-decoration: none;
+}
+
+.actionMenu * {
+  box-sizing: content-box;
+}
+
+.dnnCheckbox .mark {
+  padding: 0;
+  background: none;
+}
+
+.ui-dialog {
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+
+html body form#Form a.theme-page-login,
+html body form#Form a.theme-page-login:link,
+html body form#Form a.theme-page-login:visited {
+  color: var(--bs-primary);
+  font-size: 10px;
+}
+html body form#Form a.theme-page-login:hover {
+  color: var(--bs-white);
+}
+
+#ControlBar_ControlPanel #ServiceImg {
+  display: none;
+}
+
+body:not(.dnnEditState) .DNNEmptyPane {
+  width: 100%;
+}
+
+html body form#Form .dnnLabel {
+  display: block;
+  float: none;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  margin-right: 18px;
+  overflow: visible;
+  text-align: left;
+  font-size: 14px;
+}
+html body form#Form .dnnLoginService input[type=text],
+html body form#Form .dnnLoginService input[type=password] {
+  width: 100%;
+  min-width: 200px;
+  margin-bottom: 5px;
+}
+html body form#Form .dnnPrimaryAction,
+html body form#Form .dnnFormItem input[type=submit],
+html body form#Form a.dnnPrimaryAction {
+  border-color: var(--bs-primary);
+  background: var(--bs-primary);
+  box-shadow: none;
+  color: #fff;
+  text-shadow: none;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 6px 15px;
+}
+html body form#Form .dnnPrimaryAction:hover,
+html body form#Form .dnnFormItem input[type=submit]:hover,
+html body form#Form a.dnnPrimaryAction:hover {
+  border-color: var(--bs-primary);
+  background: var(--bs-primary);
+  color: #fff;
+}
+html body form#Form .dnnFormItem button,
+html body form#Form .dnnFormItem input[type=button],
+html body form#Form .dnnFormItem input[type=reset],
+html body form#Form .dnnSecondaryAction,
+html body form#Form a.dnnSecondaryAction,
+html body form#Form ul.dnnAdminTabNav li a,
+html body form#Form .dnnLogin .LoginTabGroup span {
+  background: #f5f5f5;
+  font-size: 14px;
+  font-weight: normal;
+  box-shadow: none;
+  text-shadow: none;
+  color: #333;
+  padding: 6px 15px;
+}
+html body form#Form .dnnActions {
+  padding-left: 0;
+}
+html body form#Form .dnnFormItem > label.dnnFormLabel,
+html body form#Form .dnnFormItem > span.dnnFormLabel {
+  display: block;
+  margin: 0;
+  width: 0%;
+  text-align: left;
+}
+html body form#Form .dnnBoxLabel {
+  font-size: 14px;
+}
+html body form#Form .dnnLogin {
+  text-align: center;
+}
+html body form#Form .dnnLogin #dnn_ctr_Login_pnlLogin {
+  margin: 0 auto;
+  max-width: 500px;
 }
 @media (max-width: 767.98px) {
   html body form#Form .dnnLogin #dnn_ctr_Login_pnlLogin .LoginPanel {
@@ -10483,6 +10490,7 @@ textarea.form-control-lg {
     padding: 0 32px;
   }
 }
+
 .theme-mainnav-variation-left #theme-page-navigation .offcanvas-body .align-items-end {
   align-items: flex-start !important;
 }
@@ -10690,32 +10698,30 @@ textarea.form-control-lg {
     color: var(--bs-body-color) !important;
   }
 }
-@media all {
-  a#theme-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
-    background-color: var(--bs-primary);
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    z-index: 100;
-    transition: opacity 0.5s;
-    pointer-events: none;
-  }
-  a#theme-to-top.theme-top-visible {
-    opacity: 1;
-    pointer-events: auto;
-  }
+a#theme-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background-color: var(--bs-primary);
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: 100;
+  transition: opacity 0.5s;
+  pointer-events: none;
 }
-@media all {
-  .theme-mainnav-variation-left #theme-page-language li:first-child {
-    padding-left: 0;
-  }
-  #theme-page-language {
-    list-style: none;
-  }
+a#theme-to-top.theme-top-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.theme-mainnav-variation-left #theme-page-language li:first-child {
+  padding-left: 0;
+}
+
+#theme-page-language {
+  list-style: none;
 }
 @media (max-width: 991.98px) {
   #theme-page-language {
@@ -10723,41 +10729,36 @@ textarea.form-control-lg {
     padding-right: 0;
   }
 }
-@media all {
-  #theme-page-language li {
-    padding: 5px;
-    font-size: 11px;
-    font-weight: 700;
-  }
+#theme-page-language li {
+  padding: 5px;
+  font-size: 11px;
+  font-weight: 700;
 }
 @media (max-width: 991.98px) {
   #theme-page-language li:first-child {
     padding-left: 0;
   }
 }
-@media all {
-  #theme-page-language li a {
-    color: var(--bs-body-color);
-  }
+#theme-page-language li a {
+  color: var(--bs-body-color);
 }
 @media (max-width: 991.98px) {
   #theme-page-language li a {
     color: rgba(var(--bs-white), 0.8);
   }
 }
-@media all {
-  #theme-page-language li a:hover {
-    color: var(--bs-primary);
-  }
-  #theme-page-language li.active a {
-    color: var(--bs-primary);
-  }
+#theme-page-language li a:hover {
+  color: var(--bs-primary);
+}
+#theme-page-language li.active a {
+  color: var(--bs-primary);
 }
 @media (max-width: 991.98px) {
   #theme-page-language li.active a {
     color: #fff;
   }
 }
+
 /* ---------- Breadcrumbs ---------- */
 .page-is-home .theme-page-breadcrumb {
   display: none;
@@ -10813,34 +10814,28 @@ textarea.form-control-lg {
   }
 }
 
-@media all {
-  body.theme-variation-default #theme-page-header-pane {
-    margin-top: 0px;
-  }
+body.theme-variation-default #theme-page-header-pane {
+  margin-top: 0px;
 }
 @media (min-width: 1400px) {
   body.theme-variation-default #theme-page-header-pane {
     margin-top: 50px;
   }
 }
-@media all {
-  body.theme-variation-default main#theme-page-main {
-    background-color: var(--theme-page-main-bg);
-    width: 100%;
-    margin: 0 auto;
-  }
+body.theme-variation-default main#theme-page-main {
+  background-color: var(--theme-page-main-bg);
+  width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 1400px) {
   body.theme-variation-default main#theme-page-main {
     max-width: 1320px;
   }
 }
-@media all {
-  body.theme-variation-default footer#theme-page-footer {
-    background-color: var(--theme-footer-bg);
-    width: 100%;
-    margin: 0 auto;
-  }
+body.theme-variation-default footer#theme-page-footer {
+  background-color: var(--theme-footer-bg);
+  width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 1400px) {
   body.theme-variation-default footer#theme-page-footer {
@@ -10848,21 +10843,20 @@ textarea.form-control-lg {
     max-width: 1320px;
   }
 }
-@media all {
-  /*layout centered*/
-  body.theme-variation-centered header {
-    background: transparent;
-  }
-  body.theme-variation-centered header .container {
-    background: var(--bs-white);
-  }
-  body.theme-variation-centered main#theme-page-main,
-  body.theme-variation-centered #theme-page-header-pane,
-  body.theme-variation-centered footer#theme-page-footer,
-  body.theme-variation-centered nav#theme-page-navigation {
-    width: 100%;
-    margin: 0 auto;
-  }
+
+/*layout centered*/
+body.theme-variation-centered header {
+  background: transparent;
+}
+body.theme-variation-centered header .container {
+  background: var(--bs-white);
+}
+body.theme-variation-centered main#theme-page-main,
+body.theme-variation-centered #theme-page-header-pane,
+body.theme-variation-centered footer#theme-page-footer,
+body.theme-variation-centered nav#theme-page-navigation {
+  width: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 1400px) {
   body.theme-variation-centered main#theme-page-main,
@@ -10872,23 +10866,20 @@ textarea.form-control-lg {
     max-width: 1320px;
   }
 }
-@media all {
-  body.theme-variation-centered main#theme-page-main {
-    background: var(--theme-page-main-bg);
-  }
-  body.theme-variation-centered #theme-page-header-pane {
-    background-color: var(--theme-nav-bg);
-  }
-  body.theme-variation-centered nav#theme-page-navigation {
-    background-color: var(--theme-nav-bg);
-  }
-  body.theme-variation-centered footer#theme-page-footer {
-    background-color: var(--theme-footer-bg);
-  }
+body.theme-variation-centered main#theme-page-main {
+  background: var(--theme-page-main-bg);
 }
-@media all {
-  /*layout floatwideheader*/
+body.theme-variation-centered #theme-page-header-pane {
+  background-color: var(--theme-nav-bg);
 }
+body.theme-variation-centered nav#theme-page-navigation {
+  background-color: var(--theme-nav-bg);
+}
+body.theme-variation-centered footer#theme-page-footer {
+  background-color: var(--theme-footer-bg);
+}
+
+/*layout floatwideheader*/
 @media (min-width: 1200px) {
   body.theme-variation-floatwideheader.page-2650 main#theme-page-main {
     margin-top: -10vh !important;
@@ -10899,27 +10890,23 @@ textarea.form-control-lg {
     margin-top: -5vh !important;
   }
 }
-@media all {
-  body.theme-variation-floatwideheader main#theme-page-main {
-    background: var(--theme-page-main-bg);
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
+body.theme-variation-floatwideheader main#theme-page-main {
+  background: var(--theme-page-main-bg);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 @media (min-width: 1400px) {
   body.theme-variation-floatwideheader main#theme-page-main {
     max-width: 1320px;
   }
 }
-@media all {
-  body.theme-variation-floatwideheader nav#theme-page-navigation,
-  body.theme-variation-floatwideheader #theme-page-header-pane {
-    max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-    background: var(--theme-nav-bg);
-  }
+body.theme-variation-floatwideheader nav#theme-page-navigation,
+body.theme-variation-floatwideheader #theme-page-header-pane {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--theme-nav-bg);
 }
 @media (min-width: 992px) {
   body.theme-variation-floatwideheader nav#theme-page-navigation.theme-header-pane-empty,
@@ -10929,13 +10916,11 @@ textarea.form-control-lg {
     background: linear-gradient(0deg, color-mix(in srgb, var(--bs-secondary), transparent 100%) 0%, color-mix(in srgb, var(--bs-secondary), #fff 10%) 100%);
   }
 }
-@media all {
-  body.theme-variation-floatwideheader footer#theme-page-footer {
-    background-color: var(--theme-footer-bg);
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-  }
+body.theme-variation-floatwideheader footer#theme-page-footer {
+  background-color: var(--theme-footer-bg);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 @media (min-width: 1400px) {
   body.theme-variation-floatwideheader footer#theme-page-footer {
@@ -10943,42 +10928,40 @@ textarea.form-control-lg {
     max-width: 1320px;
   }
 }
+
 /*layout fullscreen*/
-@media all {
-  html body.theme-variation-fullscreen form main#theme-page-main {
-    background-color: var(--theme-page-main-bg);
-  }
-  html body.theme-variation-fullscreen form #theme-page-header-pane {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+html body.theme-variation-fullscreen form main#theme-page-main {
+  background-color: var(--theme-page-main-bg);
 }
-@media all {
-  /*layout full*/
-  body.theme-variation-landingpage {
-    background: var(--theme-page-main-bg);
-  }
-  body.theme-variation-landingpage nav#theme-page-navigation {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  body.theme-variation-landingpage .theme-background-container {
-    overflow: hidden;
-  }
+html body.theme-variation-fullscreen form #theme-page-header-pane {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
-@media all {
-  /* Logo left */ /* Logo right */
-  /* header centered */
+
+/*layout full*/
+body.theme-variation-landingpage {
+  background: var(--theme-page-main-bg);
 }
+body.theme-variation-landingpage nav#theme-page-navigation {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+body.theme-variation-landingpage .theme-background-container {
+  overflow: hidden;
+}
+
+/* Logo left */ /* Logo right */
 @media (min-width: 992px) {
   body.theme-mainnav-variation-left nav#theme-page-navigation .container {
     flex-direction: row-reverse;
   }
 }
+
+/* header centered */
 @media (min-width: 992px) {
   body.theme-mainnav-variation-center nav#theme-page-navigation > .container {
     flex-direction: column !important;
@@ -10986,15 +10969,14 @@ textarea.form-control-lg {
     padding-bottom: 0px;
   }
 }
-@media all {
-  body.theme-mainnav-variation-center nav#theme-page-navigation .offcanvas-start {
-    width: auto;
-  }
-  body.theme-mainnav-variation-center nav#theme-page-navigation .nav-brand {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+body.theme-mainnav-variation-center nav#theme-page-navigation .offcanvas-start {
+  width: auto;
 }
+body.theme-mainnav-variation-center nav#theme-page-navigation .nav-brand {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
 /* 
   If you need page specific customizations - like home uses a different space, put that here
 

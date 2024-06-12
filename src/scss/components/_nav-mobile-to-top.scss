@@ -1,20 +1,18 @@
-@media all {
-	a#theme-to-top {
-		position: fixed;
-		bottom: 20px;
-		right: 25px;
-		background-color: var(--bs-primary);
-		width: 40px;
-		height: 40px;
-		box-shadow: 0 0 4px rgba(0,0,0,.3);
-		opacity: 0;
-		z-index: 100;
-		transition: opacity 0.5s;
-		pointer-events: none;
-		
-		&.theme-top-visible {
-			opacity: 1;
-			pointer-events: auto;
-		}
+a#theme-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
+	background-color: var(--bs-primary);
+	width: 40px;
+	height: 40px;
+	box-shadow: 0 0 4px rgba(0,0,0,.3);
+	opacity: 0;
+	z-index: 100;
+	transition: opacity 0.5s;
+	pointer-events: none;
+	
+	&.theme-top-visible {
+		opacity: 1;
+		pointer-events: auto;
 	}
 }

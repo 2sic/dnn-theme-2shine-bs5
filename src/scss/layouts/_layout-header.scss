@@ -1,34 +1,32 @@
-@media all {
-  /* Logo left */ /* Logo right */
-  body.theme-mainnav-variation-left {
-    nav#theme-page-navigation {
-      .container {
-        @include media-breakpoint-up(lg) {
-          flex-direction: row-reverse;
-        }
+/* Logo left */ /* Logo right */
+body.theme-mainnav-variation-left {
+  nav#theme-page-navigation {
+    .container {
+      @include media-breakpoint-up(lg) {
+        flex-direction: row-reverse;
       }
-    } 
-  }
-  
-  /* header centered */
-  body.theme-mainnav-variation-center {
-    nav#theme-page-navigation {
-      > .container {
-        @include media-breakpoint-up(lg) {
-          flex-direction: column !important;
-          justify-content: center !important;
-          padding-bottom: 0px;
-        }
-      }
+    }
+  } 
+}
 
-      .offcanvas-start {
-        width: auto;
+/* header centered */
+body.theme-mainnav-variation-center {
+  nav#theme-page-navigation {
+    > .container {
+      @include media-breakpoint-up(lg) {
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding-bottom: 0px;
       }
-      
-      .nav-brand {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
+    }
+
+    .offcanvas-start {
+      width: auto;
+    }
+    
+    .nav-brand {
+      margin-right: 0;
+      margin-bottom: 10px;
     }
   }
 }

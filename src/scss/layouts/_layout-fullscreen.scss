@@ -1,18 +1,16 @@
 /*layout fullscreen*/
-@media all {
-  html {
-    body.theme-variation-fullscreen {
+html {
+  body.theme-variation-fullscreen {
+    
+    form {
+      main#theme-page-main {
+        background-color: var(--theme-page-main-bg);
+      }
       
-      form {
-        main#theme-page-main {
-          background-color: var(--theme-page-main-bg);
-        }
-        
-        #theme-page-header-pane {
-          max-width: 100%;
-          padding-left: 0;
-          padding-right: 0;
-        }
+      #theme-page-header-pane {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
   }

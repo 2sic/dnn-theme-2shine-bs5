@@ -36,7 +36,7 @@
 				<li @classString>
 					<a @linkClassString target='@(node.Target == "_blank" ? "_blank" : "_self")' href='@(node.Enabled ? node.Url : "javascript:void(0)")'>@node.Text</a>
 					@if (node.HasChildren()) { 
-						<span class="dropdown-toggle nav-item-sub-opener" @(node.HasChildren() ? "data-bs-toggle=dropdown data-bs-target=.dropdown-" + node.TabId : "") ></span>
+						<span class="dropdown-toggle nav-item-sub-opener" data-bs-auto-close="outside" @(node.HasChildren() ? "data-bs-toggle=dropdown data-bs-target=.dropdown-" + node.TabId : "") ></span>
 					}
 					
 					@RenderNodes(node.Children)

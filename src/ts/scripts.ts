@@ -38,33 +38,32 @@ if(document.querySelector('#theme-to-top')) {
 
 /* scrolling behavior (to top button / breadcrumb) */
 const navheader = document.querySelector('#theme-page-navigation') as HTMLElement;
-const navheight = navheader.offsetHeight;
-window.addEventListener('scroll', function (event) {
-	const bc = document.querySelector('.theme-page-breadcrumb');
-	if(bc != null) {
-		(bc as HTMLElement).style.top = `${navheader.offsetHeight - 1}px` ;
+const bc = document.querySelector('.theme-page-breadcrumb') as HTMLElement | null;
+const toTop = document.querySelector("#theme-to-top") as HTMLElement | null;
 
-		if (window.scrollY > navheight) {
-			bc.classList.add('bg-light' , 'shadow');
-		} else {
-			bc.classList.remove('bg-light' , 'shadow');
-		}
-	}
+window.addEventListener('scroll', () => {
+	const navHeight = navheader.offsetHeight;
 
-	const toTop = document.querySelector("#theme-to-top");
-	if(toTop != null) {
-		/* show / hide scroll to top button */
-		if (window.scrollY > 200) {
-			toTop.classList.add('theme-top-visible');
-		} else {
-			toTop.classList.remove('theme-top-visible');
-		}
-	}
 	
+	if (bc) {
+		bc.style.top = `${navHeight - 1}px`;
+		
+		// Breadcrumb-Position relativ zum Viewport
+		const bcPosition = Math.round(bc.getBoundingClientRect().top);
+		
+		// Klasse hinzufügen/entfernen, wenn Breadcrumb die obere Position erreicht
+		bc.classList.toggle('bg-light', bcPosition < navHeight);
+		bc.classList.toggle('shadow-sm', bcPosition < navHeight);
+	}
+
+	if (toTop) {
+		// Scroll-to-top Button ein-/ausblenden
+		toTop.classList.toggle('theme-top-visible', window.scrollY > 200);
+	}
 }, false);
 
+
 /* Breadcrumb */
-const bc = document.querySelector('.theme-page-breadcrumb');
 if(bc){
 	const bcALast = document.querySelector('.theme-page-breadcrumb span a:last-child');
 	if(bcALast) bcALast.classList.add('last');

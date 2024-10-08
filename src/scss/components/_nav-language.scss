@@ -28,6 +28,7 @@
 
     a {
       color: var(--bs-body-color);
+      text-decoration: none;
 
       @include media-breakpoint-down(lg) {
         color: rgba(var(--bs-white), 0.8);

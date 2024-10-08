@@ -10741,6 +10741,7 @@ a#theme-to-top.theme-top-visible {
 }
 #theme-page-language li a {
   color: var(--bs-body-color);
+  text-decoration: none;
 }
 @media (max-width: 991.98px) {
   #theme-page-language li a {

@@ -1,4 +1,15 @@
-/*DNN Overrides and default styles (do not change) */
+/*********************************************/
+/*  _dnn-overrides.scss					 		         */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  DO NOT CHANGE THIS FILE                  */
+/*                                           */
+/*  overrides default styles                 */
+/*********************************************/
+
 /* box-sizing Fixes for DNN components, 3dr party plugins, modules */
 #ControlBar_ControlPanel * {
 	box-sizing: content-box;

@@ -14,12 +14,12 @@ footer#to-shine-page-footer {
   }
   a,
   a:focus {
-    color: $white;
+    color: #fff;
     text-decoration: underline;
     text-underline-offset: 3px;
     &:hover,
     &:active {
-      color: rgba($white, 0.5);
+      color: rgba(#fff, 0.5);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
@@ -28,7 +28,7 @@ footer#to-shine-page-footer {
       color: transparent;
 
       &:hover {
-        color:$white;
+        color: #fff;
       }
     }
   }

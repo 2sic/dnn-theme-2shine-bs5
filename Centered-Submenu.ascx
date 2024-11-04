@@ -17,4 +17,6 @@
 <tosic:BodyCssClasses runat="server" Layout="Centered" Navigation="right"/>
 
 <%-- All Themes share the same main part - they only differ in the css classes etc. --%>
+
+<%-- The following line is no comment, its a file include --%>
 <!--#include file="controls/theme-body.ascx"-->

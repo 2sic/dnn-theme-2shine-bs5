@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="2shine BS5" type="Skin" version="5.3.4">
+  <packages><package name="2shine BS5" type="Skin" version="5.3.5">
   <friendlyName>2shineBS5</friendlyName>
   <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.</description>
   <iconFile>/Images/icon_skin.gif</iconFile>
@@ -229,16 +229,8 @@
           <name>_custom-variables.scss</name>
         </skinFile>
         <skinFile>
-          <path>src\scss</path>
-          <name>_variables.scss</name>
-        </skinFile>
-        <skinFile>
           <path>src\ts</path>
           <name>scripts.ts</name>
-        </skinFile>
-        <skinFile>
-          <path>src\ts</path>
-          <name>theme.ts</name>
         </skinFile>
         <skinFile>
           <path>theme</path>

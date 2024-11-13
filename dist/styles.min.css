@@ -2,6 +2,17 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/scss/styles.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
+/*********************************************/
+/*  _custom-variables.scss                   */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Here you can override Bootstrap          */
+/*  specific variables so they fit           */
+/*  your needs. (will override theme.css)    */
+/*********************************************/
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -10353,7 +10364,17 @@ html body form#Form div[id^=module-] {
   scroll-margin-top: 150px;
 }
 
-/*DNN Overrides and default styles (do not change) */
+/*********************************************/
+/*  _dnn-overrides.scss					 		         */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  DO NOT CHANGE THIS FILE                  */
+/*                                           */
+/*  overrides default styles                 */
+/*********************************************/
 /* box-sizing Fixes for DNN components, 3dr party plugins, modules */
 #ControlBar_ControlPanel * {
   box-sizing: content-box;
@@ -10981,11 +11002,11 @@ body.theme-mainnav-variation-center nav#theme-page-navigation .nav-brand {
 /* 
   If you need page specific customizations - like home uses a different space, put that here
 
-  // for all pages where root page has root-123 as body class and also pages under that
-  .root-123 {}
+  // for all pages where root page has page-parent-123 as body class and also pages under that
+  .page-parent-123 {}
 
-  // for a specific page where the body class is tab-123
-  .tab-123 {}
+  // for a specific page where the body class is page-123
+  .page-123 {}
 
 */
 

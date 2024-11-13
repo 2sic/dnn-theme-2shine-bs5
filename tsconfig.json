@@ -1,10 +1,13 @@
 {
     "compilerOptions": {
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "lib": ["es6", "dom"],
-        "target": "es5",
-        "allowJs": true
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "lib": ["es6", "dom"],
+      "target": "es6",
+      "allowJs": true,
+      "strict": true,
+      "moduleResolution": "node",
+      "outDir": "./dist"
     }
-}
+  }

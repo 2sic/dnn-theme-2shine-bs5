@@ -10797,42 +10797,12 @@ a#theme-to-top.theme-top-visible {
     top: 58px;
   }
 }
-.theme-page-breadcrumb .theme-page-breadcrumb-link {
-  color: var(--bs-secondary) !important;
-  white-space: pre-wrap;
-  font-size: 14px;
-  padding: 0 5px;
-}
-.theme-page-breadcrumb .theme-page-breadcrumb-link:hover {
-  color: var(--bs-primary) !important;
-}
-.theme-page-breadcrumb .theme-page-breadcrumb-link.theme-page-breadcrumb-home {
-  display: inline;
-}
 @media (min-width: 768px) {
-  .theme-page-breadcrumb .theme-page-breadcrumb-link.theme-page-breadcrumb-home {
-    display: inline;
+  .theme-page-breadcrumb .breadcrumb-item-trigger {
+    display: none !important;
   }
-}
-.theme-page-breadcrumb .last .theme-page-breadcrumb-link {
-  color: var(--bs-primary) !important;
-  display: inline-block;
-}
-.theme-page-breadcrumb.theme-page-breadcrumb-shortened .theme-page-breadcrumb-link.theme-page-breadcrumb-home {
-  display: none;
-}
-@media (min-width: 768px) {
-  .theme-page-breadcrumb.theme-page-breadcrumb-shortened .theme-page-breadcrumb-link.theme-page-breadcrumb-home {
-    display: inline;
-  }
-}
-.theme-page-breadcrumb .theme-page-breadcrumb-trigger {
-  cursor: pointer;
-  display: inline;
-}
-@media (min-width: 768px) {
-  .theme-page-breadcrumb .theme-page-breadcrumb-trigger {
-    display: none;
+  .theme-page-breadcrumb .breadcrumb-item-home {
+    display: block !important;
   }
 }
 

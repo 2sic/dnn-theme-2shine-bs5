@@ -24,8 +24,9 @@ setTimeout(function () {
 }, 500);
 
 /* Go to top button */
-if(document.querySelector('#theme-to-top')) {
-	document.querySelector('#theme-to-top').addEventListener('click', (e) => {
+const themeTop = document.querySelector('#theme-to-top');
+if(themeTop) {
+	themeTop.addEventListener('click', (e) => {
 		e.preventDefault();
 	
 		window.scrollTo({
@@ -44,7 +45,6 @@ const toTop = document.querySelector("#theme-to-top") as HTMLElement | null;
 window.addEventListener('scroll', () => {
 	const navHeight = navheader.offsetHeight;
 
-	
 	if (bc) {
 		bc.style.top = `${navHeight - 1}px`;
 		
@@ -62,27 +62,18 @@ window.addEventListener('scroll', () => {
 	}
 }, false);
 
-
 /* Breadcrumb */
 if(bc){
-	const bcALast = document.querySelector('.theme-page-breadcrumb span a:last-child');
-	if(bcALast) bcALast.classList.add('last');
-
-	const bcSpanLast = document.querySelector('.theme-page-breadcrumb span:last-child')
-	if(bcSpanLast) bcSpanLast.classList.add('last');
-
-	const bcSpanLinkChild = document.querySelector('.theme-page-breadcrumb span .theme-page-breadcrumb-link:nth-last-child(3)');
-	if(bcSpanLinkChild) bcSpanLinkChild.classList.add('second-last');
-
-	bc.classList.toggle('theme-page-breadcrumb-shortened', 
-		(document.querySelector('.theme-page-breadcrumb-link') != null || document.querySelectorAll('.theme-page-breadcrumb-link').length > 2)
-	)
-	
-	const bcTrigger = document.querySelector('.theme-page-breadcrumb-trigger');
+	const bcTrigger = document.querySelector('.breadcrumb-item-trigger') as HTMLElement | null;
+	const bcHome = document.querySelector('.breadcrumb-item-home') as HTMLElement;
 	if(bcTrigger) {
 		bcTrigger.addEventListener('click', () => {
-			bc.classList.toggle('theme-page-breadcrumb-shortened')
+			bcHome.style.display = bcHome.style.display === 'none' ? 'inline-block' : 'none';
 		})
+
+		bcTrigger.style.display = document.querySelectorAll('.breadcrumb-item').length > 2 ? 'inline-block' : 'none';
+		bcHome.style.display = document.querySelectorAll('.breadcrumb-item').length > 2 ? 'none' : 'inline-block';
+
 	}
 }
 

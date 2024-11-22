@@ -84,13 +84,15 @@
   <%
   if(ShowBreadcrumb){
   %>
-    <div class="theme-page-breadcrumb" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <ToSic:BreadcrumbNavigation runat="server" />
+
+    <%-- <div class="theme-page-breadcrumb" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
       <div class="container py-1">
         <a class="theme-page-breadcrumb-link theme-page-breadcrumb-home" aria-current="page" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"><%= LocalizeString("Home.Text") %></a>
         <span>&nbsp;&rsaquo;&nbsp;</span><span class="theme-page-breadcrumb-trigger display-inline display-md-none"><a aria-current="page">...</a></span>
         <dnn:BREADCRUMB runat="server" aria-current="page" Separator="<span>&nbsp;&rsaquo;&nbsp;</span>" CssClass="theme-page-breadcrumb-link" RootLevel="0" />
       </div>		
-    </div>
+    </div> --%>
   <%
   }
   %>

@@ -3,7 +3,7 @@
 <%@ Register TagPrefix="dnn" TagName="MENU" src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
 <%@ Register TagPrefix="ToSic" TagName="LanguageNavigation" src="LanguageNavigation.ascx" %>
-<%@ Register TagPrefix="dnn" TagName="BREADCRUMB" Src="~/Admin/Skins/BreadCrumb.ascx" %>
+<%@ Register TagPrefix="ToSic" TagName="BreadcrumbNavigation" Src="Breadcrumb.ascx" %>
 
 <%-- Change the page title to contain the breadcrumbi in an SEO optimized way --%>
 <%@ Register TagPrefix="tosic" TagName="PageTitle" src="optimize-page-title.ascx" %>

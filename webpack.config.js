@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = () => {
   let lastMessage = '';
@@ -35,6 +36,12 @@ module.exports = () => {
           lastMessage = message;
         }
       }),
+      new ForkTsCheckerWebpackPlugin({
+        async: false, // Blocks the build on type errors
+        typescript: {
+          configFile: path.resolve(__dirname, 'tsconfig.json'),
+        },
+      }),      
     ],
     optimization: {
       splitChunks: {
@@ -47,9 +54,22 @@ module.exports = () => {
           test: /\.tsx?$/,
           use: [
             {
-              loader: 'ts-loader',
+              loader: 'babel-loader', // Babel for transformations
               options: {
-                transpileOnly: true,
+                presets: [
+                  '@babel/preset-env',
+                  '@babel/preset-typescript',
+                ],
+                plugins: [
+                  '@babel/plugin-transform-class-properties',
+                  '@babel/plugin-transform-object-rest-spread',
+                ],
+              }
+            },
+            {
+              loader: 'ts-loader', // Type-checking
+              options: {
+                transpileOnly: true, // Skip type-checking; separate type-checker recommended
               },
             },
           ],
@@ -72,7 +92,10 @@ module.exports = () => {
                 postcssOptions: {
                   plugins: function () {
                     return [
-                      require('autoprefixer')
+                      require('autoprefixer'),
+                      require('cssnano')({
+                        preset: 'default',
+                      }),
                     ];
                   }
                 }

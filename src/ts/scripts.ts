@@ -1,6 +1,6 @@
 /* Open all PDF links in a new window */
 document.querySelectorAll('a').forEach((linkElem: Element, index) => {
-	if(linkElem.hasAttribute('href') && linkElem.getAttribute('href').endsWith('.pdf')) {
+	if(linkElem.hasAttribute('href') && linkElem.getAttribute('href')?.endsWith('.pdf')) {
 		linkElem.setAttribute('target', '_blank');
 	}
 });
@@ -9,17 +9,17 @@ document.querySelectorAll('a').forEach((linkElem: Element, index) => {
 setTimeout(function () {
 	let mailElement = document.querySelectorAll('[data-madr1]:not(.madr-done)');
 
-	mailElement.forEach((mail: HTMLElement, index) => {
+	mailElement.forEach((mail: Element, index) => {
 		const maddr = mail.getAttribute('data-madr1') + '@' + mail.getAttribute('data-madr2') + '.' + mail.getAttribute('data-madr3');
 		const linktext = mail.getAttribute('data-linktext') ? mail.getAttribute('data-linktext') : maddr;
 
 		const a = document.createElement('a')
 		a.setAttribute('href', `mailto:${maddr}`)
-		a.innerHTML = linktext;
+		a.innerHTML = linktext || '';
 
 		if (mail.parentElement) mail.parentElement.appendChild(a);
 		mail.classList.add('madr-done');
-		mail.style.display = 'none';
+		(mail as HTMLElement).style.display = 'none';
 	});
 }, 500);
 
@@ -48,16 +48,16 @@ window.addEventListener('scroll', () => {
 	if (bc) {
 		bc.style.top = `${navHeight - 1}px`;
 		
-		// Breadcrumb-Position relativ zum Viewport
+		// Breadcrumb-Positon relativ to Viewport
 		const bcPosition = Math.round(bc.getBoundingClientRect().top);
 		
-		// Klasse hinzufügen/entfernen, wenn Breadcrumb die obere Position erreicht
+		// Toggle class if breadcrumb reaches top
 		bc.classList.toggle('bg-light', bcPosition < navHeight);
 		bc.classList.toggle('shadow-sm', bcPosition < navHeight);
 	}
 
 	if (toTop) {
-		// Scroll-to-top Button ein-/ausblenden
+		// show/hide scroll-to-top button
 		toTop.classList.toggle('theme-top-visible', window.scrollY > 200);
 	}
 }, false);

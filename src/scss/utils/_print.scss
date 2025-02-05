@@ -1,3 +1,14 @@
+/*********************************************/
+/*  _print.scss                              */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  styles for print media.                  */
+/*********************************************/
+
 @media print {
 	a[href]:after {
 		content: "" !important;

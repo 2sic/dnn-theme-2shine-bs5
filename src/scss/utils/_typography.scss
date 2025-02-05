@@ -1,5 +1,17 @@
+/*********************************************/
+/*  _typography.scss                         */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  typography styles. (overrides theme.css) */
+/*********************************************/
+
 // Import fonts from google
 // @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700);
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
 	br {
@@ -13,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 	}
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--bs-body-font-family-headlines);
 }
 
 body {

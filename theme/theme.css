@@ -19,15 +19,15 @@
 :root,
 [data-bs-theme="default-theme"] {
   /* BS Main Colors */
-  --bs-primary: #0060AC;
-  --bs-secondary: #001D38;
+  --bs-primary: #E23835;
+  --bs-secondary: #386BB7;
 
   /* Background Color for the backmost level */
   --theme-backdrop-bg: #E5E5E5;
 
   /* Default Background-Color and Color */
-  --bs-body-bg: #fff;
-  --bs-body-color: #222222;
+  --bs-body-bg: #F0F2F4;
+  --bs-body-color: #161615;
   
   /* Theme Classes */
   --theme-page-main-bg: var(--bs-body-bg);
@@ -41,8 +41,9 @@
   --bs-link-hover-color: var(--bs-body-color);
 
   /* Font Setting */
-  --bs-font-sans-serif: "DM Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Manrope", "DM Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family-headlines: "Funnel Display", serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;

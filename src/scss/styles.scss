@@ -1,4 +1,17 @@
-// Check out Sass Customization: https://getbootstrap.com/docs/5.3/customize/sass/
+/*********************************************/
+/*  styles.scss                              */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file imports and customizes         */
+/*  Bootstrap styles and includes            */
+/*  additional custom styles for the         */
+/*  2ShineBS5 skin.                          */
+/*********************************************/
+
+/* Check out Sass Customization: https://getbootstrap.com/docs/5.3/customize/sass/ */
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../node_modules/bootstrap/scss/_functions.scss";

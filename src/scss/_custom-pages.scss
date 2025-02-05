@@ -1,10 +1,20 @@
-/* 
-  If you need page specific customizations - like home uses a different space, put that here
+/*********************************************/
+/*  _custom-pages.scss                       */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Here you can add page specific           */
+/*  customizations so they fit               */
+/*  your needs.                              */
+/*********************************************/
 
-  // for all pages where root page has page-parent-123 as body class and also pages under that
-  .page-parent-123 {}
-  
-  // for a specific page where the body class is page-123
-  .page-123 {}
 
-*/
+/* If you need page specific customizations - like home uses a different space, put that here */
+
+/* for all pages where root page has page-parent-123 as body class and also pages under that */
+// .page-parent-123 {}
+
+/* for a specific page where the body class is page-123 */
+// .page-123 {}

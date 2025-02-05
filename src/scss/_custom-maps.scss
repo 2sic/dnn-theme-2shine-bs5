@@ -1,15 +1,27 @@
-// Add custom colors depending on your style
+/*********************************************/
+/*  _custom-maps.scss                        */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Here you can add map specific            */
+/*  customizations so they fit               */
+/*  your needs.                              */
+/*********************************************/
+
+/* Add custom colors depending on your style */
 // $custom-colors: (
 //   "name": value
 // );
 
-// // Merge the maps
+/* Merge the maps */
 // $theme-colors: map-merge(
 //   $theme-colors,
 //   $custom-colors
 // );
 
-// Optimized and extended spacing for the use of paddings and margins like: px-5 or mb-2
+/* Optimized and extended spacing for the use of paddings and margins like: px-5 or mb-2 */
 // $spacer: 1rem !default;
 // $spacers: () !default;
 // $spacers: map-merge((

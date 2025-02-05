@@ -73,7 +73,9 @@
 
 // 8. Add additional custom code here
 // Fonts / typography
-@import "components/typography";      
+@import "utils/typography";
+// Print styles
+@import "utils/print";
 
 // Layout styles, body, html, fluid, etc.
 @import "components/base-layout"; 
@@ -99,5 +101,3 @@
 // Page Customizations
 // This contains special overrides for specific pages
 @import "custom-pages";
-
-

@@ -13,8 +13,10 @@
 /* A list of all accessable variables can be found here */
 /* https://getbootstrap.com/docs/5.3/customize/css-variables/#root-variables */
 
-/* If the variables above don't fullfill your needs, use the docs WIP TODO*/
+/* If the variables above don't fullfill your needs, use the docs */
 /* https://getbootstrap.com/docs/5.3/customize/css-variables/#component-variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&display=swap');
 
 :root,
 [data-bs-theme="default-theme"] {
@@ -41,9 +43,9 @@
   --bs-link-hover-color: var(--bs-body-color);
 
   /* Font Setting */
-  --bs-font-sans-serif: "Manrope", "DM Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-family-headlines: "Funnel Display", serif;
+  --theme-font: "Manrope", Arial;
+  --theme-font-headlines: "Funnel Display", serif;
+  --bs-body-font-family: var(--theme-font);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;

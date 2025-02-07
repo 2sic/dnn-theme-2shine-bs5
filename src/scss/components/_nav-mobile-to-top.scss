@@ -1,3 +1,16 @@
+/*********************************************/
+/*  _nav-mobile-to-top.scss                  */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Contains styling for the mobile "Back to */
+/*  Top" button, including its fixed         */
+/*  positioning, opacity transitions, and    */
+/*  visibility handling based on scroll.     */
+/*********************************************/
+
 a#theme-to-top {
 	position: fixed;
 	bottom: 20px;

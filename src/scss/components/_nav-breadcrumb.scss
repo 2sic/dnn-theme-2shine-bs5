@@ -1,4 +1,16 @@
-/* ---------- Breadcrumbs ---------- */
+/*********************************************/
+/*  _nav-breadcrumb.scss                     */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Styles for the breadcrumb navigation,    */
+/*  including sticky positioning, visibility */
+/*  based on page type, and responsive       */
+/*  adjustments.                             */
+/*********************************************/
+
 .page-is-home .theme-page-breadcrumb {
   display: none;
 }

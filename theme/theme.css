@@ -16,7 +16,7 @@
 /* If the variables above don't fullfill your needs, use the docs */
 /* https://getbootstrap.com/docs/5.3/customize/css-variables/#component-variables */
 
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root,
 [data-bs-theme="default-theme"] {
@@ -28,7 +28,7 @@
   --theme-backdrop-bg: #E5E5E5;
 
   /* Default Background-Color and Color */
-  --bs-body-bg: #F0F2F4;
+  --bs-body-bg: #fff;
   --bs-body-color: #161615;
   
   /* Theme Classes */
@@ -44,11 +44,12 @@
 
   /* Font Setting */
   --theme-font: "Manrope", Arial;
-  --theme-font-headlines: "Funnel Display", serif;
+  --theme-font-headlines: var(--theme-font);
   --bs-body-font-family: var(--theme-font);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
+  --bs-body-h1-font-size: 2.5rem;
  
   /* Border Radius  */
   --bs-border-radius: 0.375rem;

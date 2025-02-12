@@ -72,7 +72,11 @@
       }
     }
 
-    .nav-link {
+    .nav-link.disabled {
+      font-weight: bold;
+    }
+
+    .nav-link:not(.disabled) {
       font-weight: bold;
       color: var(--bs-nav-link-color);
 

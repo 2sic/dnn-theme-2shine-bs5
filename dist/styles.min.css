@@ -3,6 +3,19 @@
   \*********************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /*********************************************/
+/*  styles.scss                              */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file imports and customizes         */
+/*  Bootstrap styles and includes            */
+/*  additional custom styles for the         */
+/*  2ShineBS5 skin.                          */
+/*********************************************/
+/* Check out Sass Customization: https://getbootstrap.com/docs/5.3/customize/sass/ */
+/*********************************************/
 /*  _custom-variables.scss                   */
 /*-------------------------------------------*/
 /*           This file is part of:           */
@@ -13,6 +26,22 @@
 /*  specific variables so they fit           */
 /*  your needs. (will override theme.css)    */
 /*********************************************/
+/* These CSS variables are available everywhere, regardless of color mode. */
+/* https://getbootstrap.com/docs/5.3/customize/css-variables/#root-variables */
+/*********************************************/
+/*  _custom-maps.scss                        */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Here you can add map specific            */
+/*  customizations so they fit               */
+/*  your needs.                              */
+/*********************************************/
+/* Add custom colors depending on your style */
+/* Merge the maps */
+/* Optimized and extended spacing for the use of paddings and margins like: px-5 or mb-2 */
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -10280,6 +10309,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*********************************************/
+/*  _typography.scss                         */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  typography styles. (overrides theme.css) */
+/*********************************************/
 @media (max-width: 767.98px) {
   h1 br, .h1 br, h2 br, .h2 br, h3 br, .h3 br, h4 br, .h4 br, h5 br, .h5 br, h6 br, .h6 br {
     content: "";
@@ -10305,6 +10344,36 @@ a:not(.btn):hover {
   color: var(--bs-link-hover-color);
 }
 
+/*********************************************/
+/*  _print.scss                              */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  styles for print media.                  */
+/*********************************************/
+@media print {
+  a[href]:after {
+    content: "" !important;
+  }
+  .to-shine-nav-mobile-trigger {
+    display: block;
+  }
+}
+/*********************************************/
+/*  _base-layout.scss                        */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Contains the base layout styles,         */
+/*  including the overall structure of       */
+/*  the page elements like body, footer,     */
+/*  and form adjustments.                    */
+/*********************************************/
 html {
   min-height: 100vh;
 }
@@ -10512,6 +10581,18 @@ html body form#Form .dnnLogin #dnn_ctr_Login_pnlLogin {
   }
 }
 
+/*********************************************/
+/*  _nav.scss                                */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Customizes the navigation bar,           */
+/*  including link styling, dropdown         */
+/*  behavior, logo size, and responsive      */
+/*  adjustments.                             */
+/*********************************************/
 .theme-mainnav-variation-left #theme-page-navigation .offcanvas-body .align-items-end {
   align-items: flex-start !important;
 }
@@ -10552,42 +10633,45 @@ html body form#Form .dnnLogin #dnn_ctr_Login_pnlLogin {
     border-bottom: 1px solid #e5e5e5;
   }
 }
-#theme-page-navigation .navbar-nav .nav-link {
+#theme-page-navigation .navbar-nav .nav-link.disabled {
+  font-weight: bold;
+}
+#theme-page-navigation .navbar-nav .nav-link:not(.disabled) {
   font-weight: bold;
   color: var(--bs-nav-link-color);
 }
 @media (min-width: 992px) {
-  #theme-page-navigation .navbar-nav .nav-link {
+  #theme-page-navigation .navbar-nav .nav-link:not(.disabled) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     font-size: 16px;
   }
 }
-#theme-page-navigation .navbar-nav .nav-link:hover {
+#theme-page-navigation .navbar-nav .nav-link:not(.disabled):hover {
   color: white;
 }
 @media (min-width: 992px) {
-  #theme-page-navigation .navbar-nav .nav-link:hover {
+  #theme-page-navigation .navbar-nav .nav-link:not(.disabled):hover {
     color: var(--bs-nav-link-hover-color);
   }
 }
-#theme-page-navigation .navbar-nav .nav-link.active {
+#theme-page-navigation .navbar-nav .nav-link:not(.disabled).active {
   color: var(--bs-white);
 }
 @media (min-width: 992px) {
-  #theme-page-navigation .navbar-nav .nav-link.active {
+  #theme-page-navigation .navbar-nav .nav-link:not(.disabled).active {
     color: var(--bs-nav-link-hover-color);
   }
 }
 @media (max-width: 991.98px) {
-  #theme-page-navigation .navbar-nav .nav-link {
+  #theme-page-navigation .navbar-nav .nav-link:not(.disabled) {
     color: color-mix(in srgb, var(--bs-white), transparent 70%);
   }
-  #theme-page-navigation .navbar-nav .nav-link.active {
+  #theme-page-navigation .navbar-nav .nav-link:not(.disabled).active {
     color: var(--bs-white);
   }
 }
-#theme-page-navigation .navbar-nav .nav-link.dropdown-toggle:after {
+#theme-page-navigation .navbar-nav .nav-link:not(.disabled).dropdown-toggle:after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -10719,6 +10803,18 @@ html body form#Form .dnnLogin #dnn_ctr_Login_pnlLogin {
     color: var(--bs-body-color) !important;
   }
 }
+/*********************************************/
+/*  _nav-mobile-to-top.scss                  */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Contains styling for the mobile "Back to */
+/*  Top" button, including its fixed         */
+/*  positioning, opacity transitions, and    */
+/*  visibility handling based on scroll.     */
+/*********************************************/
 a#theme-to-top {
   position: fixed;
   bottom: 20px;
@@ -10737,6 +10833,17 @@ a#theme-to-top.theme-top-visible {
   pointer-events: auto;
 }
 
+/*********************************************/
+/*  _nav-language.scss                       */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Styles for the language switcher         */
+/*  navigation, including padding, font size,*/
+/*  active states, and hover effects.        */
+/*********************************************/
 .theme-mainnav-variation-left #theme-page-language li:first-child {
   padding-left: 0;
 }
@@ -10781,7 +10888,18 @@ a#theme-to-top.theme-top-visible {
   }
 }
 
-/* ---------- Breadcrumbs ---------- */
+/*********************************************/
+/*  _nav-breadcrumb.scss                     */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Styles for the breadcrumb navigation,    */
+/*  including sticky positioning, visibility */
+/*  based on page type, and responsive       */
+/*  adjustments.                             */
+/*********************************************/
 .page-is-home .theme-page-breadcrumb {
   display: none;
 }
@@ -10806,6 +10924,16 @@ a#theme-to-top.theme-top-visible {
   }
 }
 
+/*********************************************/
+/*  _layout-default.scss                     */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines the default layout     */
+/*  styles.                                  */
+/*********************************************/
 body.theme-variation-default #theme-page-header-pane {
   margin-top: 0px;
 }
@@ -10836,6 +10964,16 @@ body.theme-variation-default footer#theme-page-footer {
   }
 }
 
+/*********************************************/
+/*  _layout-centered.scss                    */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  styles for centered layout.              */
+/*********************************************/
 /*layout centered*/
 body.theme-variation-centered header {
   background: transparent;
@@ -10871,6 +11009,17 @@ body.theme-variation-centered footer#theme-page-footer {
   background-color: var(--theme-footer-bg);
 }
 
+/*********************************************/
+/*  _layout-floatwideheader.scss             */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  the layout for the wide header with      */
+/*  floating elements layout.                */
+/*********************************************/
 /*layout floatwideheader*/
 @media (min-width: 1200px) {
   body.theme-variation-floatwideheader.page-2650 main#theme-page-main {
@@ -10921,6 +11070,16 @@ body.theme-variation-floatwideheader footer#theme-page-footer {
   }
 }
 
+/*********************************************/
+/*  _layout-fullscreen.scss                  */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file defines and customizes         */
+/*  styles for fullscreen.                   */
+/*********************************************/
 /*layout fullscreen*/
 html body.theme-variation-fullscreen form main#theme-page-main {
   background-color: var(--theme-page-main-bg);
@@ -10931,6 +11090,16 @@ html body.theme-variation-fullscreen form #theme-page-header-pane {
   padding-right: 0;
 }
 
+/*********************************************/
+/*  _layout-landingpage.scss                 */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file contains layout styles         */
+/*  specifically for the landing page.       */
+/*********************************************/
 /*layout full*/
 body.theme-variation-landingpage {
   background: var(--theme-page-main-bg);
@@ -10946,6 +11115,16 @@ body.theme-variation-landingpage .theme-background-container {
   overflow: hidden;
 }
 
+/*********************************************/
+/*  _layout-header.scss                      */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  This file contains styles for the        */
+/*  header layout.                           */
+/*********************************************/
 /* Logo left */ /* Logo right */
 @media (min-width: 992px) {
   body.theme-mainnav-variation-left nav#theme-page-navigation .container {
@@ -10969,15 +11148,19 @@ body.theme-mainnav-variation-center nav#theme-page-navigation .nav-brand {
   margin-bottom: 10px;
 }
 
-/* 
-  If you need page specific customizations - like home uses a different space, put that here
-
-  // for all pages where root page has page-parent-123 as body class and also pages under that
-  .page-parent-123 {}
-
-  // for a specific page where the body class is page-123
-  .page-123 {}
-
-*/
+/*********************************************/
+/*  _custom-pages.scss                       */
+/*-------------------------------------------*/
+/*           This file is part of:           */
+/*                 2ShineBS5                 */
+/*            https://2shine.org/            */
+/*-------------------------------------------*/
+/*  Here you can add page specific           */
+/*  customizations so they fit               */
+/*  your needs.                              */
+/*********************************************/
+/* If you need page specific customizations - like home uses a different space, put that here */
+/* for all pages where root page has page-parent-123 as body class and also pages under that */
+/* for a specific page where the body class is page-123 */
 
 /*# sourceMappingURL=styles.min.css.map*/

@@ -65,15 +65,41 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 ## History
 
-### v5.00.02
+### v05.03.06
 
-1. removed node-sass, added sass
-2. removed unnecessary packages
-3. fixed :visited link style in navigation
-4. Renamed body classes 
-   1. tab -> page
-   2. portal -> site
-   3. tab-level -> nav-level
+1. Rebranded 2Shine with new colors and logo  
+1. Introduced a new comment convention for better accessibility  
+1. Made minor changes to the overall code structure  
+1. Refactored the Components folder and moved files to the new Utils folder
+
+### v05.03.05
+
+1. improved CSS Variables
+1. bugfixes
+1. added bootstrap components
+1. clean up
+
+### v05.03.04
+
+1. Improvement of CSS variables
+1. Refactoring
+
+### v05.03.03
+
+1. Uses CSS Variables to customize your style
+1. Updated NPM Packages
+
+### v05.00.05
+
+1. Bootstrap made a big update with many bug fixes and many new features
+
+### v05.00.04
+
+1. Added NPM Script to copy node_modules bootstrap and update bootstrap files in lib folder
+1. Refactoring
+1. w3c
+1. folder renaming
+1. bugfixes
 
 ### v05.00.03
 
@@ -83,9 +109,15 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 1. Added boolean to determin if Breadcrumbs should be displayed 
 1. Added boolean to determin how many nodes should be selected for the desktop navigation (disables Dropdown if "*,0,0" is set)
 
-### v05.00.04
+### v5.00.02
 
-1. Added NPM Script to copy node_modules bootstrap and update bootstrap files in lib folder 
+1. removed node-sass, added sass
+2. removed unnecessary packages
+3. fixed :visited link style in navigation
+4. Renamed body classes 
+   1. tab -> page
+   2. portal -> site
+   3. tab-level -> nav-level
 
 ## Love from Switzerland
 

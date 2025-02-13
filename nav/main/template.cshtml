@@ -13,6 +13,7 @@
 
 				if (node.First) { cssClasses.Add("first"); }
 				if (node.Last) { cssClasses.Add("last"); }
+				if (!node.Enabled) { cssClasses.Add("disabled"); }
 				if (node.HasChildren()) { cssClasses.Add("has-child dropdown"); }
 				if (node.Breadcrumb) {
 					cssClasses.Add("active");
@@ -28,7 +29,6 @@
 				} else {
 					linkCssClasses.Add("nav-link");
 				}
-				if (!node.Enabled) { linkCssClasses.Add("disabled"); }
 				if (node.Breadcrumb) { linkCssClasses.Add("active"); }
 				if (node.HasChildren()) { linkCssClasses.Add("dropdown-toggle"); }
 

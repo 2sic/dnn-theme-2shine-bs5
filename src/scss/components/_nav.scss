@@ -71,12 +71,8 @@
        border-bottom: 1px solid #e5e5e5;
       }
     }
-
-    .nav-link.disabled {
-      font-weight: bold;
-    }
-
-    .nav-link:not(.disabled) {
+    
+    .nav-link {
       font-weight: bold;
       color: var(--bs-nav-link-color);
 

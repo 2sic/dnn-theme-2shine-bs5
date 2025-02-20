@@ -4,30 +4,22 @@
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
   "scripts": {
-    "build-prod": "webpack",
+    "build-prod": "vite build --sourcemap --watch",
+    "dev": "vite dev",
     "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
   },
   "author": "2sic internet solutions",
   "license": "MIT",
   "repository": "https://github.com/2sic/dnn-theme-2shine-bs5",
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/plugin-transform-class-properties": "^7.25.9",
-    "@babel/plugin-transform-object-rest-spread": "^7.25.9",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-typescript": "^7.26.0",
+    "@types/node": "^22.13.2",
     "autoprefixer": "^10.4.20",
-    "babel-loader": "^9.2.1",
-    "css-loader": "^7.1.2",
-    "fork-ts-checker-webpack-plugin": "^9.0.2",
-    "mini-css-extract-plugin": "^2.9.2",
-    "postcss-loader": "^8.1.1",
-    "sass": "^1.80.7",
-    "sass-loader": "^16.0.3",
-    "ts-loader": "^9.5.1",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.1",
     "typescript": "^5.6.3",
-    "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4"
+    "vite": "^6.1.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"

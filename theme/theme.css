@@ -16,8 +16,6 @@
 /* If the variables above don't fullfill your needs, use the docs */
 /* https://getbootstrap.com/docs/5.3/customize/css-variables/#component-variables */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
 :root,
 [data-bs-theme="default-theme"] {
   /* BS Main Colors */

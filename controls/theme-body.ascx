@@ -162,6 +162,8 @@
 <!-- include files -->
 
 
+<dnn:DnnCssInclude runat="server" FilePath="dist/fonts.css" Priority="97" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
+
 <dnn:DnnCssInclude runat="server" FilePath="dist/dnn-default.min.css" Priority="99" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
 <dnn:DnnCssInclude runat="server" FilePath="theme/theme.css" Priority="98" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
 

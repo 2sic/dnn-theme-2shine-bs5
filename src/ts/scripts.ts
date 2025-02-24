@@ -1,4 +1,4 @@
-// import '../scss/styles.scss';
+import '../scss/styles.scss';
 
 /* Open all PDF links in a new window */
 document.querySelectorAll('a').forEach((linkElem: Element, index) => {

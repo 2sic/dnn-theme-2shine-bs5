@@ -1,48 +1,41 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
-import postcss from 'rollup-plugin-postcss'; // Importiere das PostCSS-Plugin
+import scss from 'rollup-plugin-scss';
 
 export default defineConfig({
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
   build: {
     outDir: 'dist',
-    sourcemap: true, // Aktiviert Sourcemaps
+    sourcemap: true,
     emptyOutDir: false,
     rollupOptions: {
-      input: {
-        scripts: 'src/ts/scripts.ts',
-        styles: 'src/scss/styles.scss', // SCSS als separaten Input definieren
-      },
+      input: 'src/ts/scripts.ts',
       output: {
         entryFileNames: '[name].min.js',
-        assetFileNames: '[name].min.[ext]',
+        assetFileNames: '[name].[ext]',
+        sourcemap: true,
       },
-      plugins: [
-        postcss({
-          extract: 'styles.min.css',   // Extrahiert CSS in eine separate Datei
-          minimize: true,               // Minifiziert das CSS (optional)
-          sourceMap: true,              // Aktiviert Sourcemaps
-          plugins: [
-            autoprefixer(),             // Fügt Browser-Prefixes hinzu
-            cssnano({                  // Minifiziert CSS
-              preset: 'default',
-            }),
-          ],
-        }),
-      ],
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        quietDeps: true,  // Unterdrückt SCSS-Warnungen
+        additionalData: '',
+        quietDeps: true,
       },
     },
   },
+  plugins: [
+    scss({
+      name: "styles.min.css",
+      sourceMap: true,
+      outputStyle: 'compressed',
+      processor: () => require('postcss')([autoprefixer()]),
+    }),
+  ],
 });

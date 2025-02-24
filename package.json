@@ -4,7 +4,7 @@
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
   "scripts": {
-    "build-prod": "vite build --sourcemap --watch",
+    "build-prod": "vite build --watch",
     "dev": "vite dev",
     "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
   },
@@ -14,7 +14,6 @@
   "devDependencies": {
     "@types/node": "^22.13.2",
     "autoprefixer": "^10.4.20",
-    "cssnano": "^7.0.6",
     "postcss": "^8.5.2",
     "rollup-plugin-scss": "^4.0.1",
     "sass": "^1.85.0",

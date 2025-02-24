@@ -11,14 +11,13 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: true,
     emptyOutDir: false,
+    sourcemap: true,
     rollupOptions: {
       input: 'src/ts/scripts.ts',
       output: {
         entryFileNames: '[name].min.js',
         assetFileNames: '[name].[ext]',
-        sourcemap: true,
       },
     },
   },
@@ -35,7 +34,9 @@ export default defineConfig({
       name: "styles.min.css",
       sourceMap: true,
       outputStyle: 'compressed',
-      processor: () => require('postcss')([autoprefixer()]),
+      processor: () => require('postcss')([
+        autoprefixer()
+      ]),
     }),
   ],
 });

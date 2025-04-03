@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
+    "target": "es6",
+    "module": "esnext",
     "strict": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]

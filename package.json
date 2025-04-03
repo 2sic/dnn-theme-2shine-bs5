@@ -4,20 +4,19 @@
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
   "scripts": {
-    "build-prod": "vite build --watch",
+    "build-prod": "rollup -c --watch",
     "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
   },
   "author": "2sic internet solutions",
   "license": "MIT",
   "repository": "https://github.com/2sic/dnn-theme-2shine-bs5",
   "devDependencies": {
-    "@types/node": "^22.13.2",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.2",
-    "rollup-plugin-scss": "^4.0.1",
-    "sass": "^1.85.0",
-    "typescript": "^5.6.3",
-    "vite": "^6.1.0"
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.37.0",
+    "rollup-plugin-styler": "^2.0.0",
+    "sass": "^1.86.2",
+    "typescript": "^5.8.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"

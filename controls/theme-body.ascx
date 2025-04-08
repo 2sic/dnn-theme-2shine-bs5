@@ -132,7 +132,7 @@
 
 <footer id="theme-page-footer" class="footer">
   <div class="container py-4 d-flex justify-content-md-between flex-column flex-md-row text-white">
-    <ul class="theme-footer-address d-flex" itemscope itemtype="http://schema.org/LocalBusiness">
+    <ul class="theme-footer-address d-flex flex-column flex-xl-row" itemscope itemtype="http://schema.org/LocalBusiness">
       <li>
         <strong itemprop="name">2shine DNN BS5 2sxc </strong>
       </li>

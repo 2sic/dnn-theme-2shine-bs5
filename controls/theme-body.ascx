@@ -13,7 +13,7 @@
 
 <nav id="theme-page-navigation" class="navbar navbar-expand-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalController.GetCurrentPortalSettings().HomeTabId) %>" title="2shine DNN BS5 2sxc (change this in the theme-body.ascx)">
+    <a class="navbar-brand" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>" title="2shine DNN BS5 2sxc (change this in the theme-body.ascx)">
       <img alt="Logo" class="logo img-fluid" src="<%=SkinPath%>images/logo.svg">
     </a>
     
@@ -23,7 +23,7 @@
 
     <div class="offcanvas offcanvas-start border-0" id="offcanvasNavbar" tabindex="-1" >
       <div class="offcanvas-header">
-        <a class="navbar-brand" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalController.GetCurrentPortalSettings().HomeTabId) %>" title="2shine DNN BS5 2sxc (change this in the theme-body.ascx)">
+        <a class="navbar-brand" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>" title="2shine DNN BS5 2sxc (change this in the theme-body.ascx)">
           <img alt="Logo" class="logo img-fluid" src="<%=SkinPath%>images/logo.svg">
         </a>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
@@ -81,34 +81,18 @@
 </div>
 
 <main id="theme-page-main">
-  <%
-  if(ShowBreadcrumb){
-  %>
+  <% if(ShowBreadcrumb) { %>
     <ToSic:BreadcrumbNavigation runat="server" />
-
-    <%-- <div class="theme-page-breadcrumb" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-      <div class="container py-1">
-        <a class="theme-page-breadcrumb-link theme-page-breadcrumb-home" aria-current="page" href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.HomeTabId) %>"><%= LocalizeString("Home.Text") %></a>
-        <span>&nbsp;&rsaquo;&nbsp;</span><span class="theme-page-breadcrumb-trigger display-inline display-md-none"><a aria-current="page">...</a></span>
-        <dnn:BREADCRUMB runat="server" aria-current="page" Separator="<span>&nbsp;&rsaquo;&nbsp;</span>" CssClass="theme-page-breadcrumb-link" RootLevel="0" />
-      </div>		
-    </div> --%>
-  <%
-  }
-  %>
-  <% 
-  if(ShowSidebarNavigation && HasChildrenInMenu(this.PortalSettings.ActiveTab)) {
-  %>
+  <% } %>
+  
+  <% if(ShowSidebarNavigation && HasChildrenInMenu(this.PortalSettings.ActiveTab)) { %>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-lg-9 order-lg-2 ly-col-contentpane">
-  <%
-  }
-  %>
+  <% } %>
         <div id="ContentPane" runat="server" containertype="G" containername="2shineBS5" containersrc="default.ascx"></div>
-  <% 
-  if(ShowSidebarNavigation && HasChildrenInMenu(this.PortalSettings.ActiveTab)) {
-  %>        
+  
+  <% if(ShowSidebarNavigation && HasChildrenInMenu(this.PortalSettings.ActiveTab)) { %>        
       </div>
       <div class="col-xs-12 col-lg-3 order-lg-1 ly-col-leftpane">
         <div id="theme-nav-sub" class="d-none d-sm-block">  
@@ -117,9 +101,8 @@
       </div>
     </div>
   </div>
-  <%
-  }
-  %>
+  <% } %>
+
   <a id="theme-to-top" href="#" title="Nach oben" rel="nofollow" class="d-flex align-items-center justify-content-center rounded-circle">
     <svg xmlns="http://www.w3.org/2000/svg" width="19.032" height="20.034" viewBox="0 0 19.032 20.034">
       <g id="Group_2" data-name="Group 2" transform="translate(-1055.984 -551.276)">
@@ -154,20 +137,17 @@
         <%-- 
           Terms and Privacy Links are set in "Site Settings" > "Site Behavior"
         --%>
-        <a href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalController.GetCurrentPortalSettings().TermsTabId) %>" title="<%= LocalizeString("Imprint.Text") %>"><%= LocalizeString("Imprint.Text") %></a> | 
-        <a href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalController.GetCurrentPortalSettings().PrivacyTabId) %>" title="<%= LocalizeString("Privacy.Text") %>"><%= LocalizeString("Privacy.Text") %></a>    </div>
+        <a href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.TermsTabId) %>" title="<%= LocalizeString("Imprint.Text") %>"><%= LocalizeString("Imprint.Text") %></a> | 
+        <a href="<%= DotNetNuke.Common.Globals.NavigateURL(PortalSettings.PrivacyTabId) %>" title="<%= LocalizeString("Privacy.Text") %>"><%= LocalizeString("Privacy.Text") %></a>    </div>
   </div>
 </footer>
 
 <!-- include files -->
-
-
 <dnn:DnnCssInclude runat="server" FilePath="dist/fonts.css" Priority="97" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
-
 <dnn:DnnCssInclude runat="server" FilePath="dist/dnn-default.min.css" Priority="99" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
 <dnn:DnnCssInclude runat="server" FilePath="theme/theme.css" Priority="98" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
-
 <dnn:DnnCssInclude runat="server" FilePath="dist/styles.min.css" Priority="100" PathNameAlias="SkinPath" HtmlAttributesAsString="rel:'stylesheet preload', as:'style'" />
+
 <dnn:DnnJsInclude runat="server" FilePath="dist/lib/bootstrap.bundle.min.js" ForceProvider="DnnFormBottomProvider" Priority="100" PathNameAlias="SkinPath" HtmlAttributesAsString="defer, async" />
 <dnn:DnnJsInclude runat="server" FilePath="dist/scripts.min.js" ForceProvider="DnnFormBottomProvider" Priority="130" PathNameAlias="SkinPath" HtmlAttributesAsString="defer, async" />
 
@@ -198,7 +178,7 @@
 
   protected string LocalizeString(string key)
   {
-      return Localization.GetString(key, ResourceFilePath);
+    return Localization.GetString(key, ResourceFilePath);
   }
 
   protected string ResourceFilePath

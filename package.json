@@ -3,6 +3,7 @@
   "version": "05.00.01",
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
+  "type": "module",
   "scripts": {
     "build-prod": "rollup -c --watch",
     "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
@@ -13,12 +14,12 @@
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
-    "rollup": "^4.37.0",
+    "rollup": "^4.40.0",
     "rollup-plugin-styler": "^2.0.0",
-    "sass": "^1.86.2",
-    "typescript": "^5.8.2"
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.5"
   }
 }

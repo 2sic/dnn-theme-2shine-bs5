@@ -65,6 +65,14 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 ## History
 
+### v05.04.00
+
+1. Switched from webpack to rollup
+1. Updated for DNN 10 compatibility
+1. Updated NPM packages
+1. added BS accordion to styles
+1. fixed breadcrumb multilanguage issue
+
 ### v05.03.06
 
 1. Rebranded 2Shine with new colors and logo  

@@ -24,4 +24,7 @@
   <data name="ToTop.Text" xml:space="preserve">
     <value>Back to top</value>
   </data>
+  <data name="Home.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
 </root>

@@ -62,3 +62,21 @@
 		</nav>
 	</div>
 </div>
+
+<script runat="server">
+
+  protected string LocalizeString(string key)
+  {
+      return Localization.GetString(key, ResourceFilePath);
+  }
+
+  protected string ResourceFilePath
+  {
+    get
+    {
+      return _resPath ?? (_resPath = PortalSettings.Current.ActiveTab.SkinPath + "App_LocalResources/2shine.resx" );
+    }
+  }
+  private string _resPath;
+
+</script>

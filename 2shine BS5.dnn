@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="2shine BS5" type="Skin" version="5.3.7">
+  <packages><package name="2shine BS5" type="Skin" version="5.4.0">
   <friendlyName>2shineBS5</friendlyName>
   <description>A clean, prepared bootstrap 5 skin for DNN (DotNetNuke), ready to make awesomeness - ideally combined with bootstrap content-templates.</description>
   <iconFile>/Images/icon_skin.gif</iconFile>
@@ -9,8 +9,8 @@
     <url>https://www.2sic.com/</url>
     <email>info@2sic.com</email>
   </owner>
-  <license />
-  <releaseNotes />
+  <license>The license for this package is not currently included within the installation file, please check with the vendor for full license details.</license>
+  <releaseNotes>This package has no Release Notes</releaseNotes>
   <components>
     <component type="Skin">
       <skinFiles>
@@ -292,7 +292,7 @@
           <name>koi.json</name>
         </skinFile>
         <skinFile>
-          <name>Landingpage.ascx</name>
+          <name>landingpage.ascx</name>
         </skinFile>
         <skinFile>
           <name>Landingpage.jpg</name>

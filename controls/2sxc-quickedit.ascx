@@ -14,7 +14,7 @@
 
         try {
             // Loads the 2sxc QuickEdit control, if it's available
-            var path = "~/DesktopModules/ToSIC_SexyContent/DnnWebForms/Skins/QuickEdit.ascx";
+            var path = "~/DesktopModules/ToSic.Sxc/DnnWebForms/Skins/QuickEdit.ascx";
             if (System.IO.File.Exists(Server.MapPath(path))) {
                 var control = LoadControl(path);
                 QuickEditPlaceholder.Controls.Add(control);

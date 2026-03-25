@@ -65,6 +65,11 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 ## History
 
+### v05.04.01
+
+1. Updated NPM packages
+1. Switched from rollup to vite
+
 ### v05.04.00
 
 1. Switched from webpack to rollup

@@ -40,11 +40,11 @@
 	}
 
 	/* scrolling behavior (to top button / breadcrumb) */
-	const navheader = document.querySelector('#theme-page-navigation') as HTMLElement;
+	const navheader = document.querySelector('#theme-page-navigation') as HTMLElement | null;
 	const bc = document.querySelector('.theme-page-breadcrumb') as HTMLElement | null;
 
 	window.addEventListener('scroll', () => {
-		const navHeight = navheader.offsetHeight;
+		const navHeight = navheader?.offsetHeight || 0;
 
 		if (bc) {
 			bc.style.top = `${navHeight - 1}px`;

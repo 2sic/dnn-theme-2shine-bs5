@@ -22,16 +22,15 @@
 // );
 
 /* Optimized and extended spacing for the use of paddings and margins like: px-5 or mb-2 */
-// $spacer: 1rem !default;
-// $spacers: () !default;
-// $spacers: map-merge((
+// $spacer: 1rem; // 16px
+// $spacers: (
 //   0: 0,
-//   1: ($spacer / 2), // 10px
-//   2: ($spacer * 1), // 20px
-//   3: ($spacer * 1.5), // 30px
-//   4: ($spacer * 2), // 40px
-//   5: ($spacer * 3), // 60px
-//   6: ($spacer * 4), // 80px
-//   7: ($spacer * 5), // 100px
+//   1: ($spacer / 2), // 8px
+//   2: ($spacer * 1), // 16px
+//   3: ($spacer * 1.5), // 24px
+//   4: ($spacer * 2), // 32px
+//   5: ($spacer * 3), // 48px
+//   6: ($spacer * 4), // 64px
+//   7: ($spacer * 5), // 80px
 //   8: ($spacer * 6) // 120px
-// ), $spacers);
+// );

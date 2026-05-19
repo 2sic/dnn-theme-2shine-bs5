@@ -4,7 +4,9 @@
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
   "scripts": {
-    "build-prod": "vite build --watch",
+    "build-prod": "concurrently -n vite,tsc -c cyan,yellow \"npm run build:vite\" \"npm run build:tsc\"",
+    "build:vite": "vite build --watch",
+    "build:tsc": "tsc --noEmit --watch --preserveWatchOutput",
     "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
   },
   "author": "2sic internet solutions",
@@ -15,7 +17,8 @@
     "postcss": "^8.4.49",
     "sass": "^1.80.7",
     "typescript": "^5.6.3",
-    "vite": "^5.4.11"
+    "vite": "^5.4.11",
+    "concurrently": "^9.2.1"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"

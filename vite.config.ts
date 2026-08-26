@@ -47,12 +47,6 @@ export default defineConfig({
   
   // CSS configuration
   css: {
-    preprocessorOptions: {
-      scss: {
-        // Silence SCSS deprecation warnings
-        silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import'],
-      },
-    },
     postcss: {
       plugins: [
         autoprefixer(), // Autoprefixer for vendor prefixes
@@ -79,7 +73,7 @@ export default defineConfig({
         const result = sass.compile(scssPath, {
           sourceMap: true,
           style: 'compressed',
-          silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import'],
+          silenceDeprecations: ['if-function', 'color-functions', 'global-builtin', 'import'],
         });
 
         // Cache all imported SCSS files so they stay watched even after compile errors

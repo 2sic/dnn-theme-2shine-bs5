@@ -7,12 +7,7 @@
 --%>
 
 <%@ Control language="C#" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
-<%@ Register TagPrefix="dnn" TagName="LOGIN" Src="~/Admin/Skins/Login.ascx" %>
-<%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.DDRMenu.TemplateEngine" Assembly="DotNetNuke.Web.DDRMenu" %>
-<%@ Register TagPrefix="dnn" TagName="MENU" src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="dnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
-<%@ Register TagPrefix="ToSic" TagName="LanguageNavigation" src="controls/LanguageNavigation.ascx" %>
-<%@ Register TagPrefix="dnn" TagName="BREADCRUMB" Src="~/Admin/Skins/BreadCrumb.ascx" %>
 <%-- Change the page title to contain the breadcrumbi in an SEO optimized way --%>
 <%@ Register TagPrefix="tosic" TagName="PageTitle" src="controls/optimize-page-title.ascx" %>
 <tosic:PageTitle runat="server" />
@@ -46,9 +41,7 @@ body {
 }
 </style>
 
-<!-- include files -->
-<dnn:DnnCssInclude runat="server" FilePath="dist/theme.min.css" Priority="100" PathNameAlias="SkinPath" />
-<dnn:DnnJsInclude runat="server" FilePath="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ForceProvider="DnnFormBottomProvider" Priority="100" PathNameAlias="SkinPath"  />
+
 <script runat="server">
   
   protected override void OnLoad(EventArgs e)

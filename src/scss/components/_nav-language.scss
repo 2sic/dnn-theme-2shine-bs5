@@ -20,8 +20,10 @@
   }
 }
 
-#theme-page-language {
+#theme-page-language {  
   list-style: none;
+  margin-bottom: 0;
+  
   @include media-breakpoint-down(lg) {
     padding: 1rem;
     padding-right: 0;

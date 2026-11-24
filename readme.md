@@ -65,10 +65,17 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 ## History
 
-### v05.04.01
+### v05.05.00
 
-1. Updated NPM packages
-1. Switched from rollup to vite
+1. Switched from rollup to vite (incl. TypeScript type-checking and autoprefixer)
+1. Updated NPM packages (Bootstrap 5.3.9)
+1. Fixed 2sxc QuickEdit not showing on empty pages (#23)
+1. Fixed footer styles not being included
+1. Refactored landing page: Bootstrap navbar, offcanvas mobile menu, language navigation only shown with multiple languages
+1. Added BS button group to styles
+1. Removed global margin reset on `ul` / `ol` (may affect spacing in existing content)
+1. Refactored and hardened theme scripts
+1. Cleaned up unused controls, includes and styles
 
 ### v05.04.00
 

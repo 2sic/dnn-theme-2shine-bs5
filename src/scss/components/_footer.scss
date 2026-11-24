@@ -11,30 +11,32 @@
 /*********************************************/
 
 footer#theme-page-footer {
+  background-color: var(--theme-footer-bg);   
+
   ul {
     margin: 0;
     padding: 0;
-    @include media-breakpoint-up(lg) {
-      display: flex;
-    }
 
     li {
       list-style-type: none;
       margin-right: 6px;
     }
   }
+  
   a,
   a:focus {
     color: #fff;
     text-decoration: underline;
     text-underline-offset: 3px;
+
     &:hover,
     &:active {
       color: rgba(#fff, 0.5);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    &.to-shine-page-login {
+
+    &.theme-page-login {
       font-size: 12px;
       color: transparent;
 

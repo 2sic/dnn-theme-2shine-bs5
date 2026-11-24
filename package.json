@@ -13,15 +13,15 @@
   "license": "MIT",
   "repository": "https://github.com/2sic/dnn-theme-2shine-bs5",
   "devDependencies": {
-    "@types/node": "^26.1.2",    
-    "autoprefixer": "^10.5.4",
-    "postcss": "^8.5.26",
-    "sass": "^1.102.0",
+    "@types/node": "^26.6.6",    
+    "autoprefixer": "^10.7.0",
+    "postcss": "^8.5.33",
+    "sass": "^1.108.2",
     "typescript": "^6.0.3",
-    "vite": "^8.2.1",
-    "concurrently": "^10.0.5"
+    "vite": "^8.3.8",
+    "concurrently": "^10.0.7"
   },
   "dependencies": {
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.9"
   }
 }

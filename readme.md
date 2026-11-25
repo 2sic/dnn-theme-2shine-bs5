@@ -65,6 +65,10 @@ To get the awesome designed content, install [2sxc](https://github.com/2sic/2sxc
 
 ## History
 
+### v05.05.01
+
+1. Updated bootstrap bundle to version 5.3.9
+
 ### v05.05.00
 
 1. Switched from rollup to vite (incl. TypeScript type-checking and autoprefixer)

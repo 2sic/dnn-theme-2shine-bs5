@@ -1,13 +1,13 @@
 {
   "name": "2sic-standard-skin-template",
-  "version": "05.05.00",
+  "version": "05.05.01",
   "description": "The default skin template for 2sic websites",
   "main": "(none)",
   "scripts": {
     "build-prod": "concurrently -n vite,tsc -c cyan,yellow \"npm run build:vite\" \"npm run build:tsc\"",
     "build:vite": "vite build --watch",
     "build:tsc": "tsc --noEmit --watch --preserveWatchOutput",
-    "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
+    "update-lib-bootstrap": "(ROBOCOPY node_modules\\bootstrap\\dist\\js dist\\lib bootstrap.bundle.min.js bootstrap.bundle.min.js.map ) ^& IF %ERRORLEVEL% LEQ 1 exit 0"
   },
   "author": "2sic internet solutions",
   "license": "MIT",
